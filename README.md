@@ -1,5 +1,5 @@
 # Team Super-Duper-Bassoons
-## Project Idea
+## Project Idea:
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
