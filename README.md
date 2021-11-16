@@ -10,5 +10,5 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Everitt Cheng | [@NinjaBreadLord](https://github.com/NinjaBreadLord) | [Tasks](https://github.com/Gennalynb123/flask_portfolio/projects/2#card-68554609) |[Scrum Board](https://github.com/Gennalynb123/flask_portfolio/projects/2) |[Commits](https://github.com/Gennalynb123/flask_portfolio/commits?author=Gennalynb123)
 | Daniel Tsivkovsky | [@sayed123455](https://github.com/sayed123455) | [Tasks](https://github.com/Gennalynb123/flask_portfolio/projects/2#card-68559348) |[Scrum Board](https://github.com/Gennalynb123/flask_portfolio/projects/2) |[Commits](https://github.com/Gennalynb123/flask_portfolio/commits?author=sayed123455)
 ## Pair Share Journals
-### [Lucas, Ŕithwikh, and Jun Pair-Share Journal]()
+### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal]()
 ### [Jun and Ali's Pair-Share Journal]()
