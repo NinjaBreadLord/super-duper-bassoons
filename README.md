@@ -10,5 +10,5 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Everitt Cheng | [@NinjaBreadLord](https://github.com/NinjaBreadLord) | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/assigned/NinjaBreadLord) |[Scrum Board](https://github.com/Gennalynb123/flask_portfolio/projects/2) |[Commits](https://github.com/Gennalynb123/flask_portfolio/commits?author=Gennalynb123)
 | Daniel Tsivkovski | [@dtsivkovski](https://github.com/dtsivkovski) | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/assigned/dtsivkovski) |[Scrum Board](https://github.com/Gennalynb123/flask_portfolio/projects/2) |[Commits](https://github.com/NinjaBreadLord/super-duper-bassoons/commits?author=dtsivkovski)
 ## Pair Share Journals
-### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal]()
+### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit)
 ### [Jun and Ali's Pair-Share Journal]()
