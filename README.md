@@ -12,3 +12,6 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ## Pair Share Journals
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Jun and Ali's Pair-Share Journal]()
+
+## Week 0
+[Added Bootstrap Navbar](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/2)
