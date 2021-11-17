@@ -14,6 +14,10 @@ def index():
 def daniel():
     return render_template("daniel-templates/d_homepage.html")
 
+@app.route('/jun')
+def jun():
+    return render_template("jun/j_aboutme.html")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')

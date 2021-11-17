@@ -1,0 +1,58 @@
+{% extends "layouts/base.html" %}
+
+{% set project = "Jun" %}
+
+{% block body %}
+
+<head>
+    <title>HTML Background Color</title>
+</head>
+<body style="background-color:lightskyblue;">
+
+</body>
+
+<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+
+    <div class="col-12">
+        <p>My name is Jun. </p>
+        <p> Hello, {{name}}!</p>
+    </div>
+
+    <div class="col-12">
+        <form action="/JUN" id="JUN" method="POST" >
+            <label for="name">What's your name?</label>
+            <input name="name" id="name">
+            <input type="submit" value="Greetings!">
+        </form>
+    </div>
+    <div>
+        <style>
+            .center {
+                text-align: center;
+                border: 7px solid black;
+            }
+        </style>
+        </head>
+        <body>
+
+        <div class="center">
+            <h1><strong>JUN LIM</strong></h1>
+        </div>
+        <p><center>
+            Hi my name is Jun. I like california rolls and the Philadelphia 76ers. I really like computers. I learned how to put together certain computers before I took this class. My goal is to learn more about the software/web development side of information technology through taking this class. My favorite video game is CS:GO.
+        </center> </p>
+        <center>
+            <img src="https://media.pitchfork.com/photos/5bfc2567b3693510111d42c4/1:1/w_600/earl_some%20rap%20songs.jpg" style="width:300px;height:300px;">
+            <p>I also listen to a lot of music. This is one of my favorite albums if you are ever wondering what my gmail picture is. </p>
+        </center>
+
+        </a>
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+{% block background %}
+{% endblock %}
