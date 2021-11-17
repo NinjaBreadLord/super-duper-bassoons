@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/daniel/home')
+def daniel():
+    return render_template("daniel-templates/d_homepage.html")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
