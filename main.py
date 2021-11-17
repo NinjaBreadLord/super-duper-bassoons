@@ -12,7 +12,7 @@ def index():
 
 @app.route('/daniel/home')
 def daniel():
-    return render_template("daniel-templates/d_homepage.html")
+    return render_template("daniel/d_homepage.html")
 
 
 # connects /kangaroos path to render kangaroos.html
