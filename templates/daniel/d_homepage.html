@@ -6,20 +6,41 @@
 
 {% block under %}
 
+<style>
+    #imageSwitch{
+        cursor: pointer;
+        width: 40vw;
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: lightcoral;
+
+    }
+</style>
+
 <div class="parallax" style="height:max-content">
     <div class="frame" id="parallax-frame">
         <!-- New stuff goes here -->
 
+        <div class="d-flex justify-content-center mb-2">I am Daniel Tsivkovski, one of the contributors to this AP Computer Science Principles project. I enjoy running, biking, and hanging out with my friends.</div>
+        <div class="d-flex justify-content-center mb-2">
+            <button class="btn btn-primary" style="width: 60%" onclick="imageSwitch()"> Click! </button>
+        </div>
         <div class="d-flex justify-content-center">
-        Welcome to my site!
-        <img id="imageSwitch" src="" style="cursor: pointer" onclick="imageSwitch()"> </div>
+        <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/daniel/imageSwitch/normal.jpg">
         </div>
     </div>
 </div>
 
 <script>
+
     function imageSwitch(){
-        var
+        const image = document.getElementById('imageSwitch')
+
+        if (image.src.match("/static/assets/daniel/imageSwitch/normal.jpg")) {
+            image.src = "/static/assets/daniel/imageSwitch/wideopen.jpg";
+        } else {
+            image.src = "/static/assets/daniel/imageSwitch/normal.jpg";
+        }
     }
 </script>
 {% endblock %}
