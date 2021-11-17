@@ -1,5 +1,9 @@
 # Team Super-Duper-Bassoons
-## Project Idea:
+## Project Idea: 
+Idea: Job website? 
+
+It can have categories of jobs with the jobs in those categories, it can have job descriptions, maybe something that tells you what jobs you can do based on the answer you choose, and maybe a fun quiz
+
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits | Role | 
