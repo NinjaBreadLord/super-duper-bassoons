@@ -20,6 +20,9 @@ def daniel():
 def kangaroos():
     return render_template("kangaroos.html")
 
+@app.route('/rithwikh/')
+def rithwikh():
+    return render_template("Rithwikh's Templates/rithwikh.html")
 
 @app.route('/walruses/')
 def walruses():
