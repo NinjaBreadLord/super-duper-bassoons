@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/everitt/everitthomepage')
+def everitt():
+    return render_template("everitt/everitthomepage.html")
+
 @app.route('/daniel/home')
 def daniel():
     return render_template("daniel/d_homepage.html")
