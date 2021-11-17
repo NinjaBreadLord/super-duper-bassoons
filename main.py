@@ -14,12 +14,19 @@ def index():
 def daniel():
     return render_template("daniel/d_homepage.html")
 
+@app.route('/lucas/home')
+def lucas():
+    return render_template("lucas-templates/l-homepage.html")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
 def kangaroos():
     return render_template("kangaroos.html")
 
+@app.route('/rithwikh/')
+def rithwikh():
+    return render_template("Rithwikh's Templates/rithwikh.html")
 
 @app.route('/walruses/')
 def walruses():
