@@ -12,7 +12,7 @@ def index():
 
 @app.route('/daniel/home')
 def daniel():
-    return render_template("daniel-templates/d_homepage.html")
+    return render_template("daniel/d_homepage.html")
 
 @app.route('/lucas/home')
 def lucas():
