@@ -19,3 +19,4 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 
 ## Week 0
 [Added Bootstrap Navbar](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/2)
+[Issues](https://github.com/NinjaBreadLord/super-duper-bassoons/issues)
