@@ -1,0 +1,61 @@
+{% extends "layouts/base.html" %}
+
+{% set project = "Jun" %}
+
+{% block body %}
+
+<head>
+    <title>HTML Background Color</title>
+</head>
+<body style="background-color:#7FFFD4;">
+
+</body>
+
+<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+
+    <div>
+        <style>
+            .center {
+                text-align: center;
+                border: 7px solid black;
+            }
+            div{
+                font-family: monospace;
+                color: black
+            }
+        </style>
+        </head>
+
+        <div class="center" style="height:max-content">
+            <h1><strong>JUN LIM</strong></h1>
+        </div>
+        <p><center>
+            Hi my name is Jun. I like california rolls, the Philadelphia 76ers, and the Kansas City Chiefs. I also really like computers. I learned how to put together certain computers before I took this class. My goal is to learn more about the software/web development side of information technology through taking this class. My favorite video game is CS:GO.
+        </center> </p>
+        <center>
+            <p>I also listen to a lot of music. This is one of my favorite albums if you are ever wondering what my gmail picture is. </p>
+            <img id="myface" onclick="myface()" src="/static/assets/Jun/srs.jpg">
+        </center>
+        <p><center>
+            This album cover and I actually have a lot of similarities. Don't believe me? Click the image then.
+        </center></p>
+        </a>
+    </div>
+</div>
+
+<script>
+
+    function myface(){
+        const image = document.getElementById('myface')
+
+        if (image.src.match("/static/assets/Jun/srs.jpg")) {
+            image.src = "/static/assets/Jun/myface.jpg";
+        } else {
+            image.src = "/static/assets/Jun/srs.jpg";
+        }
+    }
+</script>
+{% endblock %}
+
+{% block background %}
+{% endblock %}

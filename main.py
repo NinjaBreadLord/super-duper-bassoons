@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/everitt/everitthomepage')
+def everitt():
+    return render_template("everitt/everitthomepage.html")
+
 @app.route('/daniel/home')
 def daniel():
     return render_template("daniel/d_homepage.html")
@@ -22,15 +26,19 @@ def danieltest():
 def lucas():
     return render_template("lucas-templates/l-homepage.html")
 
+@app.route('/jun')
+def jun():
+    return render_template("jun/j_aboutme.html")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
 def kangaroos():
     return render_template("kangaroos.html")
 
-@app.route('/rithwikh/')
+@app.route('/rithwikh/home')
 def rithwikh():
-    return render_template("Rithwikh's Templates/rithwikh.html")
+    return render_template("rithwikh/r_homepage.html")
 
 @app.route('/walruses/')
 def walruses():
