@@ -28,9 +28,9 @@ def lucas():
 def kangaroos():
     return render_template("kangaroos.html")
 
-@app.route('/rithwikh/')
+@app.route('/rithwikh/home')
 def rithwikh():
-    return render_template("Rithwikh's Templates/rithwikh.html")
+    return render_template("rithwikh/r_homepage.html")
 
 @app.route('/walruses/')
 def walruses():
