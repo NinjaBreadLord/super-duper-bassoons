@@ -25,25 +25,36 @@
             }
         </style>
         </head>
-        <body>
 
-        <div class="center">
+        <div class="center" style="height:max-content">
             <h1><strong>JUN LIM</strong></h1>
         </div>
         <p><center>
-            Hi my name is Jun. I like california rolls and the Philadelphia 76ers. I really like computers. I learned how to put together certain computers before I took this class. My goal is to learn more about the software/web development side of information technology through taking this class. My favorite video game is CS:GO.
+            Hi my name is Jun. I like california rolls, the Philadelphia 76ers, and the Kansas City Chiefs. I also really like computers. I learned how to put together certain computers before I took this class. My goal is to learn more about the software/web development side of information technology through taking this class. My favorite video game is CS:GO.
         </center> </p>
         <center>
-            <img src="https://media.pitchfork.com/photos/5bfc2567b3693510111d42c4/1:1/w_600/earl_some%20rap%20songs.jpg" style="width:300px;height:300px;">
             <p>I also listen to a lot of music. This is one of my favorite albums if you are ever wondering what my gmail picture is. </p>
+            <img id="myface" onclick="myface()" src="/static/assets/Jun/srs.jpg">
         </center>
-
+        <p><center>
+            This album cover and I actually have a lot of similarities. Don't believe me? Click the image then.
+        </center></p>
         </a>
     </div>
-
-
 </div>
 
+<script>
+
+    function myface(){
+        const image = document.getElementById('myface')
+
+        if (image.src.match("/static/assets/Jun/srs.jpg")) {
+            image.src = "/static/assets/Jun/myface.jpg";
+        } else {
+            image.src = "/static/assets/Jun/srs.jpg";
+        }
+    }
+</script>
 {% endblock %}
 
 {% block background %}
