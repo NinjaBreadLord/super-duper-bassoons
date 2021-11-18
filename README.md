@@ -18,5 +18,5 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
 ## Week 0
-[Added Bootstrap Navbar](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/2)
-[Issues](https://github.com/NinjaBreadLord/super-duper-bassoons/issues)
+### [Added Bootstrap Navbar](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/2)
+### [Issues](https://github.com/NinjaBreadLord/super-duper-bassoons/issues)
