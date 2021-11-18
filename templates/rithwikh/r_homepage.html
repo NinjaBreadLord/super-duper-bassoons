@@ -81,28 +81,12 @@
     <div class="d-flex justify-content-center mb-2">
         <button class="btn btn-primary" style="width: 60%" onclick="imageSwitch()"> Click! </button>
     </div>
-    <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/rithwikh/me.png" height="168" width="152">
+        <div>
     <marquee behavior="alternate" direction="left" scrollamount = "3">
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-        <img src="/static/assets/rithwikh/me.png" height="168" width="152"/>
-
-
+        <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/rithwikh/me.png" height="168" width="152">
+        <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/rithwikh/me.png" height="168" width="152">
     </marquee>
+        </div>
 </div>
 
     <script>
@@ -110,10 +94,10 @@
         function imageSwitch(){
             const image = document.getElementById('imageSwitch')
 
-            if (image.src.match("/static/assets/daniel/imageSwitch/normal.jpg")) {
-                image.src = "/static/assets/daniel/imageSwitch/wideopen.jpg";
+            if (image.src.match("/static/assets/rithwikh/me.png")) {
+                image.src = "/static/assets/rithwikh/MeAgain.png";
             } else {
-                image.src = "/static/assets/daniel/imageSwitch/normal.jpg";
+                image.src = "/static/assets/rithwikh/me.png";
             }
         }
     </script>
