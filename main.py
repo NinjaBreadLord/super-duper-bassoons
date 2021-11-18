@@ -24,7 +24,7 @@ def danieltest():
 
 @app.route('/lucas/home')
 def lucas():
-    return render_template("lucas-templates/l-homepage.html")
+    return render_template("lucas/l_homepage.html")
 
 @app.route('/jun')
 def jun():
