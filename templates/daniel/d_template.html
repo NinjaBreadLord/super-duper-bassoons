@@ -22,104 +22,11 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 
 
     <link rel="icon" href="/static/assets/daniel/dtsivkovski-icon.png">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        :root{
-            --white: whitesmoke;
-            --black: black;
-            --grey: grey;
-        }
+    <link href="/static/assets/daniel/d_stylesheet_main.css" rel="stylesheet">
 
-        html, body{
-            margin: 0;
-            height: 100%;
-            animation: fadein 2s;
-            -moz-animation: fadein 2s; /* Firefox */
-            -webkit-animation: fadein 2s; /* Safari and Chrome */
-            -o-animation: fadein 2s; /* Opera */
-            background-color: #659DBD;
-            color: var(--white);
-        }
 
-         #parallax-frame {
-             background-color: rgba(0,0,0, 0.5);
-             padding: 5%;
-             width: 80%;
-             margin: auto;
-             height:max-content
-         }
-
-        .dark-mode {
-            background-color: var(--white);
-            color: var(--black);
-        }
-
-        h1{
-            font-size: 6em;
-        }
-
-        a {
-            color: #659DBD;
-        }
-
-        .fa{
-            font-size: 3em;
-            letter-spacing: 1em;
-            transition: all .2s;
-            color: white;
-        }
-
-        .fa:hover{
-            transform: translateY(10px);
-        }
-
-        .fa-youtube-play:hover{
-            color: #cc0000;
-        }
-
-        .fa-twitter:hover{
-            color: #1da1f2;
-        }
-
-        .fa-github:hover{
-            color: hotpink;
-        }
-
-        .btn:link,
-        .btn:visited {
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 15px 40px;
-            display: inline-block;
-            border-radius: 100px;
-            transition: all .2s;
-            position: absolute;
-            color: #8D8741;
-            font-size: 2.5em;
-            background-color: #FBEEC1;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(218, 173, 134, 0.4);
-        }
-
-        .btn:active {
-            transform: translateY(-1px);
-            box-shadow: 0 5px 10px rgba(218, 173, 134, 0.4);
-        }
-
-        .row{
-            margin: auto;
-        }
-
-        .navbar{
-            z-index: 1000;
-        }
-
-    </style>
 
     <title>{{ basename }} - {{ project }} </title>
 
@@ -148,6 +55,19 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+
+    #parallax-frame {
+        background-color: rgba(0,0,0, 0.5);
+        padding: 5%;
+        width: 80%;
+        margin: auto;
+        height:max-content
+    }
+
+    h1{
+        font-size: 6em;
     }
 </style>
 

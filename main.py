@@ -18,6 +18,10 @@ def everitt():
 def daniel():
     return render_template("daniel/d_homepage.html")
 
+@app.route('/daniel/testing1')
+def danieltest():
+    return render_template("daniel/csstesting.html")
+
 @app.route('/lucas/home')
 def lucas():
     return render_template("lucas-templates/l-homepage.html")

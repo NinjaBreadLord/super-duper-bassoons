@@ -1,0 +1,25 @@
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* If image unavailable */
+    background-color: darkslateblue;
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-frame {
+    background-color: rgba(0,0,0, 0.5);
+    padding: 5%;
+    width: 80%;
+    margin: auto;
+    height:max-content
+}
