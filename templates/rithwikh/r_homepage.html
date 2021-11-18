@@ -84,10 +84,23 @@
         <div>
             <marquee behavior="alternate" direction="left" scrollamount = "3">
                 <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/rithwikh/me.png" height="168" width="152">
+                <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/rithwikh/me.png" height="168" width="152">
             </marquee>
         </div>
     </div>
 
+    <script>
+
+        function imageSwitch(){
+            const image = document.getElementById('imageSwitch')
+
+            if (image.src.match("/static/assets/rithwikh/me.png")) {
+                image.src = "/static/assets/rithwikh/AnotherOne.png" ;
+            } else {
+                image.src = "/static/assets/rithwikh/me.png";
+            }
+        }
+    </script>
     <script>
 
         function imageSwitch(){
