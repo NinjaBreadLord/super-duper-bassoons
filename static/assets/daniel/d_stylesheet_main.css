@@ -1,0 +1,84 @@
+:root{
+    --white: whitesmoke;
+    --black: black;
+    --grey: grey;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    background-color: #659DBD;
+    color: var(--white);
+}
+
+.dark-mode {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+h1{
+    font-size: 6em;
+}
+
+a {
+    color: #659DBD;
+}
+
+.fa{
+    font-size: 3em;
+    letter-spacing: 1em;
+    transition: all .2s;
+    color: white;
+}
+
+.fa:hover{
+    transform: translateY(10px);
+}
+
+.fa-youtube-play:hover{
+    color: #cc0000;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-github:hover{
+    color: hotpink;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    color: #8D8741;
+    font-size: 2.5em;
+    background-color: #FBEEC1;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(218, 173, 134, 0.4);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(218, 173, 134, 0.4);
+}
+
+.row{
+    margin: auto;
+}
+
+.navbar{
+    z-index: 1000;
+}
