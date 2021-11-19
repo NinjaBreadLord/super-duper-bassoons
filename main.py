@@ -22,6 +22,10 @@ def daniel():
 def danieltest():
     return render_template("daniel/csstesting.html")
 
+@app.route('/rithwikh/home')
+def rithwikh():
+    return render_template("rithwikh/r_homepage.html")
+
 @app.route('/jun')
 def jun():
     return render_template("jun/j_aboutme.html")
