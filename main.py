@@ -31,22 +31,7 @@ def lucas():
     return render_template("lucas/l_homepage.html")
 
 # connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
-def kangaroos():
-    return render_template("kangaroos.html")
 
-@app.route('/rithwikh/home')
-def rithwikh():
-    return render_template("rithwikh/r_homepage.html")
-
-@app.route('/walruses/')
-def walruses():
-    return render_template("walruses.html")
-
-
-@app.route('/hawkers/')
-def hawkers():
-    return render_template("hawkers.html")
 
 
 @app.route('/stub/')
