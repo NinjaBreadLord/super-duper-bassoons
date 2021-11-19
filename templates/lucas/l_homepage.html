@@ -1,0 +1,74 @@
+{% extends "layouts/base.html" %}
+
+<!--<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">-->
+
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Lucas's Home Page</title>-->
+
+
+<!--</head>-->
+
+{% set project = "Lucas's Home Page" %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+{% block body %}
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <div class="w3-panel w3-border-top w3-border-bottom w3-border-transparent">
+        <center>
+
+        <div class="w3-panel w3-yellow">
+            <h1 class="w3-text-blue" style="text-shadow:1px 1px 0 #444">
+                <b>Lucas Ho - About Me</b></h1>
+        </div>
+
+        <p class="w3-monospace">Hello. My name is Lucas Ho and I am a junior at Del Norte High School. I find computer science fun
+        and I also am looking forward to this trimester of computer science. I also learned a lot from first trimester.</p>
+    </center>
+    </div>
+</div>
+
+<style>
+    #imageSwitch{
+        cursor: pointer;
+        width: 40vw;
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: #103ac2;
+
+    }
+</style>
+
+<div class="parallax" style="height:max-content">
+    <div class="frame" id="parallax-frame">
+        <!-- New stuff goes here -->
+
+            <center><button class="btn btn-primary" style="width: 10%" onclick="imageSwitch()"> Click! </button></center>
+        </div>
+        <div class="d-flex justify-content-center">
+            <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/lucasp/normal.jpg">
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function imageSwitch(){
+        const image = document.getElementById('imageSwitch')
+
+        if (image.src.match("/static/assets/lucasp/nomask.jpg")) {
+            image.src = "/static/assets/lucasp/mask.jpg";
+        } else {
+            image.src = "/static/assets/lucasp/nomask.jpg";
+        }
+    }
+</script>
+
+{% endblock %}

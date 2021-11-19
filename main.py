@@ -22,14 +22,13 @@ def daniel():
 def danieltest():
     return render_template("daniel/csstesting.html")
 
-@app.route('/lucas/home')
-def lucas():
-    return render_template("lucas-templates/l-homepage.html")
-
 @app.route('/jun')
 def jun():
     return render_template("jun/j_aboutme.html")
 
+@app.route('/lucas/home')
+def lucas():
+    return render_template("lucas/l_homepage.html")
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
