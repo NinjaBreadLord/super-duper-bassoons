@@ -50,10 +50,11 @@
 </html>
 <script>
     function imageswap(){
-        if(img){
-
+        const image = document.getElementById('imageSwitch')
+        if (image.src.match("/static/assets/everitt/")) {
+            image.src = "/static/assets/everitt/";
         }else{
-
+            image.src = "/static/assets/rithwikh/me.png";
         }
     }
 </script>
