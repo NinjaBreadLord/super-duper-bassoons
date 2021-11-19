@@ -1,5 +1,8 @@
-body, html {
+ body, html {
     height: 100%;
+    font-family: "Segoe UI";
+    color: white;
+    background: rgba(0,0,0,0.8);
 }
 
 .parallax {
