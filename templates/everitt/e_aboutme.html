@@ -1,0 +1,75 @@
+{% extends "layouts/base.html" %}
+{% block body %}
+
+<html lang="en">
+<style>
+    background{
+
+    }
+    body{
+        background:linear-gradient(#FFD83B,#CC232A);
+        /*display:flex;*/
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        padding: 0;
+        margin: 0;
+    }
+    .centerb{
+        width: 1200px;
+        height: 800px;
+        padding: 10px;
+        margin: 100px auto;
+        box-shadow: 0px 0px 10px 2px grey;
+        border: 4px solid white;
+
+        background-image: url(../../static/assets/backgrounds/nuno-alberto-MykFFC5zolE-unsplash.jpg);
+        background-size:cover
+
+    }
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size:300%;
+        border: 5px solid white;
+    }
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size:130%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+</style>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="centerb" >
+        <div class="wrap">
+            <h1>About me</h1>
+            <p>I am Everitt Cheng, I am an 11th grader at Del Norte High School. I was born in New York and moved to California at the age of 8. My family and I come from Chinese descent, with my family still practicing aspects of Chinese culture consistently. I like playing video games and watching YouTube videos. I especially enjoy learning about modern history on YouTube, and also learn through my friends. I also aspire to learn multiple languages in the future in both coding and actual languages. Using languages I could travel the world someday.
+        </p>
+        <img src="/static/assets/everitt/penguin.jpg" width="396" height="536" id="imageSwitch">
+        <button class="btn btn-primary" onclick="imageswap()">button</button>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function imageswap(){
+        const image = document.getElementById('imageSwitch')
+        if (image.src.match("/static/assets/everitt/penguin.jpg")) {
+            image.src = "/static/assets/everitt/grizzly2.png";
+        }else{
+            image.src = "/static/assets/everitt/penguin.jpg";
+        }
+    }
+</script>
+{% endblock %}
+{% block background %}
+{% endblock %}
