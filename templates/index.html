@@ -3,8 +3,29 @@
 
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Home" %}
-{% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
-{% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
+
+{% block body %}
+<link href="/static/assets/daniel/parallax.css" rel="stylesheet">
+
+<style>
+    .parallax {
+        background-image: url("static/assets/backgrounds/gianpaolo-antonucci-beach-unsplash.jpg");
+    }
+</style>
+
+<div class="parallax" style="height: 25%"></div>
+<div class="parallax">
+    <div class="d-flex justify-content-center">
+    <div class="card text-white text-center bg-dark border-success" style="width: 60%">
+        <div class="card-body justify-content-center">
+            <h1 class="card-title">Home Page</h1>
+        </div>
+        <div class="card-footer"> Welcome to the Super Duper Bassoons home page! </div>
+    </div>
+    </div>
+</div>
+<div class="parallax" style="height: 40%"></div>
+{% endblock %}
 
 {% block background %}
 {% endblock %}
