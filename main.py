@@ -1,5 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template
+import requests
 
 # create a Flask instance
 app = Flask(__name__)
@@ -17,6 +18,12 @@ def everitt():
 @app.route('/daniel/home')
 def daniel():
     return render_template("daniel/d_homepage.html")
+
+@app.route('/daniel/api')
+def danielapi():
+    url = "https://randanimal.pmbytes.org/imageapi/"
+    response = requests.get(url)
+    return render_template("daniel/api.html", api_image=response.text)
 
 @app.route('/daniel/testing1')
 def danieltest():
