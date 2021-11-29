@@ -18,7 +18,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 10. [Contributions](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#contributions)
 11. [Final Videos Part #1](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#Final-videos-part-#1)
 
-##Our Team
+## Our Team
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits | Role | 
 |:-----|:----------------------|:-----:|:-----------:|:-------:|:-------:|
 | Jun Lim | [@the1jun](https://github.com/the1jun) [@peacekeeper6](https://github.com/peacekeeper6)| [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/assigned/the1jun) |[Scrum Board](https://github.com/NinjaBreadLord/super-duper-bassoons/projects/1) | [Commits](https://github.com/NinjaBreadLord/super-duper-bassoons/commits?author=peacekeeper6) | Deployment Manager
