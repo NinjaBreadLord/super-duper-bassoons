@@ -35,8 +35,8 @@
                 <b>Lucas Ho - About Me</b></h1>
         </div>
 
-        <p class="w3-monospace">Hello. My name is Lucas Ho and I am a junior at Del Norte High School. I find computer science fun
-        and I also am looking forward to this trimester of computer science. I also learned a lot from first trimester.</p>
+        <p class="w3-monospace">Hello. My name is Lucas Ho and I am a junior at Del Norte High School. Some things I like to do are run, play video games, eat, and hang out with friends.
+            My favorite class is math. I find computer science fun and I also am looking forward to this trimester of computer science. I also learned a lot from first trimester.</p>
     </center>
     </div>
 </div>
@@ -56,7 +56,7 @@
             <center><button class="btn btn-primary" style="width: 10%" onclick="imageSwitch()"> Click! </button></center>
         </div>
         <div class="d-flex justify-content-center">
-            <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/lucasp/nomask.jpg" height="350" width="50">
+            <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/lucasp/nomask.jpg" height="500" width="50">
         </div>
     </div>
 </div>
@@ -70,6 +70,31 @@
         } else {
             image.src = "/static/assets/lucasp/nomask.jpg";
         }
+    }
+</script>
+
+My data of interest are times of my favorite locations around the world. I can provide you the times of my favorite locations. I used the free API from the website https://www.timeanddate.com/clocks/free.html.
+
+<form action="javascript:void(0);" onsubmit="showResults()">
+    <label for="locations"> Location:</label>
+    <select name="locations" id="locations">
+        <option value="https://free.timeanddate.com/clock/i838ixnf/n4882/tt0">San Diego</option>
+        <option value="https://free.timeanddate.com/clock/i838j82k/n64/tt0">Chicago</option>
+        <option value="https://free.timeanddate.com/clock/i838j82k/n179/tt0">New York</option>
+        <option value="https://free.timeanddate.com/clock/i838j82k/n136/tt0">London</option>
+        <option value="https://free.timeanddate.com/clock/i838j82k/n195/tt0">Paris</option>
+        <option value="https://free.timeanddate.com/clock/i838j82k/n248/tt0">Tokyo</option>
+        <option value="https://free.timeanddate.com/clock/i838j82k/n103/tt0">Hawaii</option>
+    <input type="submit" value="Submit">
+</form>
+
+<div id="stats"></div>
+
+<script>
+    /* This function displays the stats for the Padres of the user's year entered. */
+    function showResults() {
+        let location = document.getElementById("locations").value;
+        document.getElementById("stats").innerHTML = '<object type = "text/html" data = "' + location + '"></object>';//
     }
 </script>
 
