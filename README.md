@@ -6,34 +6,17 @@ It can have categories of jobs with the jobs in those categories, it can have jo
 
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
-
-## [Sprint 0 - Introduction]
-### [Link to Sprint 0](https://drive.google.com/drive/folders/14VUYDYmwswaDMb8-JK4YqOccHa42-vMJ)
-## [Sprint 1 and 2 - Innovation]
-### [Sprints 1 & 2](https://github.com/Gennalynb123/flask_portfolio/projects/2)
-## [Sprint 3 and 4 - Prototyping]
-### [Sprints 3 & 4](https://github.com/Gennalynb123/flask_portfolio/projects/2)
-###  [Video](https://drive.google.com/file/d/1kl5jFIyRJC3_xG10DX86GP8bgeFx_Ryx/view?usp=sharing)
-## [Sprint 5 and 6- Timeboxing]
-### [Sprints 5 & 6](https://github.com/Gennalynb123/flask_portfolio/projects/2)
-###  [TPT Activities (TPT brainstorm, 3.1/3.2 work/notes,journals](https://github.com/Gennalynb123/flask_portfolio/issues/17)
-###  [RGB mini-lab (set up only)](https://github.com/Gennalynb123/flask_portfolio/issues/18)
-###  [RGB mini-lab](https://github.com/Gennalynb123/flask_portfolio/issues/20)
-## [Sprint 7 and 8 - Logic Gates]
-### [Sprints 7 & 8](https://github.com/Gennalynb123/flask_portfolio/projects/2)
-### [Logic Gates](https://github.com/Gennalynb123/flask_portfolio/issues/21)
-### [TPT Work (3.7/3.8)](https://github.com/Gennalynb123/flask_portfolio/issues/24)
-## [Final Videos Part #1]
-### [Jun Lim](https://github.com/Gennalynb123/flask_portfolio/issues/28)
-### [Lucas Ho](https://github.com/Gennalynb123/flask_portfolio/issues/27)
-### [Gennalyn Bongolan](https://github.com/Gennalynb123/flask_portfolio/issues/26)
-### [Ŕithwikh Várma](https://github.com/Gennalynb123/flask_portfolio/issues/30)
-## [PBL Issues]
-### [Develop website idea/wireframe](https://github.com/Gennalynb123/flask_portfolio/issues/10)
-### [Develop Hompage/Overview Page](https://github.com/Gennalynb123/flask_portfolio/issues/32)
-### [Develop Test Page](https://github.com/Gennalynb123/flask_portfolio/issues/34)
-### [Develop Results Page](https://github.com/Gennalynb123/flask_portfolio/issues/35)
-### [Add suggestions from peer review presentation](https://github.com/Gennalynb123/flask_portfolio/issues/36)
+## Table of Contents
+1. [Contributors](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#contributors)
+2. [Pair Share Journals](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#pair-share-journals)
+3. [Project Ideation](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#project-ideation)
+4. [Sprint 0 - Introduction](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-0---introduction)
+5. [Sprints 1,2 - Innovation](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-1-and-2---innovation)
+6. [Sprints 3,4 - Prototyping](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-3-and-4)
+7. [Sprints 5,6 - Time Boxing](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-5-and-6)
+9. [Sprints 7,8 - Logic Gates](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-7-and-8---logic-gates)
+10. [Contributions](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#contributions)
+11. [Final Videos Part #1](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#Final-videos-part-#1)
 
 
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits | Role | 
