@@ -5,45 +5,24 @@ import requests
 # create a Flask instance
 app = Flask(__name__)
 
+from routes.apis import app_apis
+from routes.dan_routes import app_danroutes
+from routes.luc_routes import app_lucroutes
+from routes.rit_routes import app_ritroutes
+from routes.jun_routes import app_junroutes
+from routes.ev_routes import app_evroutes
+
+app.register_blueprint(app_apis)
+app.register_blueprint(app_danroutes)
+app.register_blueprint(app_lucroutes)
+app.register_blueprint(app_ritroutes)
+app.register_blueprint(app_junroutes)
+app.register_blueprint(app_evroutes)
 
 # connects default URL to render index.html
 @app.route('/')
 def index():
     return render_template("index.html")
-
-@app.route('/everitt/about')
-def everitt():
-    return render_template("everitt/e_aboutme.html")
-
-@app.route('/daniel/home')
-def daniel():
-    return render_template("daniel/d_homepage.html")
-
-@app.route('/daniel/api')
-def danielapi():
-    url = "https://randanimal.pmbytes.org/imageapi/"
-    response = requests.get(url)
-    return render_template("daniel/api.html", api_image=response.text)
-
-@app.route('/daniel/testing1')
-def danieltest():
-    return render_template("daniel/csstesting.html")
-
-@app.route('/rithwikh/home')
-def rithwikh():
-    return render_template("rithwikh/r_homepage.html")
-
-@app.route('/jun')
-def jun():
-    return render_template("jun/j_aboutme.html")
-
-@app.route('/lucas/home')
-def lucas():
-    return render_template("lucas/l_homepage.html")
-
-# connects /kangaroos path to render kangaroos.html
-
-
 
 @app.route('/stub/')
 def stub():
