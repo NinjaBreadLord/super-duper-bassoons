@@ -7,7 +7,7 @@ It can have categories of jobs with the jobs in those categories, it can have jo
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
 ## Table of Contents
-1. [Contributors](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#contributors)
+1. [Our Team](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#our-team)
 2. [Pair Share Journals](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#pair-share-journals)
 3. [Project Ideation](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#project-ideation)
 4. [Sprint 0 - Introduction](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-0---introduction)
