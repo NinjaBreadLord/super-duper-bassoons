@@ -8,15 +8,8 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 
 ## Table of Contents
 1. [Our Team](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#our-team)
-2. [Pair Share Journals](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#pair-share-journals)
-3. [Project Ideation](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#project-ideation)
-4. [Sprint 0 - Introduction](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-0---introduction)
-5. [Sprints 1,2 - Innovation](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-1-and-2---innovation)
-6. [Sprints 3,4 - Prototyping](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-3-and-4)
-7. [Sprints 5,6 - Time Boxing](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-5-and-6)
-9. [Sprints 7,8 - Logic Gates](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#sprint-7-and-8---logic-gates)
-10. [Contributions](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#contributions)
-11. [Final Videos Part #1](https://github.com/Gennalynb123/flask_portfolio/blob/main/README.md#Final-videos-part-#1)
+2. [Week 0](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
+
 
 ## Our Team
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits | Role | 
