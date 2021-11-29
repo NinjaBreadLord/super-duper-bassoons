@@ -101,6 +101,13 @@
             }
         }
     </script>
+    <div>
+        <a class="button" href="http://127.0.0.1:5000/">Click To Return Home</a>
+    </div>
+    <br>
+    <br>
+    <br>
+
     <script>
 
         function imageSwitch(){
@@ -114,9 +121,23 @@
         }
     </script>
 
+    <form action="javascript:void(0);" onsubmit="showResults()">
+        <label for="locations"> Location:</label>
+        <select name="locations" id="locations">
+            <option value="https://free.timeanddate.com/clock/i839olvr/n815/fn7/fs18/fc09f/ftb/bac00f/tt0/tw0/tm1/ta1/tb">San Diego Time</option>
+            <input type="submit" value="Submit">
+    </form>
 
+    <div id="stats"></div>
 
-    <a class="button" href="http://127.0.0.1:5000/">Click To Return Home</a>
+    <script>
+        /* This function displays the stats for the Padres of the user's year entered. */
+        function showResults() {
+            let location = document.getElementById("locations").value;
+            document.getElementById("stats").innerHTML = '<object type = "text/html" data = "' + location + '"></object>';//
+        }
+    </script>
+<br>
 
 
     {% endblock %}
