@@ -8,7 +8,8 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 
 ## Table of Contents
 1. [Our Team](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#our-team)
-2. [Week 0](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
+2. [Pair-Share Journals](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
+3. [Week 0](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
 
 
 ## Our Team
