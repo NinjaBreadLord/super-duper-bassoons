@@ -1,6 +1,6 @@
 # Team Super-Duper-Bassoons
 ## Project Idea: 
-Idea: Job website? 
+Idea: Job website ([Wireframe Ideation](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/10))
 
 It can have categories of jobs with the jobs in those categories, it can have job descriptions, maybe something that tells you what jobs you can do based on the answer you choose, and maybe a fun quiz
 
