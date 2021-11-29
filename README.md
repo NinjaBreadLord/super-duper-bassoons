@@ -1,11 +1,18 @@
 # Team Super-Duper-Bassoons
 ## Project Idea: 
-Idea: Job website? 
+Idea: Job website ([Wireframe Ideation](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/10))
 
 It can have categories of jobs with the jobs in those categories, it can have job descriptions, maybe something that tells you what jobs you can do based on the answer you choose, and maybe a fun quiz
 
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
+## Table of Contents
+1. [Our Team](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#our-team)
+2. [Pair-Share Journals](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#pair-share-journals)
+3. [Week 0](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
+
+
+## Our Team
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits | Role | 
 |:-----|:----------------------|:-----:|:-----------:|:-------:|:-------:|
 | Jun Lim | [@the1jun](https://github.com/the1jun) [@peacekeeper6](https://github.com/peacekeeper6)| [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/assigned/the1jun) |[Scrum Board](https://github.com/NinjaBreadLord/super-duper-bassoons/projects/1) | [Commits](https://github.com/NinjaBreadLord/super-duper-bassoons/commits?author=peacekeeper6) | Deployment Manager
