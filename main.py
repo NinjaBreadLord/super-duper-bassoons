@@ -4,8 +4,6 @@ from flask import Flask, render_template
 # create a Flask instance
 app = Flask(__name__)
 
-applist = ["apis", "danroutes", "lucroutes", "ritroutes", "junroutes", "evroutes"]
-
 from routes.apis import app_apis
 from routes.danroutes import app_danroutes
 from routes.lucroutes import app_lucroutes
