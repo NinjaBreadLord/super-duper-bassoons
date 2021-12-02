@@ -31,7 +31,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/12) | [Commits]
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/12) | [Commits]
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/12) | [Technical Ideas](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/14), [Blueprinting](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/11), [Homepage](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/9) |
-| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/12) | [Commits]
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/12) | [Deployment Plan, Hardware, Frequency](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Deployment-Plan)
 
 ## Week 0
 ### [Added Bootstrap Navbar](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/2)
