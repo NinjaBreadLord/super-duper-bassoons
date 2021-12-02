@@ -1,5 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template
+import requests
 
 # create a Flask instance
 app = Flask(__name__)
