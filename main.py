@@ -1,16 +1,17 @@
 # import "packages" from flask
 from flask import Flask, render_template
-import requests
 
 # create a Flask instance
 app = Flask(__name__)
 
+applist = ["apis", "danroutes", "lucroutes", "ritroutes", "junroutes", "evroutes"]
+
 from routes.apis import app_apis
-from routes.dan_routes import app_danroutes
-from routes.luc_routes import app_lucroutes
-from routes.rit_routes import app_ritroutes
-from routes.jun_routes import app_junroutes
-from routes.ev_routes import app_evroutes
+from routes.danroutes import app_danroutes
+from routes.lucroutes import app_lucroutes
+from routes.ritroutes import app_ritroutes
+from routes.junroutes import app_junroutes
+from routes.evroutes import app_evroutes
 
 app.register_blueprint(app_apis)
 app.register_blueprint(app_danroutes)
