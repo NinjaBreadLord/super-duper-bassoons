@@ -10,3 +10,9 @@ app_mainframe = Blueprint('mainframe', __name__,
 def mainsearch():
     return render_template("mainframe/full_search.html")
 
+@app_mainframe.route('/search/term')
+def termsearch():
+    
+    return render_template("mainframe/full_search.html")
+
+
