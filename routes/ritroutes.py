@@ -1,6 +1,5 @@
-import requests
-
 from flask import Blueprint, render_template, request
+import requests
 
 app_ritroutes = Blueprint('ritroutes', __name__,
                      url_prefix='/rithwikh',
@@ -10,13 +9,10 @@ app_ritroutes = Blueprint('ritroutes', __name__,
 
 @app_ritroutes.route('/home')
 def rithwikh():
+    return render_template("rithwikh/r_homepage.html")
 
-    url = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
-
-    response = requests.request("GET", url,)
-
-    print(response)
-
-    return render_template("rithwikh/r_homepage.html", response= response)
+@app_ritroutes.route('/weather')
+def weather():
+    return render_template("rithwikh/rithwikhAPI.html")
 
 
