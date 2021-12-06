@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template
 import requests
 import json
 app_junroutes = Blueprint('junroutes', __name__,
@@ -12,7 +12,7 @@ app_junroutes = Blueprint('junroutes', __name__,
 def jun():
     return render_template("jun/j_aboutme.html")
 
-@app_junrroutes.route('/junapi/', methods=['GET', 'POST'])
+@app_junroutes.route('/junapi/', methods=['GET', 'POST'])
 def junapi():
     url = "https://quiterandomapi.p.rapidapi.com/api"
 
