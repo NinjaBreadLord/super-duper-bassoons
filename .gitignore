@@ -9,3 +9,8 @@
 *.iml
 *.ipr
 *.xml
+__pycache__/
+.vscode/
+*.pyc
+routes/__pycache__/
+routes/__pycache__/
