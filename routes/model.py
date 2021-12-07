@@ -1,8 +1,8 @@
 """ database setup to support db examples """
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.exc import IntegrityError
-from flask_migrate import Migrate
-from flask_restful import Resource, Api
+#rom flask_sqlalchemy import SQLAlchemy
+#from sqlalchemy.exc import IntegrityError
+#from flask_migrate import Migrate
+#from flask_restful import Resource, Api
 
 from __init__ import app
 
