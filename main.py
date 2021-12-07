@@ -1,4 +1,7 @@
+# import "packages" from flask
 from flask import Flask, render_template
+import requests
+import json
 
 # create a Flask instance
 app = Flask(__name__)
@@ -27,7 +30,7 @@ def index():
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
-    
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
