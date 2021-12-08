@@ -123,24 +123,7 @@
     </div>
 
 
-<div style="height: 100%">
-    <form action="javascript:void(0);" onsubmit="showResults()">
-        <label for="locations"> Location:</label>
-        <select name="locations" id="locations">
-            <option height = "100%" value="https://www.powr.io/weather/u/be801033_1638823897#platform=iframe">San Francisco</option>
-            <input type="submit" value="Submit">
 
-    </form>
-</div>
-    <div id="stats"></div>
-
-    <script>
-        /* This function displays the stats for the Padres of the user's year entered. */
-        function showResults() {
-            let location = document.getElementById("locations").value;
-            document.getElementById("stats").innerHTML = '<object type = "text/html" data = "' + location + '"></object>';//
-        }
-    </script>
 
     {% endblock %}
 
