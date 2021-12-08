@@ -40,12 +40,11 @@
         width: 50%;
     }
 
-    h1 {
+    .bor {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 300%;
         border: 5px solid white;
     }
-
     p {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 130%;
@@ -69,16 +68,22 @@
 <body>
     <div class="centerb">
         <div class="wrap">
-            <h1 style="color: #ffffff; text-align: center;">About me</h1>
+            <h1 class="bor" style="color: #ffffff; text-align: center;">About me</h1>
             <p style="color: #ffffff; text-align: center;">I am Everitt Cheng, I am an 11th grader at Del Norte High School. I was born in New York and moved to California at the age of 8. My family and I come from Chinese descent, with my family still practicing aspects of Chinese culture consistently. I like playing video games and watching YouTube videos. I especially enjoy learning about modern history on YouTube, and also learn through my friends. I also aspire to learn multiple languages in the future in both coding and actual languages. Using languages I could travel the world someday.
             </p>
-            <img src="/static/assets/everitt/penguin.jpg" width="396" height="536" id="imageSwitch" style="margin-left: auto; margin-right: auto;   ">
+            <img align="left" src="/static/assets/everitt/penguin.jpg" width="396" height="536" id="imageSwitch" style="margin-left: auto; margin-right: auto;   ">
             <button class="btn btn-primary" onclick="imageswap()">button</button>
+            <h1 style="color: #ffffff; background: rgba(0,0,0,0)">Journal</h1>
+            <div align="right">
+                <iframe style="width: 60%; height: 100%;" src="https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#heading=h.xplecw512gzr"></iframe>
+            </div>
         </div>
     </div>
 </body>
 <body>
-    <div class="centerb">
+    <div align="center" class="centerb">
+        <h1 class="bor" style="color: #ffffff">Dog API</h1>
+        <p style="color: #ffffff">click for random dog image</p>
         <img class="image" id="dog" src=""></img>
         <button id="button" type="button" class="btn btn-primary">Click</button>
     </div>
