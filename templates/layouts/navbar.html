@@ -33,7 +33,7 @@
             <input type="text" class="form-control" id="term" placeholder="Enter search term">
         </div>
         <div class="float-right me-3">
-            <button class="btn btn-primary ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
+            <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
             <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
         </div>
     </div>
@@ -55,6 +55,16 @@
 
 
 <script>
+    var inputnav = document.getElementById("term");
+
+    inputnav.addEventListener("keyup", function(event) {
+    
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("navsearch").click();
+        }
+    });
+
     function search_data() {
         // fetch standard requires data set to a name-value pair
         const term = document.getElementById("term");
