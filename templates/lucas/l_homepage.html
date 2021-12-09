@@ -1,5 +1,9 @@
 {% extends "layouts/base.html" %}
 
+{% set overview = "https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing" %}
+{% set repo = "https://github.com/NinjaBreadLord/super-duper-bassoons" %}
+{% set scrumboard = "https://github.com/NinjaBreadLord/super-duper-bassoons/projects/1" %}
+
 <!--<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">-->
 
 <!--<html lang="en">-->
@@ -97,6 +101,23 @@ My data of interest are times of my favorite locations around the world. I can p
         document.getElementById("stats").innerHTML = '<object type = "text/html" data = "' + location + '"></object>';//
     }
 </script>
+
+<div class="row" style="padding-left: 10%;">
+    {% block links %}
+    <div class="col-3">
+        <a href="{{ overview }}" class="btn">Journal</a>
+    </div>
+
+    <div class="col-3">
+        <a href="{{ repo }}" class="btn">GitHub</a>
+    </div>
+
+    <div class="col-3">
+        <a href="{{ scrumboard }}" class="btn">Scrumboard</a>
+    </div>
+
+    {% endblock %}
+</div>
 
 {% endblock %}
 
