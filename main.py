@@ -1,10 +1,10 @@
 # import "packages" from flask
-from flask import Flask, render_template
+from flask import render_template
+from __init__ import app
 import requests
 import json
 
 # create a Flask instance
-app = Flask(__name__)
 
 from routes.apis import app_apis
 from routes.danroutes import app_danroutes
