@@ -9,13 +9,13 @@ app_danroutes = Blueprint('danroutes', __name__,
 
 @app_danroutes.route('/home')
 def daniel():
-    return render_template("daniel/d_homepage.html")
+    url = "https://randanimal.pmbytes.org/imageapi/"
+    response = requests.get(url)
+    return render_template("daniel/d_homepage.html", api_image=response.text)
 
 @app_danroutes.route('/api')
 def danielapi():
-    url = "https://randanimal.pmbytes.org/imageapi/"
-    response = requests.get(url)
-    return render_template("daniel/api.html", api_image=response.text)
+    return render_template("daniel/api.html")
 
 @app_danroutes.route('/testing1')
 def danieltest():
