@@ -10,6 +10,8 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 1. [Our Team](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#our-team)
 2. [Pair-Share Journals](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#pair-share-journals)
 3. [Week 0](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
+4. [Week 1](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-1)
+5. [Week 2](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-2)
 
 
 ## Our Team
@@ -23,6 +25,15 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ## Pair Share Journals
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
+
+## Week 2
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(API Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/f9adb3d283d4ce5335e55cffdef32c545a907349) [(Week 3 Issue)](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) [(Scumboard Wiki Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Policies)
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(Commits)]() [(About Me)]()
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(About Me)]() [(API)]() [(Contribution Policy)](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Policies#contribution-policy)
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [Technical Ideas](), [Blueprinting](), [Homepage]() |
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [Deployment Plan, Hardware, Frequency]()
 
 ## Week 1
 | Name | Tasks | Commits |
