@@ -31,7 +31,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 |:-----|:----------------------|:-----:|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(API Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/f9adb3d283d4ce5335e55cffdef32c545a907349) [(Week 3 Issue)](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) [(Scumboard Wiki Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Policies)
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(Commits)]() [(About Me)]()
-| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(About Me)]() [(API)]() [(Contribution Policy)](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Policies#contribution-policy)
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(About Me CSS)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ade72f71fb7aa00310a0483e9bd9953d2954c69e) [(API)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/6b01710e604764fa5075a2116a362b505437efd1)
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [Database Work](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/16), [About Me Page](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b657206d8b921409aa8e5813b378c347bed865bb#diff-a7e790a1e1a021c8902b4a6d1e541015d29cd110a222e0cfcd6abaed6edd25a3) |
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [Deployment Plan, Hardware, Frequency]()
 
