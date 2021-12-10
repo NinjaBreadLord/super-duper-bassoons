@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
 
-{% set project = "Jun" %}
+{% set project = "Jun's Homepage" %}
 
 {% block body %}
 
@@ -32,33 +32,76 @@
             Hi my name is Jun. I like california rolls, the Philadelphia 76ers, and the Kansas City Chiefs. I also really like computers. I learned how to put together certain computers before I took this class. My goal is to learn more about the software/web development side of information technology through taking this class. My favorite video game is CS:GO.
         </center> </p>
         <center>
-            <p>I also listen to a lot of music. This is one of my favorite albums if you are ever wondering what my gmail picture is. </p>
+            <p>I also listen to a lot of music, specifically on SoundCloud. </p>
             <img id="myface" onclick="myface()" src="/static/assets/Jun/srs.jpg">
         </center>
         <p><center>
-        This album cover and I actually have a lot of similarities. Don't believe me? Click the button.
-    </center>
-        </p>
-        <p><center>
-        <input type="button" class="btn btn-primary" onclick="myface()" value="Compare"/>
+        <input type="button" class="btn btn-primary" onclick="myface()" value="Toggle"/>
         </center></p>
         </a>
     </div>
-    <iframe src="https://yourcountdown.to/summer"
 </div>
-
 <script>
+    function display_random_image()
+    {
+    var theImages = [{
+    src: "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+    width: "240",
+    height: "160"
+    }, {
+    src: "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+    width: "320",
+    height: "195"
+    }, {
+    src: "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",
+    width: "500",
+    height: "343"
+    }];
 
-    function myface(){
-        const image = document.getElementById('myface')
+    var preBuffer = [];
+    for (var i = 0, j = theImages.length; i < j; i++) {
+    preBuffer[i] = new Image();
+    preBuffer[i].src = theImages[i].src;
+    preBuffer[i].width = theImages[i].width;
+    preBuffer[i].height = theImages[i].height;
+    }
 
-        if (image.src.match("/static/assets/Jun/srs.jpg")) {
-            image.src = "/static/assets/Jun/myface.jpg";
-        } else {
-            image.src = "/static/assets/Jun/srs.jpg";
-        }
+    // create random image number
+    function getRandomInt(min,max)
+    {
+    //  return Math.floor(Math.random() * (max - min + 1)) + min;
+
+    imn = Math.floor(Math.random() * (max - min + 1)) + min;
+    return preBuffer[imn];
+    }
+
+    // 0 is first image,   preBuffer.length - 1) is  last image
+
+    var newImage = getRandomInt(0, preBuffer.length - 1);
+
+    // remove the previous images
+    var images = document.getElementsByTagName('img');
+    var l = images.length;
+    for (var p = 0; p < l; p++) {
+    images[0].parentNode.removeChild(images[0]);
+    }
+    // display the image
+    document.body.appendChild(newImage);
     }
 </script>
+<center>
+    <title>Display a random image.</title>
+    <style type="text/css">
+        body {margin-top: 30px;}
+    </style>
+</head>
+<body>
+<div>
+    <button id="jsstyle"
+            onclick="display_random_image();">Show Image</button>
+</div>
+</body>
+</center>
 {% endblock %}
 
 {% block background %}
