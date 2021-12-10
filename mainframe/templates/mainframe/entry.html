@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "layouts/base-upgraded.html" %}
+
+{% block body %}
+    <div class="d-flex justify-content-center bg-dark mt-5">
+    <p></p>
+    <form action="/mainframe/" method="POST">
+        <input id="key" name="key" type="text">
+        <input type=submit>
+    </form>
+    </div>
+
+{% endblock %}
