@@ -2,11 +2,22 @@
 {% extends "layouts/base-upgraded.html" %}
 
 {% block body %}
-    <div class="d-flex justify-content-center bg-dark mt-5">
-    <p></p>
-    <form action="/mainframe/" method="POST">
-        <input id="key" name="key" type="text">
-        <input type=submit>
+
+    <style>
+        body {
+            background-color: var(--bs-dark)
+        }
+    </style>
+
+    <div class="d-flex justify-content-center bg-dark mt-5 text-white">
+        <p class="text-white"> Passcode? </p>
+    </div>
+    <div class="d-flex justify-content-center bg-dark mt-1">
+    <form action="/mainframe/" style="text-align: center" id="daniel" method="POST">
+        <div style="padding: 0 0 1% 0">
+            <input class="form-control" name="key" type="text" id="key">
+            <input class="btn btn-primary mt-3" type="submit" value="Submit">
+        </div>
     </form>
     </div>
 

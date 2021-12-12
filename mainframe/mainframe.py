@@ -34,7 +34,7 @@ def users_all():
 def users_ilike(term):
     """filter Users table by term into JSON list """
     term = "%{}%".format(term)  # "ilike" is case insensitive and requires wrapped  %term%
-    table = Users.query.filter((Users.name.ilike(term)) | (Users.email.ilike(term)))
+    table = Users.query.filter((Users.name.ilike(term)) | (Users.url.ilike(term)))
     return [peep.read() for peep in table]
 
 
@@ -45,19 +45,23 @@ def user_by_id(userid):
 
 
 # User extraction from SQL
-def user_by_email(email):
-    """finds User in table matching email """
-    return Users.query.filter_by(email=email).first()
+def user_by_url(url):
+    """finds User in table matching url """
+    return Users.query.filter_by(url=url).first()
 
 
 """ app route section """
 
 
 # Default URL
-@app_mainframe.route('/')
+@app_mainframe.route('/', methods=["GET", "POST"])
 def mainframe():
     """obtains all Users from table and loads Admin Form"""
-    return render_template("mainframe.html", table=users_all())
+    if request.form:
+            key = request.form.get("key")
+            if key == "adminentrance":  # input field has content
+                return render_template("mainframe.html", table=users_all())
+    return render_template("entry.html", methods=["POST"])
 
 
 # CRUD create/add
@@ -67,9 +71,9 @@ def create():
     if request.form:
         po = Users(
             request.form.get("name"),
-            request.form.get("email"),
-            request.form.get("password"),
-            request.form.get("phone")
+            request.form.get("url"),
+            request.form.get("description"),
+            request.form.get("usertag")
         )
         po.create()
     return redirect(url_for('mainframe.mainframe'))
@@ -135,12 +139,12 @@ def search_term():
 class UsersAPI:
     # class for create/post
     class _Create(Resource):
-        def post(self, name, email, password, phone):
-            po = Users(name, email, password, phone)
+        def post(self, name, url, description, usertag):
+            po = Users(name, url, description, usertag)
             person = po.create()
             if person:
                 return person.read()
-            return {'message': f'Processed {name}, either a format error or {email} is duplicate'}, 210
+            return {'message': f'Processed {name}, either a format error or {url} is duplicate'}, 210
 
     # class for read/get
     class _Read(Resource):
@@ -154,19 +158,19 @@ class UsersAPI:
 
     # class for update/put
     class _Update(Resource):
-        def put(self, email, name):
-            po = user_by_email(email)
+        def put(self, url, name):
+            po = user_by_url(url)
             if po is None:
-                return {'message': f"{email} is not found"}, 210
+                return {'message': f"{url} is not found"}, 210
             po.update(name)
             return po.read()
 
     class _UpdateAll(Resource):
-        def put(self, email, name, password, phone):
-            po = user_by_email(email)
+        def put(self, url, name, description, usertag):
+            po = user_by_url(url)
             if po is None:
-                return {'message': f"{email} is not found"}, 210
-            po.update(name, password, phone)
+                return {'message': f"{url} is not found"}, 210
+            po.update(name, description, usertag)
             return po.read()
 
     # class for delete
@@ -180,11 +184,11 @@ class UsersAPI:
             return data
 
     # building RESTapi resource
-    api.add_resource(_Create, '/create/<string:name>/<string:email>/<string:password>/<string:phone>')
+    api.add_resource(_Create, '/create/<string:name>/<string:url>/<string:description>/<string:usertag>')
     api.add_resource(_Read, '/read/')
     api.add_resource(_ReadILike, '/read/ilike/<string:term>')
-    api.add_resource(_Update, '/update/<string:email>/<string:name>')
-    api.add_resource(_UpdateAll, '/update/<string:email>/<string:name>/<string:password>/<string:phone>')
+    api.add_resource(_Update, '/update/<string:url>/<string:name>')
+    api.add_resource(_UpdateAll, '/update/<string:url>/<string:name>/<string:description>/<string:usertag>')
     api.add_resource(_Delete, '/delete/<int:userid>')
 
 

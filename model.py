@@ -26,16 +26,16 @@ class Users(db.Model):
     # define the Users schema
     userID = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
-    email = db.Column(db.String(255), unique=True, nullable=False)
-    password = db.Column(db.String(255), unique=False, nullable=False)
-    phone = db.Column(db.String(255), unique=False, nullable=False)
+    url = db.Column(db.String(255), unique=False, nullable=False)
+    description = db.Column(db.String(255), unique=False, nullable=False)
+    usertag = db.Column(db.String(255), unique=False, nullable=False)
 
     # constructor of a User object, initializes of instance variables within object
-    def __init__(self, name, email, password, phone):
+    def __init__(self, name, url, description, usertag):
         self.name = name
-        self.email = email
-        self.password = password
-        self.phone = phone
+        self.url = url
+        self.description = description
+        self.usertag = usertag
 
     # CRUD create/add a new record to the table
     # returns self or None on error
@@ -55,21 +55,21 @@ class Users(db.Model):
         return {
             "userID": self.userID,
             "name": self.name,
-            "email": self.email,
-            "password": self.password,
-            "phone": self.phone
+            "url": self.url,
+            "description": self.description,
+            "usertag": self.usertag
         }
 
-    # CRUD update: updates users name, password, phone
+    # CRUD update: updates users name, description, usertag
     # returns self
-    def update(self, name, password="", phone=""):
+    def update(self, name, description="", usertag=""):
         """only updates values with length"""
         if len(name) > 0:
             self.name = name
-        if len(password) > 0:
-            self.password = password
-        if len(phone) > 0:
-            self.phone = phone
+        if len(description) > 0:
+            self.description = description
+        if len(usertag) > 0:
+            self.usertag = usertag
         db.session.commit()
         return self
 
@@ -90,14 +90,13 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby', phone="1111111111")
-    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko', phone="1111112222")
-    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex', phone="1111113333")
-    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit', phone="1111114444")
-    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty', phone="8587754956")
-    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8587754956")
-    # U7 intended to fail as duplicate key
-    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8586791294")
+    u1 = Users(name='Home', url='/', description='The home page of the website.', usertag="Main")
+    u2 = Users(name='Daniel - About Me', url='/daniel/home', description='Home and about me page for Daniel Tsivkovski', usertag="Daniel")
+    u3 = Users(name='Everitt - About Me', url='/everitt/home', description='Home and about me page for Everitt Cheng', usertag="Everitt")
+    u4 = Users(name='Lucas - About Me', url='/lucas/home', description='Home and about me page for Lucas Ho', usertag="Lucas")
+    u5 = Users(name='Rithwikh - About Me', url='/rithwikh/home', description='Home and about me page for Rithwikh Varma', usertag="Rithwikh")
+    u6 = Users(name='Jun - About Me', url='/rithwikh/home', description='Home and about me page for Jun Lim', usertag="Jun")
+    u7 = Users(name='Github', url='https://github.com/NinjaBreadLord/super-duper-bassoons', description='Our GitHub page for this project.', usertag="Main")
     table = [u1, u2, u3, u4, u5, u6, u7]
     for row in table:
         try:
@@ -105,7 +104,7 @@ def model_tester():
             db.session.commit()
         except IntegrityError:
             db.session.remove()
-            print(f"Records exist, duplicate email, or error: {row.email}")
+            print(f"Records exist, duplicate url, or error: {row.url}")
 
 
 def model_printer():

@@ -15,11 +15,11 @@
 </style>
 
 <div style="height: 20%"></div>
-<div class="container py-4 bg-light">
+<div class="container py-4 bg-dark text-light">
     <!-- heading -->
     <header class="pb-3 mb-4 border-bottom">
         <a href="#" class="d-flex justify-content-center text-light text-decoration-none">
-            <span class="fs-4 text-black">Search our Website</span>
+            <span class="fs-4 text-white">Search our Website</span>
         </a>
     </header>
     <!-- search box -->
@@ -31,7 +31,7 @@
                         <input type="text" class="form-control" id="bigterm" placeholder="enter search term">
                         <label></label> <!-- used for spacer -->
                     </div>
-                    <button id="bigsearch" class="btn btn-outline-success" onclick="search_data_main();">Search</button>
+                    <button id="bigsearch" class="btn btn-primary" onclick="search_data_main();">Search</button>
                 </div>
             </div>
         </div>
@@ -77,6 +77,7 @@
             .then(function (response) {
                 // prepare HTML search result container for new output
                 const resultContainer = document.getElementById("results");
+                resultContainer.className = "row bg-dark";
                 // clean up from previous search
                 while (resultContainer.firstChild) {
                     resultContainer.removeChild(resultContainer.firstChild);
@@ -97,10 +98,48 @@
                 // response contains valid result
                 response.json().then(function(data) {
                     // loop through JSON and build HTML output
+                    // create header div for the search results
+                    const divheader = document.createElement("div");
+                    divheader.className = "row mb-1";
+                    //create headers for name and description rows
+                    const namerowheader = document.createElement("div");
+                    namerowheader.className = "col p-1";
+                    const descheader = document.createElement("div");
+                    descheader.className = "col p-1";
+                    // create divider
+                    const divider = document.createElement("hr");
+
+                    // naming the header divs
+                    namerowheader.innerHTML = "Webpage";
+                    descheader.innerHTML = "Description";
+
+                    // Appending divs to the result container
+                    resultContainer.appendChild(divheader);
+                    divheader.appendChild(namerowheader);
+                    divheader.appendChild(descheader);
+                    resultContainer.appendChild(divider)
+
                     for (let i = 0; i < data.length; i++) {
+                        // create divs for search result 
                         const div = document.createElement("div");
-                        div.innerHTML = data[i].name + ' ' + data[i].email;
+                        div.className = "row mb-1";
+                        // create name div
+                        const namediv = document.createElement("div");
+                        namediv.className = "col p-1";
+                        // create description div
+                        const descdiv = document.createElement("div");
+                        descdiv.className = "col p-1";
+                        descdiv.innerHTML = data[i].description;
+                        // Create element a with page name with link
+                        const a = document.createElement("a");
+                        a.href = data[i].url;
+                        a.innerHTML = data[i].name;
+
+                        // Append divs to result container
                         resultContainer.appendChild(div);
+                        div.appendChild(namediv);
+                        div.appendChild(descdiv);
+                        namediv.appendChild(a);
                     }
                 })
             })
