@@ -1,78 +1,68 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
+{% extends "layouts/base-upgraded.html" %}
 
-    <img src="/static/assets/general/bassoonlogo.png" width="55" style="padding-right: 7px; padding-left: 7px; cursor: pointer" class="align-center" alt="" title="Home" onclick="location.href='/'">
+{% block background %}
 
-    <a class="navbar-brand" href="/" style="font-family: Helvetica" title="Home">{{basename}}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+{% endblock %}
 
+{% block body %}
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Our Team
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/everitt/about">Everitt</a>
-                    <a class="dropdown-item" href="/daniel/home">Daniel</a>
-                    <a class="dropdown-item" href="/jun">Jun</a>
-                    <a class="dropdown-item" href="/lucas/home">Lucas</a>
-                    <a class="dropdown-item" href="/rithwikh/home">Ŕithwikh</a>
-                </div>
-            </li>
+<style>
+    
+    body {
+        background: -webkit-gradient(linear, left top, left bottom, from(#cfa144), to(#afe432)) fixed;
+    }
 
-            <li class="nav-item">
-                <a class="nav-link" href="/mainframe/search">Search Testing</a>
-            </li>
-        </ul>
-    </div>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <div class="float-right">
-            <input type="text" class="form-control" id="term" placeholder="Enter search term">
-        </div>
-        <div class="float-right me-3">
-            <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
-            <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
-        </div>
-    </div>
-</nav>
+</style>
 
-
-<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasEndLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasEndLabel">Search Results</h5>
-    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
+<div style="height: 20%"></div>
+<div class="container py-4 bg-dark text-light">
+    <!-- heading -->
+    <header class="pb-3 mb-4 border-bottom">
+        <a href="#" class="d-flex justify-content-center text-light text-decoration-none">
+            <span class="fs-4 text-white">Search our Website</span>
+        </a>
+    </header>
+    <!-- search box -->
     <div class="container">
-        <div class="row" id="result">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="bigterm" placeholder="enter search term">
+                        <label></label> <!-- used for spacer -->
+                    </div>
+                    <button id="bigsearch" class="btn btn-primary" onclick="search_data_main();">Search</button>
+                </div>
+            </div>
         </div>
     </div>
-  </div>
+</div>
+<!-- result of search -->
+<div class="container">
+    <div class="row" id="results">
+    </div>
 </div>
 
 
 <script>
-    var inputnav = document.getElementById("term");
+    var inputnav = document.getElementById("bigterm");
 
     inputnav.addEventListener("keyup", function(event) {
     
         if (event.keyCode === 13) {
         event.preventDefault();
-        document.getElementById("navsearch").click();
+        document.getElementById("bigsearch").click();
         }
     });
 
-    function search_data() {
+
+    function search_data_main() {
         // fetch standard requires data set to a name-value pair
-        const term = document.getElementById("term");
+        const term = document.getElementById("bigterm");
         const body = {
             term: term.value
         };
 
-    
         // fetch call with header options
         fetch('/mainframe/search/term/', {
             method: "POST",
@@ -86,7 +76,8 @@
             // async then replies with response header
             .then(function (response) {
                 // prepare HTML search result container for new output
-                const resultContainer = document.getElementById("result");
+                const resultContainer = document.getElementById("results");
+                resultContainer.className = "row bg-dark";
                 // clean up from previous search
                 while (resultContainer.firstChild) {
                     resultContainer.removeChild(resultContainer.firstChild);
@@ -100,6 +91,7 @@
                     resultContainer.appendChild(div);
                     const imgdiv = document.createElement("img");
                     imgdiv.src = "/static/assets/mainframe/man-crying.png";
+                    imgdiv.style.width = "400px"
                     resultContainer.appendChild(imgdiv)
                     return;
                 }
@@ -153,3 +145,5 @@
             })
     }
 </script>
+
+{% endblock %}

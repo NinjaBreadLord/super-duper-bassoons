@@ -1,10 +1,10 @@
 # import "packages" from flask
-from flask import Flask, render_template
+from flask import render_template
+from __init__ import app
 import requests
 import json
 
 # create a Flask instance
-app = Flask(__name__)
 
 from routes.apis import app_apis
 from routes.danroutes import app_danroutes
@@ -12,7 +12,7 @@ from routes.lucroutes import app_lucroutes
 from routes.ritroutes import app_ritroutes
 from routes.junroutes import app_junroutes
 from routes.evroutes import app_evroutes
-from routes.mainframe import app_mainframe
+from mainframe.mainframe import app_mainframe
 
 app.register_blueprint(app_apis)
 app.register_blueprint(app_danroutes)
