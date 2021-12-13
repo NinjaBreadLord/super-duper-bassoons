@@ -26,6 +26,15 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
+## Week 3
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(API Added)]()
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(Commits)]() [(About Me)]()
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | 
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) |
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | 
+
 ## Week 2
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
