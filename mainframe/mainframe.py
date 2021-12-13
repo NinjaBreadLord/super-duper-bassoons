@@ -58,9 +58,9 @@ def user_by_url(url):
 def mainframe():
     """obtains all Users from table and loads Admin Form"""
     if request.form:
-            key = request.form.get("key")
-            if key == "adminentrance":  # input field has content
-                return render_template("mainframe.html", table=users_all())
+        key = request.form.get("key")
+        if key == "adminentrance":  # input field has content
+            return render_template("mainframe.html", table=users_all())        
     return render_template("entry.html", methods=["POST"])
 
 
@@ -76,7 +76,7 @@ def create():
             request.form.get("usertag")
         )
         po.create()
-    return redirect(url_for('mainframe.mainframe'))
+    return render_template("mainframe.html", table=users_all())
 
 
 # CRUD read
@@ -102,7 +102,7 @@ def update():
         po = user_by_id(userid)
         if po is not None:
             po.update(name)
-    return redirect(url_for('mainframe.mainframe'))
+    return render_template("mainframe.html", table=users_all()) 
 
 
 # CRUD delete
@@ -114,7 +114,7 @@ def delete():
         po = user_by_id(userid)
         if po is not None:
             po.delete()
-    return redirect(url_for('mainframe.mainframe'))
+    return render_template("mainframe.html", table=users_all()) 
 
 
 # Search Form

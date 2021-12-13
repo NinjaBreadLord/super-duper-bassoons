@@ -136,11 +136,11 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="text" name="name" id="name" required></td>
-                            <td><input type="text" name="url" id="url" placeholder="/" required></td>
-                            <td><input type="text" name="description" id="description" required></td>
-                            <td><input type="text" name="usertag" id="usertag" placeholder="Name OR 'Main'" required></td>
-                            <td><input type="submit" value="Create"></td>
+                            <td><input class="form-control" type="text" name="name" id="name" placeholder="Home Page" required></td>
+                            <td><input class="form-control" type="text" name="url" id="url" placeholder="/" required></td>
+                            <td><input class="form-control" type="text" name="description" id="description" placeholder="Page description" required></td>
+                            <td><input class="form-control" type="text" name="usertag" id="usertag" placeholder="Main" required></td>
+                            <td><input class="btn btn-primary" type="submit" value="Create"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -162,7 +162,7 @@
                                 <tr><th><label for="read_userid">ID</label></th></tr>
                                 <tr>
                                     <td>
-                                        <select name="userid" id="read_userid">
+                                        <select class="form-select" name="userid" id="read_userid">
                                             <optgroup label="userid">
                                                 {% for row in table %}
                                                     <option label="{{ row['userID'] }}">{{ row['userID'] }}</option>
@@ -190,7 +190,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select name="userid" id="update_userid">
+                                        <select class="form-select" name="userid" id="update_userid">
                                             <optgroup label="userid">
                                                 {% for row in table %}
                                                     <option label="{{ row['userID'] }}">{{ row['userID'] }}</option>
@@ -198,8 +198,8 @@
                                             </optgroup>
                                         </select>
                                     </td>
-                                    <td><input type="text" name="name" id="update_name" required></td>
-                                    <td><input type="submit" value="Update"></td>
+                                    <td><input class="form-control" type="text" name="name" id="update_name" placeholder="Home Page" required></td>
+                                    <td><input class="btn btn-primary" type="submit" value="Update"></td>
                                 </tr>
                             </table>
                         </form>
@@ -214,7 +214,7 @@
                                 <tr><th><label for="delete_userid">ID</label></th></tr>
                                 <tr>
                                     <td>
-                                        <select name="userid" id="delete_userid">
+                                        <select class="form-select" name="userid" id="delete_userid">
                                             <optgroup label="userid">
                                                 {% for row in table %}
                                                     <option label="{{ row['userID'] }}">{{ row['userID'] }}</option>
@@ -222,7 +222,7 @@
                                             </optgroup>
                                         </select>
                                     </td>
-                                    <td><input type="submit" value="Delete"></td>
+                                    <td><input class="btn btn-primary" type="submit" value="Delete"></td>
                                 </tr>
                             </table>
                         </form>
