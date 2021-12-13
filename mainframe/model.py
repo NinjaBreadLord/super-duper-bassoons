@@ -26,7 +26,7 @@ class Users(db.Model):
     # define the Users schema
     userID = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
-    url = db.Column(db.String(255), unique=True, nullable=False)
+    url = db.Column(db.String(255), unique=False, nullable=False)
     description = db.Column(db.String(255), unique=False, nullable=False)
     usertag = db.Column(db.String(255), unique=False, nullable=False)
 
