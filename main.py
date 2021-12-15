@@ -31,6 +31,10 @@ def index():
 def stub():
     return render_template("stub.html")
 
+@app.route('/teaShop/')
+def teaShop():
+    return render_template("shop 1.0 smth idk/teaShop.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
