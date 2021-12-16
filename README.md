@@ -29,7 +29,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ## Week 3
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
-| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(API Added)]() |
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(Tea Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/1274863fc8aebb3e09462922995d490af760b93e) |
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(Commits)]() [(About Me)]() |
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | |
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [Database/Search](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/16) | 
