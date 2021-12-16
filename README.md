@@ -35,6 +35,8 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [Database/Search](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/16) | 
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [Website working with URL](superduperbassoons.tk)
 
+### TO's Database Showcase - [Video](https://youtu.be/AwvhSIHtR_k)
+
 ## Week 2
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
