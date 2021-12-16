@@ -33,7 +33,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(Commits)]() [(About Me)]() |
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | |
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [Database/Search](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/16) | 
-| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [API added + fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b6e1db4a1300c04cfee47fbe4dc8a14855c245da) + Website working with URL
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [API added, fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b6e1db4a1300c04cfee47fbe4dc8a14855c245da) + Website working with https URL
 
 ### TO's Database Showcase - [Video](https://youtu.be/AwvhSIHtR_k)
 
