@@ -31,7 +31,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 |:-----|:----------------------|:-----:|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(Tea Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/1274863fc8aebb3e09462922995d490af760b93e) |
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(Commits)]() [(About Me)]() |
-| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | |
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | | [(Commits)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/75cb9698d269f4a1059e88845f5d5444d753bb0c)
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [Database/Search](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/16) | 
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [API added, fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b6e1db4a1300c04cfee47fbe4dc8a14855c245da) + Website working with https URL
 
