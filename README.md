@@ -2,7 +2,7 @@
 ## Project Idea: 
 Idea: Job website ([Wireframe Ideation](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/10))
 
-It can have categories of jobs with the jobs in those categories, it can have job descriptions, maybe something that tells you what jobs you can do based on the answer you choose, and maybe a fun quiz
+Our job idea is a Tea and Tee shop where we can help people find T-shirts and tea that they want or need.
 
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
@@ -31,7 +31,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ## Week 4
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
-| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [blob]() |
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37)  | 
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
