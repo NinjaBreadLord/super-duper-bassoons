@@ -1,6 +1,25 @@
-{% extends "layouts/base.html" %}
+{% extends "shop 1.0 smth idk/teaBase.html" %}
+{% block body %}
+<style>
+    .parallax {
+        background-image: url("/static/assets/backgrounds/nam.jpg");
+    }
+</style>
+<!--<center>-->
+<!--    <img src="/static/TeaPictures/green_tea.png" style="width:300px;height:300px;">-->
+<!--    <p>Green Tea </p>-->
+<!--</center>-->
+<div class="parallax" style="height: 25%"></div>
+<div class="parallax">
+    </marquee>
+    <div class="d-flex justify-content-center">
+        <div class="card text-white text-center bg-success border-white" style="width: 80%; height: 80% ">
+            <div class="card-body justify-content-center">
+                <h1 class="card-title">Tea Shop</h1>
+            </div>
+            <div class="card-footer"> Get your teas here! </div>
+        </div>
+    </div>
+</div>
 
-<center>
-    <img src="/static/TeaPictures/green_tea.png" style="width:300px;height:300px;">
-    <p>Green Tea </p>
-</center>
+{% endblock %}
