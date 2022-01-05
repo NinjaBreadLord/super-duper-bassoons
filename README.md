@@ -2,7 +2,7 @@
 ## Project Idea: 
 Idea: Job website ([Wireframe Ideation](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/10))
 
-It can have categories of jobs with the jobs in those categories, it can have job descriptions, maybe something that tells you what jobs you can do based on the answer you choose, and maybe a fun quiz
+Our job idea is a Tea and Tee shop where we can help people find T-shirts and tea that they want or need.
 
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
@@ -12,6 +12,8 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 3. [Week 0](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
 4. [Week 1](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-1)
 5. [Week 2](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-2)
+6. [Week 3](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-3)
+7. [Week 4](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-4)
 
 
 ## Our Team
@@ -25,6 +27,15 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ## Pair Share Journals
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
+
+## Week 4
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [blob]() |
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37)  | 
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
 
 ## Week 3
 | Name | Tasks | Commits |
