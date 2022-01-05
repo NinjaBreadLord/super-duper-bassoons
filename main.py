@@ -12,9 +12,11 @@ from routes.lucroutes import app_lucroutes
 from routes.ritroutes import app_ritroutes
 from routes.junroutes import app_junroutes
 from routes.evroutes import app_evroutes
+from mainframe.mainframe import app_mainframe
 
 from routes.mainsite import app_mainsite
 
+app.register_blueprint(app_mainframe)
 app.register_blueprint(app_mainsite)
 app.register_blueprint(app_apis)
 app.register_blueprint(app_danroutes)
