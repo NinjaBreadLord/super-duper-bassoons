@@ -15,5 +15,5 @@ def teeShop():
     return render_template("shop 1.0 smth idk/teeShop.html")
 
 @app_mainsite.route('/nike/')
-def teeShop():
+def nike():
     return render_template("teeShop.html")
