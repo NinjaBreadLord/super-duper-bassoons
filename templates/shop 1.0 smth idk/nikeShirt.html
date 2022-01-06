@@ -1,6 +1,105 @@
 {% extends "layouts/base.html" %}
-<body>
 
-i like nike
+{% block body %}
 
-</body>
+
+
+<style>
+
+    .button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Comic Sans MS;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    @keyframes glowing {
+        0% {
+            background-color: #5f2afd;
+            box-shadow: 0 0 5px #5f2afd;
+        }
+        50% {
+            background-color: #8761f8;
+            box-shadow: 0 0 20px #8761f8;
+        }
+        100% {
+            background-color: #5f2afd;
+            box-shadow: 0 0 5px #5f2afd;
+        }
+    }
+    .button {
+        animation: glowing 1300ms infinite;
+    }
+
+
+    table, th, td {
+        border:1px solid #4709ff;
+    }
+
+    <style>
+     .p1 {
+         font-family: "Times New Roman", Times, serif;
+     }
+
+    .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p3 {
+        color: rgba(255, 255, 255, 0.99);
+        font-family: "Monaco", "Monaco", fantasy;
+    }
+
+    body {
+        background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+</style>
+
+</style>
+
+<center>
+    <h1 class = "p3" style="text-align:center; ">“Leave Before You Love Me” — Jonas Brothers</h1>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <p class = "p3" style="text-align:center;">"The Jonas Brothers have teamed up with DJ/producer Marshmello for a new song, “Leave Before You Love Me.” “Leave Before You Love Me” is a slick but somber bit of pop-rock, with an Eighties-style groove cruising underneath the Jonas Brothers’ heartbroken harmonies: “Dancing on the edge ’bout to take it too far/It’s messing with my head how I mess with your heart/If you wake up in your bed alone in the dark/I’m sorry/Gotta leave before you love me.” <br></br>-Rolling Stones</p>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <br>
+
+    <marquee behavior="alternate" direction="left" scrollamount = "3">
+        <img src="https://i.ytimg.com/vi/hmUyEDG7Jy0/maxresdefault.jpg" width="140" height="80" alt="Natural" />
+
+
+
+
+
+    </marquee>
+
+    <div class="container">
+        <img src="https://i.ytimg.com/vi/hmUyEDG7Jy0/maxresdefault.jpg" alt="Weeknd" width="600" height="355">
+        <br>
+        <a class="button" href="https://www.youtube.com/watch?v=hmUyEDG7Jy0">Click To Watch The Music Video</a>
+    </div>
+    <nav>
+        <p class = "p3" style="text-align:center;">  </>
+        <br>
+
+        <a class="button" href="http://127.0.0.1:5000/Song/">Click To Return to the Song Review</a>
+
+
+        {% endblock %}
+
+        {% block background %}
+        {% endblock %}
+
