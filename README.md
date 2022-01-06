@@ -7,6 +7,7 @@ Our job idea is a Tea and Tee shop where we can help people find T-shirts and te
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
 ## Table of Contents
+
 1. [Our Team](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#our-team)
 2. [Pair-Share Journals](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#pair-share-journals)
 3. [Week 0](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-0)
@@ -17,6 +18,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 
 
 ## Our Team
+
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits | Role | 
 |:-----|:----------------------|:-----:|:-----------:|:-------:|:-------:|
 | Jun Lim | [@the1jun](https://github.com/the1jun) [@peacekeeper6](https://github.com/peacekeeper6)| [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/assigned/the1jun) |[Scrum Board](https://github.com/NinjaBreadLord/super-duper-bassoons/projects/1) | [Commits](https://github.com/NinjaBreadLord/super-duper-bassoons/commits?author=peacekeeper6) | Deployment Manager
@@ -29,15 +31,17 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
 ## Week 4
+
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
-| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [blob]() |
-| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
-| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37)  | 
-| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [T-Shirt Pictures and Tea Review Added](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/2f2830cb31efb9519be03566d3d787359c0a049a) , [Working on linking everything](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/357ff70ce4064cc4f8e2d30e9a2a900724da73bf) |
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [Commits](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/2b7d75e92a9a81d300e1158f82b367148b00cf53)
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37)  | [CNAME](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ff2b0e8890e4a8d7c90e3ad85cda8aea411a8c75) [Tangibles](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/f17c8327432527ed7b0bd8c5f7431da268987b4b) |
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [[Individual Review]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/39), [[Database Alphabetization]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/38) |
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
 
 ## Week 3
+
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) | [(Tea Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/1274863fc8aebb3e09462922995d490af760b93e) |
@@ -51,6 +55,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### TO's Database Showcase - [Video](https://youtu.be/AwvhSIHtR_k)
 
 ## Week 2
+
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [(API Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/f9adb3d283d4ce5335e55cffdef32c545a907349) [(Week 3 Issue)](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/30) [(Scumboard Wiki Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Policies)
@@ -60,6 +65,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/29) | [Deployment Plan, Hardware, Frequency]()
 
 ## Week 1
+
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/12) | [(API Added)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/f9adb3d283d4ce5335e55cffdef32c545a907349) [(About Me)](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/c9cf04ae0e95003f23eb979579e476ae124e9e14)
