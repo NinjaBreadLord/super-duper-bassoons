@@ -34,7 +34,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [T-Shirt Pictures and Tea Review Added](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/2f2830cb31efb9519be03566d3d787359c0a049a) |
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37)  | [CNAME](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ff2b0e8890e4a8d7c90e3ad85cda8aea411a8c75) [Tangibles](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/f17c8327432527ed7b0bd8c5f7431da268987b4b) |
-| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [[Individual Review]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/39), [[Database Alphabetization]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/38) |
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
 
 ## Week 3
