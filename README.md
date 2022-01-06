@@ -32,7 +32,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [T-Shirt Pictures and Tea Review Added](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/2f2830cb31efb9519be03566d3d787359c0a049a) |
-| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [Commits](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/2b7d75e92a9a81d300e1158f82b367148b00cf53)
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37)  | [CNAME](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ff2b0e8890e4a8d7c90e3ad85cda8aea411a8c75) [Tangibles](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/f17c8327432527ed7b0bd8c5f7431da268987b4b) |
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | [[Individual Review]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/39), [[Database Alphabetization]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/38) |
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/37) | 
