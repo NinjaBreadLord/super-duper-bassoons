@@ -14,6 +14,6 @@ def teaShop():
 def teeShop():
     return render_template("store/teeShop.html")
 
-@app_mainsite.route('/nike/')
-def nike():
-    return render_template("NikeShirt.html")
+@app_mainsite.route('/nikeShirt/')
+def nikeShirt():
+    return render_template("nikeShirt.html")
