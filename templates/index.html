@@ -4,34 +4,23 @@
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Home" %}
 
+{% set small_anim_img = "/static/assets/general/flying-bird.gif" %}
+
 {% block body %}
 <link href="/static/assets/daniel/parallax.css" rel="stylesheet">
 
 <style>
     .parallax {
-        background-image: url("/static/assets/backgrounds/gianpaolo-antonucci-beach-unsplash.jpg");
+        background-image: url("/static/assets/backgrounds/tea-field-ravi-pinisetti-unsplash.jpg");
     }
 </style>
 
 <div class="parallax" style="height: 25%"></div>
 <div class="parallax">
-    <marquee behavior="alternate" direction="left" scrollamount = "3">
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
-        <img src="https://pngimg.com/uploads/rubber_duck/rubber_duck_PNG4.png" width="107" height="80" alt="Natural" />
+    <marquee behavior="alternate" direction="left" scrollamount = "10">
+        {% for i in range(1,20) %}
+        <img class="ms-5" src={{small_anim_img}} width="107" height="80" alt="Natural" />
+        {% endfor %}
 
 
 
