@@ -41,6 +41,18 @@
         </a>
     </div>
 </div>
+    <script>
+
+        function myface(){
+            const image = document.getElementById('myface')
+
+            if (image.src.match("/static/assets/Jun/srs.jpg")) {
+                image.src = "/static/assets/Jun/myface.jpg";
+            } else {
+                image.src = "/static/assets/Jun/srs.jpg";
+            }
+        }
+    </script>
 <script>
     function display_random_image()
     {
@@ -97,8 +109,8 @@
 </head>
 <body>
 <div>
-    <button id="jsstyle"
-            onclick="display_random_image();">Show Image</button>
+        <button id="jsstyle"
+                onclick="display_random_image();">Show Image</button>
 </div>
 </body>
 </center>
