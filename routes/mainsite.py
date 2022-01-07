@@ -17,3 +17,7 @@ def teeShop():
 @app_mainsite.route('/nikeShirt/')
 def nikeShirt():
     return render_template("store/nikeShirt.html")
+
+@app_mainsite.route('/ShoppingCart/')
+def ShoppingCart():
+    return render_template("store/shoppingcart.html")
