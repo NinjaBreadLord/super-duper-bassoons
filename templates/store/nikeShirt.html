@@ -1,5 +1,7 @@
 {% extends "layouts/base.html" %}
 
+{% set moreInformation = "https://www.amazon.com/NIKE-Short-Sleeve-Swoosh-Solid/dp/B01HGN3TP6/ref=pd_lpo_1?pd_rd_i=B071418HMV&psc=1" %}
+
 {% block body %}
 
 
@@ -66,8 +68,26 @@
 
 </style>
 
+<div class="mt-5">
+    <div class="p-5 justify-content-center">
+        <div class="row p-1">
+            Red Dri fit T-shirt that has sweat-wicking technology. It helps you stay dry and it also keeps you warm.
+        </div>
+        <div class="row p-1">
+            Rating: 4.5 Stars
+        </div>
+        <div class="row p-1">
+            Color: Red
+        </div>
+        <div class="row p-1">
+            Cost: $28-$45
+        </div>
+        <div class="row p-1">
+            <a href="{{ moreInformation }}" class="link">More Information</a>
+        </div>
 
-<center>
+    </div>
+</div>
 
 
         {% endblock %}
