@@ -13,6 +13,10 @@
         padding: 0;
         margin: 0;
     }
+    div {
+        column-gap: 40px;
+
+    }
 </style>
 <!--<center>-->
 <!--    <img src="/static/TeaPictures/green_tea.png" style="width:300px;height:300px;">-->
@@ -42,15 +46,36 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="d-flex justify-content-center">
-        <div class="card text-white text-center bg-success border-white" style="width: 80%; height: 80% ">
-            <div class="card-body justify-content-center">
-                <h1 class="card-title">Tea Shop</h1>
+
+    <div class="parallax">
+
+        <header class="p-3 mb-4 border-bottom text-light bg-dark">
+            <div class="d-flex align-items-center text-decoration-none">
+                <table style="margin:0%; padding:5%;">
+
+                    {% set stylechoices = "cursor: pointer; height: 300; width: 300;" %}
+                    <tr>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
+                    </tr>
+                    <tr>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" style={{stylechoices}}><center>Hello<p/> </th>
+                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
+                    </tr>
+                    <tr>
+
+                    </tr>
+
+                    <tr>
             </div>
-            <div class="card-footer"> Get your teas here! </div>
-        </div>
+        </header>
+
     </div>
-</div>
+
 
 
 
