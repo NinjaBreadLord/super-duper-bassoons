@@ -21,3 +21,7 @@ def nikeShirt():
 @app_mainsite.route('/ShoppingCart/')
 def ShoppingCart():
     return render_template("store/shoppingcart.html")
+
+@app_mainsite.route('/Flannels/')
+def Flannel():
+    return render_template("store/flannelShirt.html")
