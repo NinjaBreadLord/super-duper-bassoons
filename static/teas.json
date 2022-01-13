@@ -1,29 +1,37 @@
 [
     {
         "name": "Fu Shou Shan",
-        "url": "/teaShop/tea/fushoushan",
+        "teaid": "tea1",
+        "url": "https://redblossomtea.com/products/fu-shou-shan-spring?variant=31627639428",
         "imgurl": "/static/TeaPictures/fushoushan.jpg", 
-        "type": "Green"
+        "type": "Green",
+        "description": "Fu Shou Shan is an incredibly flavorful and complex tea with an amazing degree of balance and concentration, with absolutely no astringency or bitterness. The finish is rich, unctuous and persistent."
     }
     ,
     {
         "name": "Formosa Red 20",
-        "url": "/teaShop/tea/formosared20",
+        "teaid": "tea2",
+        "url": "https://redblossomtea.com/products/formosa-red-20?variant=20426551754814",
         "imgurl": "/static/TeaPictures/formosared20.jpg",
-        "type": "Black"
+        "type": "Black",
+        "description": "Formosa Red 20 is a black tea with natural honeyed sweetness, underpinned by complex notes of tropical fruit and citrus."
     }
     ,
     {
         "name": "Cloud and Mist",
-        "url": "/teaShop/tea/fushoushan",
+        "teaid": "tea3",
+        "url": "https://redblossomtea.com/products/cloud-mist",
         "imgurl": "/static/TeaPictures/cloudandmist.jpg",
-        "type": "Green"
+        "type": "Green",
+        "description": "This tea has a light smoky and vegetal taste. The aroma is slightly floral with an underlying note of roasted macadamia."
     }
     ,
     {
         "name": "Xin Gong Yi",
-        "url": "/teaShop/tea/xingongyi",
+        "teaid": "tea4",
+        "url": "https://redblossomtea.com/products/xin-gong-yi",
         "imgurl": "/static/TeaPictures/xingongyi.jpg",
-        "type": "White"
+        "type": "White",
+        "description": "Xin Gong Yi is sweet without being cloying, and distinct without sacrificing roundness. The combination of flavors is remarkably similar to an early flush of Darjeeling."
     }
 ]

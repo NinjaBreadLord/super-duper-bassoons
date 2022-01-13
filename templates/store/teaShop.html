@@ -56,10 +56,34 @@
         
         <header class="text-light bg-dark">         
             <div class="d-flex align-items-center">
-                
-                <div class="row p-5">
+                <div id="teaparent" class="row p-5">
                     {% for tea in tealist %}
-                        <div class="col-lg-3 btn btn-success text-center"><p class="image-up"><img class="columnimage" id="image" src={{tea.imgurl}}><center>{{tea.name}}, {{tea.type}}</center><p/></div>
+                        <div type="button" id={{tea.name}} class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#{{tea.teaid}}"><p class="image-up"><img class="columnimage" id="image" src={{tea.imgurl}}><center><h5>{{tea.name}}, {{tea.type}}</h5></center><p/></div>
+                                                
+                        <!-- Modal -->
+                        <div class="modal fade" id={{tea.teaid}} tabindex="-1" aria-labelledby="{{tea.teaid}}Label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-dark text-light">
+                                <div class="modal-header">
+                                <h4 class="modal-title" style="font-family: Arial, sans-serif; font-size: xx-large;" id="{{tea.teaid}}Label">{{tea.name}}</h4>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="font-family: Arial, sans-serif;">
+                                    <div class="row">
+                                    <div class="col-6 p-3"><img class="columnimage" id="image" src={{tea.imgurl}}></div>
+                                    <div class="col-6 p-3">
+                                        <div class="list-group-item bg-danger text-light" style="font-size: large">Type: {{tea.type}}</div>
+                                        <div class="row p-3" style="font-family: Arial, sans-serif; font-size: large;">{{tea.description}}</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" style="font-family: Arial, sans-serif;" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a type="button" style="font-family: Arial, sans-serif;" class="btn btn-danger" href={{tea.url}}>Purchase on external site</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
             </div>
@@ -67,6 +91,11 @@
 
     </div>
 
+<script>
+    
+
+
+</script>
 
 
 
