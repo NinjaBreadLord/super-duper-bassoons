@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Fu Shou Shan",
+        "url": "/teaShop/tea/fushoushan",
+        "imgurl": "/static/TeaPictures/fushoushan.jpg", 
+        "type": "Green"
+    }
+    ,
+    {
+        "name": "Formosa Red 20",
+        "url": "/teaShop/tea/formosared20",
+        "imgurl": "/static/TeaPictures/formosared20.jpg",
+        "type": "Black"
+    }
+    ,
+    {
+        "name": "Cloud and Mist",
+        "url": "/teaShop/tea/fushoushan",
+        "imgurl": "/static/TeaPictures/cloudandmist.jpg",
+        "type": "Green"
+    }
+    ,
+    {
+        "name": "Xin Gong Yi",
+        "url": "/teaShop/tea/xingongyi",
+        "imgurl": "/static/TeaPictures/xingongyi.jpg",
+        "type": "White"
+    }
+]

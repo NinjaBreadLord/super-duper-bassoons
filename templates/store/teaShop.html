@@ -1,5 +1,9 @@
 {% extends "store/teaBase.html" %}
+
+{% set project = "Tea Shop" %}
+{% set tealist = tealist %}
 {% block body %}
+
 <style>
     .parallax {
         background-image: url("/static/assets/backgrounds/nam.jpg");
@@ -13,9 +17,10 @@
         padding: 0;
         margin: 0;
     }
-    div {
-        column-gap: 40px;
-
+    .columnimage {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
     }
 </style>
 <!--<center>-->
@@ -48,29 +53,15 @@
     </div>
 
     <div class="parallax">
-
-        <header class="p-3 mb-4 border-bottom text-light bg-dark">
-            <div class="d-flex align-items-center text-decoration-none">
-                <table style="margin:0%; padding:5%;">
-
-                    {% set stylechoices = "cursor: pointer; height: 300; width: 300;" %}
-                    <tr>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
-                    </tr>
-                    <tr>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" style={{stylechoices}}><center>Hello<p/> </th>
-                        <th><p class="image-up"><img id="image" src="/static/assets/everitt/whitesquare.png" height ="300" width = "300"><center>Hello<p/> </th>
-                    </tr>
-                    <tr>
-
-                    </tr>
-
-                    <tr>
+        
+        <header class="text-light bg-dark">         
+            <div class="d-flex align-items-center">
+                
+                <div class="row p-5">
+                    {% for tea in tealist %}
+                        <div class="col-lg-3 btn btn-success text-center"><p class="image-up"><img class="columnimage" id="image" src={{tea.imgurl}}><center>{{tea.name}}, {{tea.type}}</center><p/></div>
+                    {% endfor %}
+                </div>
             </div>
         </header>
 
