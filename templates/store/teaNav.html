@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-success text-white">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
 
-    <img src="/static/assets/general/teasandtees.png" width="55" style="padding-right: 7px; padding-left: 7px; cursor: pointer" class="align-center" alt="" title="Home" onclick="location.href='/'">
+    <img src="/static/assets/general/bassoonlogo.png" width="55" style="padding-right: 7px; padding-left: 7px; cursor: pointer" class="align-center" alt="" title="Home" onclick="location.href='/'">
 
-    <a class="navbar-brand" href="/" style="font-family: 'Bauhaus 93'" title="Home">{{basename}}</a>
+    <a class="navbar-brand" href="/" style="font-family: Helvetica" title="Home">{{basename}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,14 +10,14 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Stores
+                    Shops
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
                     <a class="dropdown-item" href="/store/teeShop">Tee Shop</a>
                 </div>
             </li>
-            
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Our Team
@@ -34,11 +34,16 @@
             <li class="nav-item">
                 <a class="nav-link" href="/mainframe/search">Search Testing</a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/store/ShoppingCart">Shopping Cart</a>
+            </li>
+
         </ul>
     </div>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <div class="float-right">
-            <input type="text" class="form-control" id="term" placeholder="Search for product">
+            <input type="text" class="form-control" id="term" placeholder="Enter search term">
         </div>
         <div class="float-right me-3">
             <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
