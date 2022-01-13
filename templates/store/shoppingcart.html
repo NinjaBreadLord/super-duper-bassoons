@@ -11,22 +11,23 @@
         body{
             margin: 0;
             padding: 0;
-            background:linear-gradient(to bottom left, #000000, #270c3a;
+            background:linear-gradient(to bottom left, #ffffff, #cfebfd);
             height: 100vh;
-            display: flex;
             justify-content: center;
             align-items: center;
             color: black;
         }
 
         .cart{
-            width: 75%;
-            height: 90%;
-            border-radius: 18px;
+            width: 35%;
+            height: 50%;
+            padding: 10px;
+            margin: 50px auto;
+            border-radius: 16px;
             box-shadow: 0px 30px 45px #000000;
         }
 
-        .header{
+        .header {
             margin: auto;
             width: 85%;
             height: 20%;
@@ -34,6 +35,7 @@
             justify-content: space-between;
             align-items: center;
             color: #000000;
+        }
 
         .heading{
             font-size: 18px;
@@ -56,24 +58,24 @@
         <h5 class="remove">Remove All</h5>
     </div>
 
-
+<div class="cart">
     <div class="items">
         <div class="images">
-            <img src="static/TeePictures/buttonUp.png" style="height: 120px">
-        </div>
+            <img id="image" src="/static/TeePictures/flannel.png" height = "300" width = "270">
         <div class="about">
-            <h1 class="name"Classy Button Up Shirt"></h1>
+            <h1 class="name"Classy Button Up Shirt></h1>
             <h3 class="size"Large></h3>
         </div>
     </div>
     <style>
-    .items{
-        margin: autol
+    .items {
+        margin: auto;
         width: 90%;
         height: 30%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
         .images{
             width: 15%;
             text-align: center;
@@ -96,16 +98,17 @@
             font-wight: 600;
             color: black;
         }
-    }
+
     </style>
     <div class="price">
         <div class="money">$17.99</div>
-        <div class="Remove"Remove</div>
+        <div class="Remove"Remove></div>
     </div>
     <style>
-    .price{
-        height: 100%
+    .price {
+        height: 100%;
         text-align: right;
+    }
         .money{
             padding-top: 20px;
             font-size: 24px;
@@ -113,7 +116,7 @@
             font-weight: 1000;
             color: black;
         }
-    }
+
     </style>
     <div class="amount">
         <div class="btn">+</div>
@@ -122,7 +125,7 @@
     </div>
     <style>
     .amount{
-        width: 15%;
+        width: 35%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -135,7 +138,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size 18px;
+        font-size: 18px;
         font-family: 'Open Sans';
         font-weight: 1000;
         color: black;
@@ -148,100 +151,102 @@
     }
     </style>
     <!-- repeat for each item -->
-    <div class="items">
-        <div class="images">
-            <img src="static/TeePictures/nikeShirt.png" style="height: 120px">
+    <div class="cart">
+        <div class="items">
+            <div class="images">
+                <img src="https://www.rollingstone.com/wp-content/uploads/2021/05/Jonas-Brothers-Marshmello-press-photo-2-credit-Cynthia-Parkhurst.jpeg" width="140" height="80" alt="Natural" />
+            </div>
+            <div class="about">
+                <h1 class="name"Nike Shirt></h1>
+                <h3 class="size"Large></h3>
+            </div>
         </div>
-        <div class="about">
-            <h1 class="name"Nike Shirt"></h1>
-            <h3 class="size"Large></h3>
+        <!-- css here -->
+        <div class="price">
+            <div class="money">$9.99</div>
+            <div class="Remove"Remove></div>
         </div>
-    </div>
-    <!-- css here -->
-    <div class="price">
-        <div class="money">$9.99</div>
-        <div class="Remove"Remove</div>
-    </div>
-    <!-- css here -->
-    <div class="amount">
-        <div class="btn">+</div>
-        <div class="num">1</div>
-        <div class="btn">-</div>
-    </div>
+        <!-- css here -->
+        <div class="amount">
+            <div class="btn">+</div>
+            <div class="num">1</div>
+            <div class="btn">-</div>
+        </div>
 
-    <div class="items">
-        <div class="images">
-            <img src="static/TeePictures/longsleeve.png" style="height: 120px">
+        <div class="items">
+            <div class="images">
+                <img id="image" src="/static/TeePictures/flannel.png" height = "300" width = "270">
+            </div>
+            <div class="about">
+                <h1 class="name"Long Sleeve Shirt></h1>
+                <h3 class="size"Large></h3>
+            </div>
         </div>
-        <div class="about">
-            <h1 class="name"Long Sleeve Shirt"></h1>
-            <h3 class="size"Large></h3>
+        <!-- css here -->
+        <div class="price">
+            <div class="money">$8.99</div>
+            <div class="Remove"Remove></div>
         </div>
-    </div>
-    <!-- css here -->
-    <div class="price">
-        <div class="money">$8.99</div>
-        <div class="Remove"Remove</div>
-    </div>
-    <!-- css here -->
-    <div class="amount">
-        <div class="btn">+</div>
-        <div class="num">1</div>
-        <div class="btn">-</div>
-    </div>
+        <!-- css here -->
+        <div class="amount">
+            <div class="btn">+</div>
+            <div class="num">1</div>
+            <div class="btn">-</div>
+        </div>
 
-    <div class="items">
-        <div class="images">
-            <img src="static/TeePictures/nikeShirt.png" style="height: 120px">
+        <div class="items">
+            <div class="images">
+                <img src="static/TeePictures/nikeShirt.png" style="height: 120px">
+            </div>
+            <div class="about">
+                <h1 class="name"Nike Shirt></h1>
+                <h3 class="size"Large></h3>
+            </div>
         </div>
-        <div class="about">
-            <h1 class="name"Nike Shirt"></h1>
-            <h3 class="size"Large></h3>
+        <!-- css here -->
+        <div class="price">
+            <div class="money">$9.99</div>
+            <div class="Remove"Remove></div>
         </div>
-    </div>
-    <!-- css here -->
-    <div class="price">
-        <div class="money">$9.99</div>
-        <div class="Remove"Remove</div>
-    </div>
-    <!-- css here -->
-    <div class="amount">
-        <div class="btn">+</div>
-        <div class="num">1</div>
-        <div class="btn">-</div>
-    </div>
+        <!-- css here -->
+        <div class="amount">
+            <div class="btn">+</div>
+            <div class="num">1</div>
+            <div class="btn">-</div>
+        </div>
 
-    <div class="items">
-        <div class="images">
-            <img src="static/TeePictures/whiteShirt.png" style="height: 120px">
+        <div class="items">
+            <div class="images">
+                <img src="static/TeePictures/whiteShirt.png" style="height: 120px">
+            </div>
+            <div class="about">
+                <h1 class="name"White Shirt></h1>
+                <h3 class="size"Medium></h3>
+            </div>
         </div>
-        <div class="about">
-            <h1 class="name"White Shirt"></h1>
-            <h3 class="size"Medium></h3>
+        <!-- css here -->
+        <div class="price">
+            <div class="money">$7.99</div>
+            <div class="Remove"Remove></div>
         </div>
-    </div>
-    <!-- css here -->
-    <div class="price">
-        <div class="money">$7.99</div>
-        <div class="Remove"Remove</div>
-    </div>
-    <!-- css here -->
-    <div class="amount">
-        <div class="btn">+</div>
-        <div class="num">3</div>
-        <div class="btn">-</div>
-    </div>
-
-<hr>
-<div class="checkout">
-    <div class="total">
-        <div>
-            <div class="subtotal">Sub-Total</div>
-            <div class="items">7 items</div>
+        <!-- css here -->
+        <div class="amount">
+            <div class="btn">+</div>
+            <div class="num">3</div>
+            <div class="btn">-</div>
         </div>
-        <div class="totalm">$32.99</div>
+</div>
+    <hr>
+    <div class="checkout">
+        <div class="total">
+            <div>
+                <div class="subtotal">Sub-Total</div>
+                <div class="items">7 items</div>
+            </div>
+            <div class="totalm">$32.99</div>
+        </div>
+        <button class="button">Checkout</button>
     </div>
-    <button class="button">Checkout</button>
 </div>
 <style>
     hr{
@@ -266,7 +271,7 @@
         color: black;
     }
     .items{
-        font-size 15px;
+        font-size: 15px;
         font-family: 'Open Sans';
         font-weight: 500;
         color: lightgray;
@@ -280,7 +285,7 @@
     }
     .button{
         cursor: pointer;
-        width: 40vw;
+        width: 23vw;
         border-radius: 10px;
         border-width: 2px;
         border-color: lightcoral;
