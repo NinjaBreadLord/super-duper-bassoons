@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request
+import json 
 
 app_mainsite = Blueprint('mainsite', __name__,
                      url_prefix='/store/',
@@ -8,7 +9,8 @@ app_mainsite = Blueprint('mainsite', __name__,
 
 @app_mainsite.route('/teaShop/')
 def teaShop():
-    return render_template("store/teaShop.html")
+    tealist = json.load(open('static/teas.json'))
+    return render_template("store/teaShop.html", tealist=tealist)
 
 @app_mainsite.route('/teeShop/')
 def teeShop():
