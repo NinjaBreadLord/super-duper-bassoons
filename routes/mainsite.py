@@ -32,3 +32,7 @@ def Flannel():
 def Turtlenecks():
     return render_template("store/turtleneck.html")
 
+@app_mainsite.route('/Cart/')
+def Cart():
+    return render_template("store/Cart.html")
+
