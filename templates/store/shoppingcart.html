@@ -1,12 +1,44 @@
 {% extends "store/teaBase.html" %}
 
 {% block body %}
-<!-- shopping cart begins here -->
+<h2>
+<strong>
+    Check-Out
+</strong>
+</h2>
 
+    <style>
+    h2{
+        font-size: 70px;
+        text-align: center;
+        font-family: 'Open Sans';
+        border-bottom: 3px solid #FDC4F1;
+        justify-content: space-between;
+        margin: auto;
+
+    }
+    </style>
     <body>
-    <div class="cart"></div>
+    <div class="header">
+    <div>
+        <h3>
+                Your Items
+        </h3>
+    </div>
+    <h5 class="remove">Remove All</h5>
+    </div>
     </body>
     <style>
+    h3{
+        font-family: 'Open Sans';
+        font-size: 30px;
+        margin: auto;
+        width: 95%;
+        height: 25%;
+        font-weight: 700;
+        color: #464f58;
+
+    }
 
         body{
             margin: 0;
@@ -18,15 +50,6 @@
             color: black;
         }
 
-        .cart{
-            width: 35%;
-            height: 50%;
-            padding: 10px;
-            margin: 50px auto;
-            border-radius: 16px;
-            box-shadow: 0px 30px 45px #000000;
-        }
-
         .header {
             margin: auto;
             width: 85%;
@@ -36,7 +59,6 @@
             align-items: center;
             color: #000000;
         }
-
         .heading{
             font-size: 18px;
             font-family: 'Open Sans';
@@ -44,7 +66,7 @@
             color: #464f58;
         }
         .remove{
-            font-size: 12px;
+            font-size: 18px;
             font-family: 'Open Sans';
             font-weight: 500;
             color: #ff0000;
@@ -54,11 +76,8 @@
     </style>
 
     <div class="header">
-        <h3 class="heading">Shopping Cart</h3>
-        <h5 class="remove">Remove All</h5>
     </div>
 
-<div class="cart">
     <div class="items">
         <div class="images">
             <img id="image" src="/static/TeePictures/flannel.png" height = "300" width = "270">
@@ -70,7 +89,7 @@
     <style>
     .items {
         margin: auto;
-        width: 90%;
+        width: 75%;
         height: 30%;
         display: flex;
         justify-content: space-between;
@@ -81,7 +100,7 @@
             text-align: center;
         }
         .about{
-            height: 100%;
+            height: 75%;
         }
         .name{
             padding-top: 7px;
@@ -151,7 +170,6 @@
     }
     </style>
     <!-- repeat for each item -->
-    <div class="cart">
         <div class="items">
             <div class="images">
                 <img src="https://www.rollingstone.com/wp-content/uploads/2021/05/Jonas-Brothers-Marshmello-press-photo-2-credit-Cynthia-Parkhurst.jpeg" width="140" height="80" alt="Natural" />
@@ -236,7 +254,7 @@
             <div class="btn">-</div>
         </div>
 </div>
-    <hr>
+    <hr style="width:25%;text-align:right;margin-right:0">
     <div class="checkout">
         <div class="total">
             <div>
@@ -249,15 +267,10 @@
     </div>
 </div>
 <style>
-    hr{
-        width: 70%;
-        float: right;
-        margin-right: 5%;
-}
     .checkout{
         float: right;
         margin-right: 5%;
-        width: 30%;
+        width: 25%;
     }
     .total{
         width: 100%;
@@ -282,13 +295,22 @@
         font-family: 'Open Sans';
         font-weight: 900;
         color: black;
+        padding-top: 5px;
     }
     .button{
         cursor: pointer;
-        width: 23vw;
+        width: 25vw;
         border-radius: 10px;
         border-width: 2px;
-        border-color: lightcoral;
+        border-color: #1F75FE;
+        background-color: default;
+    }
+    .button:hover {background-color: lightgray}
+
+    .button:active {
+        background-color: lightgray;
+        box-shadow: 0 5px #248;
+        transform: translateY(4px);
     }
 </style>
 

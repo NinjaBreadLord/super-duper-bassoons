@@ -1,0 +1,77 @@
+{% extends "layouts/base.html" %}
+
+{% set moreInformation = "https://www.hollisterco.com/shop/us/p/plaid-flannel-shirt-47392821?categoryId=6974560&seq=06&faceout=prod1" %}
+
+{% block body %}
+
+<style>
+
+    .button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Comic Sans MS;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    @keyframes glowing {
+        0% {
+            background-color: #5f2afd;
+            box-shadow: 0 0 5px #5f2afd;
+        }
+        50% {
+            background-color: #8761f8;
+            box-shadow: 0 0 20px #8761f8;
+        }
+        100% {
+            background-color: #5f2afd;
+            box-shadow: 0 0 5px #5f2afd;
+        }
+    }
+    .button {
+        animation: glowing 1300ms infinite;
+    }
+
+
+    table, th, td {
+        border:1px solid #4709ff;
+    }
+
+    <style>
+     .p1 {
+         font-family: "Times New Roman", Times, serif;
+     }
+
+    .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p3 {
+        color: rgba(255, 255, 255, 0.99);
+        font-family: "Monaco", "Monaco", fantasy;
+    }
+
+    body {
+        background-image: ;
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+</style>
+
+<h2>Shopping Cart</h2>
+
+
+
+{% endblock %}
+
+{% block background %}
+
+{% endblock %}

@@ -40,12 +40,39 @@
 </center> </p>
 
 
-            <html>
-            <style>
-                table, th, td {
-                    border:5px solid #da1616;
-                }
-            </style>
+    <html>
+    <style>
+        table, th, td {
+            border:5px solid #da1616;
+        }
+    </style>
+
+    <form action="javascript:void(0);" onsubmit="updateResults()">
+        <input type="checkbox" id="choose" name="choose">
+        <label for="choose"> Random number generator</label>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+        /* This function displays the random number */
+        function updateResults() {
+            let number = document.getElementById("choose");
+
+            if (number) {
+                ;
+            } else {
+                ;
+            }
+
+    </script>
+
+
+    <body>
+
+
+    {% endblock %}
+
 
             <form action="javascript:void(0);" onsubmit="updateResults()">
                 <input type="checkbox" id="choose" name="choose">
@@ -68,7 +95,5 @@
 </script>
 
 
-            <body>
 
 
-{% endblock %}
