@@ -31,10 +31,20 @@
             <h1 class="card-title">Home Page</h1>
         </div>
         <div class="card-footer"> Welcome to the Super Duper Bassoons home page! </div>
+
     </div>
     </div>
+    <marquee behavior="scroll" direction="left" scrollamount = "10">
+        {% for i in range(1,20) %}
+        <img class="ms-5" src={{small_anim_img}} width="107" height="80" alt="Natural" />
+        {% endfor %}
+
 </div>
 <div class="parallax" style="height: 40%"></div>
+
+<div>
+
+</div>
 {% endblock %}
 
 {% block background %}
