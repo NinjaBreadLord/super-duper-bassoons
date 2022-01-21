@@ -15,6 +15,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 5. [Week 2](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-2)
 6. [Week 3](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-3)
 7. [Week 4](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-4)
+8. [Week 5](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-5)
 
 
 ## Our Team
