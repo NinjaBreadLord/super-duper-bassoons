@@ -1,72 +1,87 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
+<style>
+    .navborder{
+        height: 10px;
+    }
 
-    <img src="/static/assets/general/bassoonlogo.png" width="55" style="padding-right: 7px; padding-left: 7px; cursor: pointer" class="align-center" alt="" title="Home" onclick="location.href='/'">
+</style>
+<div class="navborder">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .banner-image {
+            background-image: url('/static/assets/backgrounds/tea-field-ravi-pinisetti-unsplash.jpg');
+            background-size: cover;
+        }
+    </style>
+    <nav class="navbar navbar-expand-md navbar-dark text-white fixed-top navbar-expand-lg p-md-2 border border-success border-4 rounded-pill">
 
-    <a class="navbar-brand" href="/" style="font-family: Helvetica" title="Home">{{basename}}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shops
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
-                    <a class="dropdown-item" href="/store/teeShop">Tee Shop</a>
-                </div>
-            </li>
-            
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Our Team
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/everitt/about">Everitt</a>
-                    <a class="dropdown-item" href="/daniel/home">Daniel</a>
-                    <a class="dropdown-item" href="/jun">Jun</a>
-                    <a class="dropdown-item" href="/lucas/home">Lucas</a>
-                    <a class="dropdown-item" href="/rithwikh/home">Ŕithwikh</a>
-                </div>
-            </li>
+        <img src="/static/assets/general/bassoonlogo.png" width="55" style="padding-right: 7px; padding-left: 7px; cursor: pointer" class="align-center" alt="" title="Home" onclick="location.href='/'">
 
-            <li class="nav-item">
-                <a class="nav-link" href="/mainframe/search">Search Testing</a>
-            </li>
+        <a class="navbar-brand" href="/" style="font-family: Helvetica" title="Home">{{basename}}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shops
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
+                        <a class="dropdown-item" href="/store/teeShop">Tee Shop</a>
+                    </div>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/store/ShoppingCart">Shopping Cart</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/store/Cart">Shopping Cart</a>
-            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/everitt/about">Everitt</a>
+                        <a class="dropdown-item" href="/daniel/home">Daniel</a>
+                        <a class="dropdown-item" href="/jun">Jun</a>
+                        <a class="dropdown-item" href="/lucas/home">Lucas</a>
+                        <a class="dropdown-item" href="/rithwikh/home">Ŕithwikh</a>
+                    </div>
+                </li>
 
-        </ul>
-    </div>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <div class="float-right">
-            <input type="text" class="form-control" id="term" placeholder="Enter search term">
+                <li class="nav-item">
+                    <a class="nav-link" href="/mainframe/search">Search Testing</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/store/ShoppingCart">Shopping Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/store/Cart">Shopping Cart</a>
+                </li>
+
+            </ul>
         </div>
-        <div class="float-right me-3">
-            <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
-            <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="float-right">
+                <input type="text" class="form-control" id="term" placeholder="Enter search term">
+            </div>
+            <div class="float-right me-3">
+                <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
+                <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
+            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
+</div>
 
 <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasEndLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasEndLabel">Search Results</h5>
-    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    <div class="container">
-        <div class="row" id="result">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasEndLabel">Search Results</h5>
+        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <div class="container">
+            <div class="row" id="result">
+            </div>
         </div>
     </div>
-  </div>
 </div>
 
 
@@ -74,10 +89,10 @@
     var inputnav = document.getElementById("term");
 
     inputnav.addEventListener("keyup", function(event) {
-    
+
         if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("navsearch").click();
+            event.preventDefault();
+            document.getElementById("navsearch").click();
         }
     });
 
@@ -88,7 +103,7 @@
             term: term.value
         };
 
-    
+
         // fetch call with header options
         fetch('/mainframe/search/term/', {
             method: "POST",
@@ -144,7 +159,7 @@
                     resultContainer.appendChild(divider)
 
                     for (let i = 0; i < data.length; i++) {
-                        // create divs for search result 
+                        // create divs for search result
                         const div = document.createElement("div");
                         div.className = "row mb-1";
                         // create name div
