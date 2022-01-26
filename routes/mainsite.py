@@ -15,7 +15,7 @@ def teaShop():
 @app_mainsite.route('/TeeeShop/')
 def TeeeShop():
     teeelist = json.load(open('static/teas.json'))
-    return render_template("store/teaShop/teaShop.html", teeelist=teeelist)
+    return render_template("store/teeeShop.html", teeelist=teeelist)
 
 @app_mainsite.route('/teeShop/')
 def teeShop():
@@ -41,6 +41,3 @@ def Turtlenecks():
 def Cart():
     return render_template("store/Cart.html")
 
-@app_mainsite.route('/TeeeShop/')
-def TeeeShop():
-    return render_template("store/teeeShop.html")
