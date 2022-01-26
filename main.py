@@ -13,8 +13,10 @@ from routes.ritroutes import app_ritroutes
 from routes.junroutes import app_junroutes
 from routes.evroutes import app_evroutes
 from mainframe.mainframe import app_mainframe
+from mainframe.teamainframe import app_teamainframe
 from routes.mainsite import app_mainsite
 
+app.register_blueprint(app_teamainframe)
 app.register_blueprint(app_mainframe)
 app.register_blueprint(app_mainsite)
 app.register_blueprint(app_apis)
