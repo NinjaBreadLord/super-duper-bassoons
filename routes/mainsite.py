@@ -12,6 +12,11 @@ def teaShop():
     tealist = json.load(open('static/teas.json'))
     return render_template("store/teaShop/teaShop.html", tealist=tealist)
 
+@app_mainsite.route('/TeeeShop/')
+def TeeeShop():
+    teeelist = json.load(open('static/teas.json'))
+    return render_template("store/teaShop/teaShop.html", teeelist=teeelist)
+
 @app_mainsite.route('/teeShop/')
 def teeShop():
     return render_template("store/teeShop.html")
