@@ -83,6 +83,65 @@ class Users(db.Model):
 
 """Database Creation and Testing section"""
 
+class Teas(db.Model):
+    teaID = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), unique=True, nullable=False)
+    url = db.Column(db.String(255), unique=False, nullable=False)
+    imgurl = db.Column(db.String(255), unique=False, nullable=False)
+    teatype = db.Column(db.String(255), unique=False, nullable=False)
+    description = db.Column(db.Text, unique=False, nullable=False)
+
+    def __init__(self, name, url, imgurl, teatype, description):
+        self.name = name
+        self.url = url
+        self.imgurl = imgurl
+        self.teatype = teatype
+        self.description = description
+
+    # CRUD create/add a new record to the table
+    # returns self or None on error
+    def create(self):
+        try:
+            # creates a person object from Users(db.Model) class, passes initializers
+            db.session.add(self)  # add prepares to persist person object to Users table
+            db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
+            return self
+        except IntegrityError:
+            db.session.remove()
+            return None
+
+    # CRUD read converts self to dictionary
+    # returns dictionary
+    def read(self):
+        return {
+            "teaID": self.teaID,
+            "name": self.name,
+            "url": self.url,
+            "imgurl": self.imgurl,
+            "teatype": self.teatype,
+            "description": self.description
+        }
+    
+    # CRUD update: updates users name, description, usertag
+    # returns self
+    def update(self, name, description="", teatype=""):
+        """only updates values with length"""
+        if len(name) > 0:
+            self.name = name
+        if len(description) > 0:
+            self.description = description
+        if len(teatype) > 0:
+            self.teatype = teatype
+        db.session.commit()
+        return self
+
+    # CRUD delete: remove self
+    # None
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+        return None
+
 
 def model_tester():
     print("--------------------------")
@@ -97,7 +156,9 @@ def model_tester():
     u5 = Users(name='Rithwikh - About Me', url='/rithwikh/home', description='Home and about me page for Rithwikh Varma', usertag="Rithwikh")
     u6 = Users(name='Jun - About Me', url='/rithwikh/home', description='Home and about me page for Jun Lim', usertag="Jun")
     u7 = Users(name='Github', url='https://github.com/NinjaBreadLord/super-duper-bassoons', description='Our GitHub page for this project.', usertag="Main")
-    table = [u1, u2, u3, u4, u5, u6, u7]
+    u8 = Teas(name='Fu Shou Shan', url='https://redblossomtea.com/products/fu-shou-shan-spring?variant=31627639428', imgurl='/static/TeaPictures/fushoushan.jpg', teatype="Green", description='Fu Shou Shan is an incredibly flavorful and complex tea with an amazing degree of balance and concentration, with absolutely no astringency or bitterness. The finish is rich, unctuous and persistent.')
+    u9 = Teas(name='Formosa Red 20', url='https://redblossomtea.com/products/formosa-red-20?variant=20426551754814', imgurl='/static/TeaPictures/formosared20.jpg', teatype="Black", description='Formosa Red 20 is a black tea with natural honeyed sweetness, underpinned by complex notes of tropical fruit and citrus.')
+    table = [u1, u2, u3, u4, u5, u6, u7, u8, u9]
     for row in table:
         try:
             db.session.add(row)
