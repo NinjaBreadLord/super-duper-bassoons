@@ -10,86 +10,92 @@
     </style>
     <nav class="navbar navbar-expand-md navbar-dark text-white fixed-top navbar-expand-lg p-md-2 border border-success border-4 rounded-pill">
 
-        <img src="/static/assets/general/bassoonlogo.png" width="55" style="padding-right: 7px; padding-left: 7px; cursor: pointer" class="align-center" alt="" title="Home" onclick="location.href='/'">
+    <img src="/static/assets/general/bassoonlogo.png" width="55" style="padding-right: 7px; padding-left: 7px; cursor: pointer" class="align-center" alt="" title="Home" onclick="location.href='/'">
 
-        <a class="navbar-brand" href="/" style="font-family: Helvetica" title="Home">{{basename}}</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Shops
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
-                        <a class="dropdown-item" href="/store/teeShop">Tee Shop</a>
-                    </div>
-                </li>
+    <a class="navbar-brand" href="/" style="font-family: Helvetica" title="Home">{{basename}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shops
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
+                    <a class="dropdown-item" href="/store/teeShop">Tee Shop</a>
+                </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Team
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/everitt/about">Everitt</a>
+                    <a class="dropdown-item" href="/daniel/home">Daniel</a>
+                    <a class="dropdown-item" href="/jun">Jun</a>
+                    <a class="dropdown-item" href="/lucas/home">Lucas</a>
+                    <a class="dropdown-item" href="/rithwikh/home">Ŕithwikh</a>
+                </div>
+            </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Our Team
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/everitt/about">Everitt</a>
-                        <a class="dropdown-item" href="/daniel/home">Daniel</a>
-                        <a class="dropdown-item" href="/jun">Jun</a>
-                        <a class="dropdown-item" href="/lucas/home">Lucas</a>
-                        <a class="dropdown-item" href="/rithwikh/home">Ŕithwikh</a>
-                    </div>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/mainframe/search">Search Testing</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/mainframe/search">Search Testing</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/store/ShoppingCart">Shopping Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/store/Cart">Shopping Cart</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/store/ShoppingCart">Shopping Cart</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/store/Cart">Shopping Cart</a>
-                </li>
-
-            </ul>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div class="float-right">
+            <input type="text" class="form-control" id="term" placeholder="Enter search term">
         </div>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <div class="float-right">
-                <input type="text" class="form-control" id="term" placeholder="Enter search term">
-            </div>
-            <div class="float-right me-3">
-                <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
-                <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
-            </div>
+        <div class="float-right me-3">
+            <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
+            <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
         </div>
-    </nav>
-</div>
+    </div>
+</nav>
+
 
 <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasEndLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasEndLabel">Search Results</h5>
-        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        <div class="container">
-            <div class="row" id="result">
-            </div>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasEndLabel">Search Results</h5>
+    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    <div class="container">
+        <div class="row mb-3">
+            <a class="btn btn-primary" onclick="filter_tag();"> Website Only </a>
+        </div>
+        <div class="row" id="result">
         </div>
     </div>
+  </div>
 </div>
 
 
 <script>
+    var SearchGlobal= {};
+
     var inputnav = document.getElementById("term");
 
     inputnav.addEventListener("keyup", function(event) {
-
+    
         if (event.keyCode === 13) {
-            event.preventDefault();
-            document.getElementById("navsearch").click();
+        event.preventDefault();
+        document.getElementById("navsearch").click();
         }
     });
+
 
     function search_data() {
         // fetch standard requires data set to a name-value pair
@@ -97,8 +103,9 @@
         const body = {
             term: term.value
         };
+        SearchGlobal.body = body
 
-
+    
         // fetch call with header options
         fetch('/mainframe/search/term/', {
             method: "POST",
@@ -154,7 +161,7 @@
                     resultContainer.appendChild(divider)
 
                     for (let i = 0; i < data.length; i++) {
-                        // create divs for search result
+                        // create divs for search result 
                         const div = document.createElement("div");
                         div.className = "row mb-1";
                         // create name div
@@ -178,4 +185,94 @@
                 })
             })
     }
+
+    function filter_tag() {
+
+        const body = SearchGlobal.body;
+
+        fetch('/mainframe/search/term/', {
+            method: "POST",
+            credentials: "include",
+            body: JSON.stringify(body),
+            cache: "no-cache",
+            headers: new Headers({
+                "content-type": "application/json"
+            })
+        })
+            // async then replies with response header
+            .then(function (response) {
+                // prepare HTML search result container for new output
+                const resultContainer = document.getElementById("result");
+                // clean up from previous search
+                while (resultContainer.firstChild) {
+                    resultContainer.removeChild(resultContainer.firstChild);
+                }
+                // trap error response from Web API
+                if (response.status !== 200) {
+                    const errorMsg = 'Uh oh, looks like the database failed! Error: ' + response.status;
+                    console.log(errorMsg);
+                    const div = document.createElement("div");
+                    div.innerHTML = errorMsg;
+                    resultContainer.appendChild(div);
+                    const imgdiv = document.createElement("img");
+                    imgdiv.src = "/static/assets/mainframe/man-crying.png";
+                    resultContainer.appendChild(imgdiv)
+                    return;
+                }
+                // response contains valid result
+                response.json().then(function(data) {
+
+                // loop through JSON and build HTML output
+                    // create header div for the search results
+                    const divheader = document.createElement("div");
+                    divheader.className = "row mb-1";
+                    //create headers for name and description rows
+                    const namerowheader = document.createElement("div");
+                    namerowheader.className = "col p-1";
+                    const descheader = document.createElement("div");
+                    descheader.className = "col p-1";
+                    // create divider
+                    const divider = document.createElement("hr");
+
+                    // naming the header divs
+                    namerowheader.innerHTML = "Webpage";
+                    descheader.innerHTML = "Description";
+
+                    // Appending divs to the result container
+                    resultContainer.appendChild(divheader);
+                    divheader.appendChild(namerowheader);
+                    divheader.appendChild(descheader);
+                    resultContainer.appendChild(divider)
+
+                for (let i = 0; i < data.length; i++) {
+
+                    // create divs for search result
+                    console.log(data[i].usertag);
+
+                    if (data[i].usertag == "Main") {
+                        const div = document.createElement("div");
+                        div.className = "row mb-1";
+                        // create name div
+                        const namediv = document.createElement("div");
+                        namediv.className = "col p-1";
+                        // create description div
+                        const descdiv = document.createElement("div");
+                        descdiv.className = "col p-1";
+                        descdiv.innerHTML = data[i].description;
+                        // Create element a with page name with link
+                        const a = document.createElement("a");
+                        a.href = data[i].url;
+                        a.innerHTML = data[i].name;
+
+                        // Append divs to result container
+                        resultContainer.appendChild(div);
+                        div.appendChild(namediv);
+                        div.appendChild(descdiv);
+                        namediv.appendChild(a);
+                    }
+                }
+            })
+        })
+    }
+
 </script>
