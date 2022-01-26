@@ -36,3 +36,6 @@ def Turtlenecks():
 def Cart():
     return render_template("store/Cart.html")
 
+@app_mainsite.route('/TeeeShop/')
+def TeeeShop():
+    return render_template("store/teeeShop.html")
