@@ -10,7 +10,7 @@ app_mainsite = Blueprint('mainsite', __name__,
 @app_mainsite.route('/teaShop/')
 def teaShop():
     tealist = json.load(open('static/teas.json'))
-    return render_template("store/teaShop.html", tealist=tealist)
+    return render_template("store/teaShop/teaShop.html", tealist=tealist)
 
 @app_mainsite.route('/teeShop/')
 def teeShop():
