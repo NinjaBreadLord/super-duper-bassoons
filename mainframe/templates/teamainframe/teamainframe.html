@@ -133,15 +133,25 @@
                             <th><label for="name">Name</label></th>
                             <th><label for="url">url</label></th>
                             <th><label for="imgurl">imgurl</label></th>
-                            <th><label for="teatype">Teatype</label></th>
-                            <th><label for="description">description</label></th>
-                        </tr>
+                            </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td><input class="form-control" type="text" name="name" id="name" placeholder="FU Shou Shan" required></td>
                             <td><input class="form-control" type="text" name="url" id="url" placeholder="https://adfasdf.com/asdasdf" required></td>
                             <td><input class="form-control" type="text" name="imgurl" id="imgurl" placeholder="/static/assets/..." required></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th><label for="teatype">Teatype</label></th>
+                            <th><label for="description">description</label></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
                             <td><input class="form-control" type="text" name="teatype" id="teatype" placeholder="Green" required></td>
                             <td><input class="form-control" type="text" name="description" id="description" placeholder="Tea description" required></td>
                             <td><input class="btn btn-primary" type="submit" value="Create"></td>
@@ -197,7 +207,7 @@
                                         <select class="form-select" name="teaID" id="update_teaID">
                                             <optgroup label="teaID">
                                                 {% for row in table %}
-                                                    <option label="{{ row['userID'] }}">{{ row['userID'] }}</option>
+                                                    <option label="{{ row['teaID'] }}">{{ row['teaID'] }}</option>
                                                 {% endfor %}
                                             </optgroup>
                                         </select>
