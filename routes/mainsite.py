@@ -25,7 +25,7 @@ def TeeeShop():
 
 @app_mainsite.route('/teeShop/')
 def teeShop():
-    return render_template("store/teeShop.html")
+    return render_template("store/teeeShop.html")
 
 @app_mainsite.route('/nikeShirt/')
 def nikeShirt():
