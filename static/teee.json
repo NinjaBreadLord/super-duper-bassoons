@@ -3,7 +3,7 @@
         "name": "Flannel Shirt",
         "teaid": "tee1",
         "url": "https://redblossomtea.com/products/fu-shou-shan-spring?variant=31627639428",
-        "flannel": "/static/TeePictures/flannel.png",
+        "imgurl": "/static/TeePictures/flannel.png",
         "type": "Green",
         "description": "Fu Shou Shan is an incredibly flavorful and complex tea with an amazing degree of balance and concentration, with absolutely no astringency or bitterness. The finish is rich, unctuous and persistent."
     }
