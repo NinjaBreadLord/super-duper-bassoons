@@ -82,16 +82,123 @@
         transform: translate(-50%, -50%);
     }
 </style>
-<div class="search">
+<div class="search text-black">
 <!--    <nav class="navbar navbar-inverse">-->
 <!--        <div class="container-fluid">-->
-    <input type="text" class="searchTerm" placeholder="What are you looking for?">
-    <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
+    <input id="teaterm" type="text" class="searchTerm text-black" placeholder="What are you looking for?">
+    <button id="teanavsearch" type="submit" class="btn btn-success" onclick="teasearch_data()">
+        Search
     </button>
 <!--        </div>-->
 <!--    </nav>-->
 </div>
+<div class="container text-black">
+<!--    <button class="btn btn-primary" onclick="teasearch_data()">Search</button>-->
+    <div class="row" id="tearesult">
+
+    </div>
+</div>
+<script>
+
+    var teainputnav = document.getElementById("teaterm");
+
+    teainputnav.addEventListener('keyup', function(event) {
+
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("teanavsearch").click();
+        }
+    });
+
+
+    function teasearch_data() {
+        // fetch standard requires data set to a name-value pair
+        const teaterm = document.getElementById("teaterm");
+        const body = {
+            term: teaterm.value
+        };
+
+        // fetch call with header options
+        fetch('/teamainframe/search/term/', {
+            method: "POST",
+            credentials: "include",
+            body: JSON.stringify(body),
+            cache: "no-cache",
+            headers: new Headers({
+                "content-type": "application/json"
+            })
+        })
+            // async then replies with response header
+            .then(function (response) {
+                // prepare HTML search result container for new output
+                const tearesultContainer = document.getElementById("tearesult");
+                // clean up from previous search
+                while (tearesultContainer.firstChild) {
+                    tearesultContainer.removeChild(tearesultContainer.firstChild);
+                }
+                // trap error response from Web API
+                if (response.status !== 200) {
+                    const errorMsg = 'Uh oh, looks like the database failed! Error: ' + response.status;
+                    console.log(errorMsg);
+                    const div = document.createElement("div");
+                    div.innerHTML = errorMsg;
+                    tearesultContainer.appendChild(div);
+                    const teaimgdiv = document.createElement("img");
+                    teaimgdiv.src = "/static/assets/mainframe/man-crying.png";
+                    tearesultContainer.appendChild(teaimgdiv)
+                    return;
+                }
+                // response contains valid result
+                response.json().then(function(data) {
+                    // loop through JSON and build HTML output
+                    // create header div for the search results
+                    const teadivheader = document.createElement("div");
+                    teadivheader.className = "row mb-1";
+                    //create headers for name and description rows
+                    const teanamerowheader = document.createElement("div");
+                    teanamerowheader.className = "col p-1";
+                    const teadescheader = document.createElement("div");
+                    teadescheader.className = "col p-1";
+                    // create divider
+                    const teadivider = document.createElement("hr");
+
+                    // naming the header divs
+                    teanamerowheader.innerHTML = "Tea";
+                    teadescheader.innerHTML = "Type";
+
+                    // Appending divs to the result container
+                    tearesultContainer.appendChild(teadivheader);
+                    teadivheader.appendChild(teanamerowheader);
+                    teadivheader.appendChild(teadescheader);
+                    tearesultContainer.appendChild(teadivider)
+
+                    for (let i = 0; i < data.length; i++) {
+                        // create divs for search result
+                        const div = document.createElement("div");
+                        div.className = "row mb-1";
+                        // create name div
+                        const teanamediv = document.createElement("div");
+                        teanamediv.className = "col p-1";
+                        // create description div
+                        const teadescdiv = document.createElement("div");
+                        teadescdiv.className = "col p-1";
+                        teadescdiv.innerHTML = data[i].teatype;
+                        // Create element a with page name with link
+                        const t = document.createElement("a");
+                        t.href = data[i].url;
+                        t.innerHTML = data[i].name;
+
+                        // Append divs to result container
+                        tearesultContainer.appendChild(div);
+                        div.appendChild(teanamediv);
+                        div.appendChild(teadescdiv);
+                        teanamediv.appendChild(t);
+                    }
+                })
+            })
+    }
+
+</script>
 <!--<body>-->
 <!--    <div class="container-fluid">-->
 <!--        <nav class="navbar navbar-inverse">-->
