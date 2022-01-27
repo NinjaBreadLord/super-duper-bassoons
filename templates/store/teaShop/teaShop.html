@@ -238,7 +238,7 @@
             <div class="d-flex align-items-center">
                 <div id="teaparent" class="row p-5">
                     {% for row in table %}
-                        <div type="button" id="{{row['name']}}" class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#id{{ row['teaID']}}"><p class="image-up"><img class="columnimage" id="image" src="{{ row['imgurl']}}"><center><h5>{{ row['name'] }}, {{ row['teatype']}}</h5></center><p/></div>
+                        <div type="button" id="{{row['name']}}" class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#id{{ row['teaID']}}"><p class="image-up"><img class="columnimage" id="image" src="{{ row['imgurl']}}"><center><h5>{{ row['name'] }} - {{ row['teatype']}}</h5></center><p/></div>
                                                 
                         <!-- Modal -->
                         <div class="modal fade" id="id{{ row['teaID']}}" tabindex="-1" aria-labelledby="{{ row['name']}}Label" aria-hidden="true">
