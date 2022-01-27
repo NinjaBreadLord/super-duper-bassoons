@@ -1,16 +1,27 @@
 from flask import Blueprint, render_template, request
 import json 
 
+from model import Teas
+
 app_mainsite = Blueprint('mainsite', __name__,
                      url_prefix='/store/',
                      template_folder='templates/',
                      static_folder='static',
                      static_url_path='assets')
 
+def Teas_all():
+    """converts Teas table into JSON list """
+    return [peep.read() for peep in Teas.query.all()]
+
 @app_mainsite.route('/teaShop/')
 def teaShop():
     tealist = json.load(open('static/teas.json'))
-    return render_template("store/teaShop/teaShop.html", tealist=tealist)
+    return render_template("store/teaShop/teaShop.html", tealist=tealist, table=Teas_all())
+
+@app_mainsite.route('/TeeeShop/')
+def TeeeShop():
+    teeelist = json.load(open('static/teas.json'))
+    return render_template("store/teeeShop.html", teeelist=teeelist)
 
 @app_mainsite.route('/teeShop/')
 def teeShop():
@@ -36,6 +47,3 @@ def Turtlenecks():
 def Cart():
     return render_template("store/Cart.html")
 
-@app_mainsite.route('/TeeeShop/')
-def TeeeShop():
-    return render_template("store/teeeShop.html")
