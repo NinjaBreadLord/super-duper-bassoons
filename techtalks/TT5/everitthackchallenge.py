@@ -1,5 +1,7 @@
 import random
+
 j = random.randint(1, 100)
+
 
 def hack(n):
     if n % 2 == 0:
@@ -13,5 +15,7 @@ def hack(n):
             else:
                 print("prime")
                 break
+
+
 print(j)
-print(hack(j))
+(hack(j))

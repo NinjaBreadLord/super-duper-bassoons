@@ -4,70 +4,38 @@
 
 {% block body %}
 
-<style>
 
-    .button {
-        background-color: #1c87c9;
-        -webkit-border-radius: 60px;
-        border-radius: 60px;
-        border: none;
-        color: #eeeeee;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Comic Sans MS;
-        font-size: 20px;
-        padding: 10px 10px;
-        text-align: center;
-        text-decoration: none;
-    }
-    @keyframes glowing {
-        0% {
-            background-color: #5f2afd;
-            box-shadow: 0 0 5px #5f2afd;
-        }
-        50% {
-            background-color: #8761f8;
-            box-shadow: 0 0 20px #8761f8;
-        }
-        100% {
-            background-color: #5f2afd;
-            box-shadow: 0 0 5px #5f2afd;
-        }
-    }
-    .button {
-        animation: glowing 1300ms infinite;
-    }
-
-
-    table, th, td {
-        border:1px solid #4709ff;
-    }
-
+<html>
+<head>
     <style>
-     .p1 {
-         font-family: "Times New Roman", Times, serif;
-     }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: banana 5s linear 2s infinite alternate;
+        }
 
-    .p2 {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+        @keyframes banana {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
 
-    .p3 {
-        color: rgba(255, 255, 255, 0.99);
-        font-family: "Monaco", "Monaco", fantasy;
-    }
+<h1>CSS Animation</h1>
 
-    body {
-        background-image: ;
-        background-color: #cccccc;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+<p>This example uses the shorthand animation property:</p>
 
-</style>
+<div></div>
 
-<h2>Shopping Cart</h2>
-
+</body>
+</html>
+    
 
 
 {% endblock %}

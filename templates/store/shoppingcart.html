@@ -12,6 +12,7 @@
         font-size: 70px;
         text-align: center;
         font-family: 'Open Sans';
+        width: 25%;
         border-bottom: 3px solid #FDC4F1;
         justify-content: space-between;
         margin: auto;
@@ -21,9 +22,7 @@
     <body>
     <div class="header">
     <div>
-        <h3>
-                Your Items
-        </h3>
+        <h3>Your Items</h3>
     </div>
     <h5 class="remove">Remove All</h5>
     </div>
@@ -253,19 +252,22 @@
             <div class="num">3</div>
             <div class="btn">-</div>
         </div>
-</div>
-    <hr style="width:25%;text-align:right;margin-right:0">
+    </div>
+
+    <div>
+        <hr style="width:24%;text-align:right;right:-10px;margin-right:100px;position:absolute;">
+    </div>
+    <br>
     <div class="checkout">
         <div class="total">
             <div>
-                <div class="subtotal">Sub-Total</div>
-                <div class="items">7 items</div>
+                <div class="subtotal" style="position:relative;top:10px;">Sub-Total</div>
+                <div class="items" style="position:relative;top:10px;">7 items</div>
             </div>
             <div class="totalm">$32.99</div>
         </div>
-        <button class="button">Checkout</button>
+        <button class="button" style="font-family:Open Sans">Checkout</button>
     </div>
-</div>
 <style>
     .checkout{
         float: right;

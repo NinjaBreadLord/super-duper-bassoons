@@ -1,8 +1,8 @@
 # Team Super-Duper-Bassoons
 ## Project Idea: 
-Idea: Job website ([Wireframe Ideation](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/10))
+Idea: Tea & Tee shop website ([Wireframe Ideation](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/10))
 
-Our job idea is a Tea and Tee shop where we can help people find T-shirts and tea that they want or need.
+Our website idea is a Tea and Tee shop where we can help people find T-shirts and tea that they want or need.
 
 Daniel, Jun, Everitt, Lucas, Ŕithwikh 
 
@@ -15,6 +15,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 5. [Week 2](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-2)
 6. [Week 3](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-3)
 7. [Week 4](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-4)
+8. [Week 5](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/README.md#week-5)
 
 
 ## Our Team
