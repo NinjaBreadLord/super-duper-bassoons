@@ -25,20 +25,23 @@
 <body>
 
 <!-- input tag -->
-<input id="searchbar" onkeyup="search_animal()" type="text"
+<input id="searchbar" onkeyup="search_shirts()" type="text"
        name="search" placeholder="Search for shirts..">
 
 <!-- ordered list -->
+<div class="resultsDiv">
+</div>
 <ol id='list'>
-    <li class="animals"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
-    <li class="animals"><a class="button" href="/store/Turtlenecks">Turtlenecks</a></li>
-    <li class="animals"><a class="button" href="/store/nikeShirt">Nike Shirt</a></li>
-    <li class="animals"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/Turtlenecks">Turtlenecks</a></li>
+    <li class="shirts"><a class="button" href="/store/nikeShirt">Nike Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
 </ol>
+
 
 <!-- linking javascript -->
 
-<script src="./animals.js"></script>
+<!-- script src="./shirts.js"></script-->
 </body>
 
 </html>
@@ -55,35 +58,31 @@
         transition: width 0.15s ease-in-out;
     }
 
-    /* When the input field gets focus,
-    change its width to 100% */
-    input[type=text]:focus {
-        width: 70%;
-    }
-
     #list{
         font-size:  1.5em;
         margin-left: 90px;
     }
 
-    .animals{
-        display: list-item;
+    .shirts{
+        display: none;
     }
 </style>
 
 <script>
     // JavaScript code
-    function search_animal() {
+    function search_shirts() {
         let input = document.getElementById('searchbar').value
         input=input.toLowerCase();
-        let x = document.getElementsByClassName('animals');
+        let x = document.getElementsByClassName('shirts');
 
         for (i = 0; i < x.length; i++) {
-            if (!x[i].innerHTML.toLowerCase().includes(input)) {
-                x[i].style.display="none";
+            if (input.trim() != '' && x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display="list-item";
+                //alert('found a match: ' + input);
             }
             else {
-                x[i].style.display="list-item";
+                x[i].style.display="none";
+                //alert('no match');
             }
         }
     }
