@@ -35,7 +35,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
-| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [Nike stuff](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/e492eb0672182c4c1ff8f0dc88b9cf524ff35041) , [Flannel stuff](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/e7fedb6d391e2033830e6ed6712493fa0df702c8) , [Turtleneck](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/d3b17f568ec5ba4f21144ddcbd30f21a4d0c1aa0)
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [Tee Shirt Search Bar](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/51462fc0c2994aa6eedf29db70fce6839bcedaa8) 
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [TeaNav Fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ca4e84cac8556953a12968fc380f3605226d9d54) [Javascript Functioning](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ab4cfa3d9d3651a3cf665847779505a5313a5fb2)
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51)  | [Teashophome](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b7f1b2b4606aee3c0d2cf5b8d0aee33747422558)
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [[TeaShop Automation]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/46), [[TT5 Challenge]](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/techtalks/TT5/danielevenoddprime.py)
