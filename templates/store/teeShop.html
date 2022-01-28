@@ -3,6 +3,91 @@
 {% block body %}
 
 
+<html>
+
+<head>
+    <title>HTML Background Color</title>
+</head>
+<body style="background-color:#e50505;">
+
+</body>
+
+<head>
+    <title>
+        Creating Search Bar using HTML
+        CSS and Javascript
+    </title>
+
+    <!-- linking the stylesheet(CSS) -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+
+<!-- input tag -->
+<input id="searchbar" onkeyup="search_animal()" type="text"
+       name="search" placeholder="Search for shirts..">
+
+<!-- ordered list -->
+<ol id='list'>
+    <li class="animals"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
+    <li class="animals"><a class="button" href="/store/Turtlenecks">Turtlenecks</a></li>
+    <li class="animals"><a class="button" href="/store/nikeShirt">Nike Shirt</a></li>
+    <li class="animals"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
+</ol>
+
+<!-- linking javascript -->
+
+<script src="./animals.js"></script>
+</body>
+
+</html>
+<style>
+    #searchbar{
+        margin-left: 15%;
+        padding:15px;
+        border-radius: 10px;
+    }
+
+    input[type=text] {
+        width: 30%;
+        -webkit-transition: width 0.15s ease-in-out;
+        transition: width 0.15s ease-in-out;
+    }
+
+    /* When the input field gets focus,
+    change its width to 100% */
+    input[type=text]:focus {
+        width: 70%;
+    }
+
+    #list{
+        font-size:  1.5em;
+        margin-left: 90px;
+    }
+
+    .animals{
+        display: list-item;
+    }
+</style>
+
+<script>
+    // JavaScript code
+    function search_animal() {
+        let input = document.getElementById('searchbar').value
+        input=input.toLowerCase();
+        let x = document.getElementsByClassName('animals');
+
+        for (i = 0; i < x.length; i++) {
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display="none";
+            }
+            else {
+                x[i].style.display="list-item";
+            }
+        }
+    }
+</script>
 
 <div class="parallax">
 
@@ -47,26 +132,6 @@
         }
     </style>
 
-    <form action="javascript:void(0);" onsubmit="updateResults()">
-        <input type="checkbox" id="choose" name="choose">
-        <label for="choose"> Random number generator</label>
-        <input type="submit" value="Submit">
-    </form>
-
-    <script>
-
-        /* This function displays the random number */
-        function updateResults() {
-            let number = document.getElementById("choose");
-
-            if (number) {
-                ;
-            } else {
-                ;
-            }
-
-    </script>
-
 
     <body>
 
@@ -74,23 +139,6 @@
     {% endblock %}
 
 
-            <form action="javascript:void(0);" onsubmit="updateResults()">
-                <input type="checkbox" id="choose" name="choose">
-                <label for="choose"> Random number generator</label>
-                <input type="submit" value="Submit">
-            </form>
-
-<script>
-
-            /* This function displays the random number */
-            function updateResults() {
-                let number = document.getElementById("choose");
-
-            if (number) {
-            ;
-            } else {
-           ;
-            }
 
 </script>
 
