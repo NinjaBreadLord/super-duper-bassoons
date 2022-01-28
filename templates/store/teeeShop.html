@@ -6,7 +6,7 @@
 
 <style>
     .parallax {
-        background-image: url("/static/assets/backgrounds/nam.jpg");
+        background-image: url("/static/assets/backgrounds/mall.png");
     }
     .carousel img {
         max-height: 500px;
@@ -23,6 +23,8 @@
         width: 100%;
     }
 </style>
+
+
 <!--<center>-->
 <!--    <img src="/static/TeaPictures/green_tea.png" style="width:300px;height:300px;">-->
 <!--    <p>Green Tea </p>-->
@@ -58,14 +60,14 @@
             <div class="d-flex align-items-center">
                 <div id="teeeparent" class="row p-5">
                     {% for teee in teeelist %}
-                    <div type="button" id={{teee.name}} class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#{{teee.teeeid}}"><p class="image-up"><img class="columnimage" id="image" src={{teee.flannel}}><center><h5>{{teee.name}}, {{teee.type}}</h5></center><p/></div>
+                    <div type="button" id={{teee.name}} class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#{{teee.teeeid}}"><p class="image-up"><img class="columnimage" id="image" src={{teee.imgurl}}><center><h5>{{teee.name}}, {{teee.type}}</h5></center><p/></div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id={{teee.teeeid}} tabindex="-1" aria-labelledby="{{teee.teeeid}}Label" aria-hidden="true">
+                    <div class="modal fade" id={{teee.teeid}} tabindex="-1" aria-labelledby="{{teee.teeid}}Label" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content bg-dark text-light">
                                 <div class="modal-header">
-                                    <h4 class="modal-title" style="font-family: Arial, sans-serif; font-size: xx-large;" id="{{teee.teeeid}}Label">{{teee.name}}</h4>
+                                    <h4 class="modal-title" style="font-family: Arial, sans-serif; font-size: xx-large;" id="{{teee.teeid}}Label">{{teee.name}}</h4>
                                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body" style="font-family: Arial, sans-serif;">
@@ -90,14 +92,6 @@
         </header>
 
     </div>
-
-    <script>
-
-
-
-    </script>
-
-
 
 
 

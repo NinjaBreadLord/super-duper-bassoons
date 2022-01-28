@@ -1,37 +1,37 @@
 [
     {
         "name": "Flannel Shirt",
-        "teaid": "tee1",
+        "teeid": "tee1",
         "url": "https://redblossomtea.com/products/fu-shou-shan-spring?variant=31627639428",
-        "flannel": "/static/TeePictures/flannel.png",
-        "type": "Green",
-        "description": "Fu Shou Shan is an incredibly flavorful and complex tea with an amazing degree of balance and concentration, with absolutely no astringency or bitterness. The finish is rich, unctuous and persistent."
+        "imgurl": "/static/TeePictures/flannel.png",
+        "type": "Long-Sleeve Shirt",
+        "description": "The flannel shirt is a shirt that manages to never go out of style. Whether you are sporting it at casual gatherings or for a special event, you are guaranteed to be in style!"
     }
     ,
     {
-        "name": "Formosa Red 20",
-        "teaid": "tea2",
+        "name": "Turtleneck",
+        "teeid": "tee2",
         "url": "https://redblossomtea.com/products/formosa-red-20?variant=20426551754814",
-        "imgurl": "/static/TeaPictures/formosared20.jpg",
-        "type": "Black",
-        "description": "Formosa Red 20 is a black tea with natural honeyed sweetness, underpinned by complex notes of tropical fruit and citrus."
+        "imgurl": "/static/TeePictures/turtleneck.png",
+        "type": "Long-Sleeve Shirt",
+        "description": "It has the word turtle in it and who doesn't like those??"
     }
     ,
     {
-        "name": "Cloud and Mist",
-        "teaid": "tea3",
+        "name": "Black Nike Shirt",
+        "teeid": "tee3",
         "url": "https://redblossomtea.com/products/cloud-mist",
-        "imgurl": "/static/TeaPictures/cloudandmist.jpg",
-        "type": "Green",
-        "description": "This tea has a light smoky and vegetal taste. The aroma is slightly floral with an underlying note of roasted macadamia."
+        "imgurl": "/static/TeePictures/nikeShirt.png",
+        "type": "Short-Sleeve Shirt",
+        "description": "This is an awesome and classy shirt. They make their products from child labor."
     }
     ,
     {
-        "name": "Xin Gong Yi",
-        "teaid": "tea4",
+        "name": "Dress Shirt",
+        "teeid": "tee4",
         "url": "https://redblossomtea.com/products/xin-gong-yi",
-        "imgurl": "/static/TeaPictures/xingongyi.jpg",
-        "type": "White",
-        "description": "Xin Gong Yi is sweet without being cloying, and distinct without sacrificing roundness. The combination of flavors is remarkably similar to an early flush of Darjeeling."
+        "imgurl": "/static/TeePictures/longSleeve.png",
+        "type": "Long-Sleeve Shirt",
+        "description": "Awesomeness."
     }
 ]
