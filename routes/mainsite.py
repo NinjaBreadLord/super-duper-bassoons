@@ -20,7 +20,7 @@ def teaShop():
 
 @app_mainsite.route('/TeeeShop/')
 def TeeeShop():
-    teeelist = json.load(open('static/teas.json'))
+    teeelist = json.load(open('static/teee.json'))
     return render_template("store/teeeShop.html", teeelist=teeelist)
 
 @app_mainsite.route('/teeShop/')
