@@ -47,3 +47,7 @@ def Turtlenecks():
 def Cart():
     return render_template("store/Cart.html")
 
+@app_mainsite.route('/LongShirt/')
+def LongShirt():
+    return render_template("store/longShirt.html")
+

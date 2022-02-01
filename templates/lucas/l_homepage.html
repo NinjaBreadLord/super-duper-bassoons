@@ -18,53 +18,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<head>
-    <title>HTML Background Color</title>
-</head>
-<body style="background-color:#4de334;">
-
-</body>
-
 {% block body %}
 
+<style>
+    .centerb {
+        width: 1200px;
+        height: 700px;
+        padding: 10px;
+        margin: 60px auto;
+    }
 
+     #imageSwitch{
+         cursor: pointer;
+         width: 40vw;
+         border-radius: 10px;
+         border-width: 2px;
+         border-color: #103ac2;
+     }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=3">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <div class="w3-panel w3-border-top w3-border-bottom w3-border-transparent">
+<body style="background-color:#ee850c;">
+    <div class="centerb">
         <center>
 
-        <div class="w3-panel w3-yellow">
+        <div class="center">
             <h1 class="w3-text-blue" style="text-shadow:1px 1px 0 #444">
                 <b>Lucas Ho - About Me</b></h1>
         </div>
 
         <p class="w3-monospace">Hello. My name is Lucas Ho and I am a junior at Del Norte High School. Some things I like to do are run, play video games, eat, and hang out with friends.
             My favorite class is math. I find computer science fun and I also am looking forward to this trimester of computer science. I also learned a lot from first trimester.</p>
-    </center>
-    </div>
-</div>
-
-<style>
-    #imageSwitch{
-        cursor: pointer;
-        width: 40vw;
-        border-radius: 10px;
-        border-width: 2px;
-        border-color: #103ac2;
-
-    }
-</style>
-        <!-- New stuff goes here -->
 
             <center><button class="btn btn-primary" style="width: 10%" onclick="imageSwitch()"> Click! </button></center>
-        </div>
-        <div class="d-flex justify-content-center">
-            <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/lucasp/nomask.jpg" height="500" width="50">
-        </div>
+            <div class="center" style="padding-top: 20px; padding-bottom: 20px">
+                <img id="imageSwitch" onclick="imageSwitch()" src="/static/assets/lucasp/nomask.jpg" height="500" width="50">
+            </div>
+
+            <table style="padding-bottom: 20px">
+                <tr>
+                    {% block links %}
+                    <td style="border: 2px solid cyan"><div><a href="{{ overview }}" class="btn" style="font-size: larger">Journal</a></div></td>
+                    <td style="border: 2px solid cyan"><div><a href="{{ repo }}" class="btn" style="font-size: larger">GitHub</a></div></td>
+                    <td style="border: 2px solid cyan"><div><a href="{{ scrumboard }}" class="btn" style="font-size: larger">Scrumboard</a></div></td>
+                </tr>
+            </table>
+
+        </center>
+
+            <br>My data of interest are times of my favorite locations around the world. I can provide you the times of my favorite locations. I used the free API from the website https://www.timeanddate.com/clocks/free.html.
+
+            <form action="javascript:void(0);" onsubmit="showResults()">
+                <label for="locations"> Location:</label>
+                <select name="locations" id="locations">
+                    <option value="https://free.timeanddate.com/clock/i838ixnf/n4882/tt0">San Diego</option>
+                    <option value="https://free.timeanddate.com/clock/i838j82k/n64/tt0">Chicago</option>
+                    <option value="https://free.timeanddate.com/clock/i838j82k/n179/tt0">New York</option>
+                    <option value="https://free.timeanddate.com/clock/i838j82k/n136/tt0">London</option>
+                    <option value="https://free.timeanddate.com/clock/i838j82k/n195/tt0">Paris</option>
+                    <option value="https://free.timeanddate.com/clock/i838j82k/n248/tt0">Tokyo</option>
+                    <option value="https://free.timeanddate.com/clock/i838j82k/n103/tt0">Hawaii</option>
+                    <input type="submit" value="Submit">
+                </select>
+            </form>
+
+            <div id="time"></div>
+
     </div>
-</div>
+
+</body>
 
 <script>
     function imageSwitch(){
@@ -78,56 +103,20 @@
     }
 </script>
 
-My data of interest are times of my favorite locations around the world. I can provide you the times of my favorite locations. I used the free API from the website https://www.timeanddate.com/clocks/free.html.
-
-
-<form action="javascript:void(0);" onsubmit="showResults()">
-    <label for="locations"> Location:</label>
-    <select name="locations" id="locations">
-        <option value="https://free.timeanddate.com/clock/i838ixnf/n4882/tt0">San Diego</option>
-        <option value="https://free.timeanddate.com/clock/i838j82k/n64/tt0">Chicago</option>
-        <option value="https://free.timeanddate.com/clock/i838j82k/n179/tt0">New York</option>
-        <option value="https://free.timeanddate.com/clock/i838j82k/n136/tt0">London</option>
-        <option value="https://free.timeanddate.com/clock/i838j82k/n195/tt0">Paris</option>
-        <option value="https://free.timeanddate.com/clock/i838j82k/n248/tt0">Tokyo</option>
-        <option value="https://free.timeanddate.com/clock/i838j82k/n103/tt0">Hawaii</option>
-    <input type="submit" value="Submit">
-</form>
-
-<div id="stats"></div>
-
 <script>
-    /* This function displays the stats for the Padres of the user's year entered. */
+    /* This function displays the time of the location selected. */
     function showResults() {
         let location = document.getElementById("locations").value;
-        document.getElementById("stats").innerHTML = '<object type = "text/html" data = "' + location + '"></object>';//
+        document.getElementById("time").innerHTML = '<object type = "text/html" data = "' + location + '"></object>';
     }
 </script>
 
-<div class="row" style="padding-left: 10%;">
-    {% block links %}
-    <div class="col-3">
-        <a href="{{ overview }}" class="btn">Journal</a>
-    </div>
 
-    <div class="col-3">
-        <a href="{{ repo }}" class="btn">GitHub</a>
-    </div>
-
-    <div class="col-3">
-        <a href="{{ scrumboard }}" class="btn">Scrumboard</a>
-    </div>
 
     {% endblock %}
-</div>
 
 {% endblock %}
 
 {% block background %}
-<head>
-    <title>color</title>
-</head>
-<body style="background-color:#ee850c;">
 
-</body>
 {% endblock %}

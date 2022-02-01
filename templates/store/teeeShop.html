@@ -22,6 +22,31 @@
         height: auto;
         width: 100%;
     }
+
+    table, th, td {
+        border:5px solid #da1616;
+    }
+
+    #searchbar{
+        margin-left: 15%;
+        padding:15px;
+        border-radius: 10px;
+    }
+
+    input[type=text] {
+        width: 30%;
+        -webkit-transition: width 0.15s ease-in-out;
+        transition: width 0.15s ease-in-out;
+    }
+
+    #list{
+        font-size:  1.5em;
+        margin-left: 90px;
+    }
+
+    .shirts{
+        display: none;
+    }
 </style>
 
 
@@ -29,6 +54,54 @@
 <!--    <img src="/static/TeaPictures/green_tea.png" style="width:300px;height:300px;">-->
 <!--    <p>Green Tea </p>-->
 <!--</center>-->
+
+<html>
+<body style="background-color:#e50505;">
+
+<!-- input tag -->
+<div style="padding-top: 10px"><input id="searchbar" onkeyup="searchShirts()" type="text"
+                                      name="search" placeholder="Search for shirts...">
+</div>
+
+<!-- ordered list -->
+<div id="resultsDiv">
+</div>
+<ol id='list'>
+    <li class="shirts"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/Turtlenecks">Turtleneck</a></li>
+    <li class="shirts"><a class="button" href="/store/nikeShirt">Nike Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/LongShirt">Long Shirt</a></li>
+</ol>
+
+</body>
+</html>
+
+<script>
+    // JavaScript code
+    function searchShirts() {
+        let input = document.getElementById('searchbar').value
+        input=input.toLowerCase();
+        let x = document.getElementsByClassName('shirts');
+        let count = 0;
+
+        for (i = 0; i < x.length; i++) {
+            if (input.trim() != '' && x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display="list-item";
+                count = count + 1;
+                //alert('found a match: ' + input);
+            } else {
+                x[i].style.display = "none";
+                //alert('no match');
+            }
+        }
+        if (input.trim() == '') {
+            document.getElementById('resultsDiv').innerHTML = '';
+        } else {
+            document.getElementById('resultsDiv').innerHTML = 'Found ' + count + ' items.';
+        }
+    }
+</script>
+
 <div class="parallax" style="height: 0%"></div>
 <div class="parallax">
     </marquee>
@@ -92,6 +165,7 @@
         </header>
 
     </div>
+</div>
 
 
 
