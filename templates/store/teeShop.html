@@ -10,42 +10,30 @@
 </head>
 <body style="background-color:#e50505;">
 
-</body>
-
-<head>
-    <title>
-        Creating Search Bar using HTML
-        CSS and Javascript
-    </title>
-
-    <!-- linking the stylesheet(CSS) -->
-    <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-
-<body>
-
 <!-- input tag -->
-<input id="searchbar" onkeyup="search_shirts()" type="text"
-       name="search" placeholder="Search for shirts..">
+<div style="padding-top: 10px"><input id="searchbar" onkeyup="searchShirts()" type="text"
+       name="search" placeholder="Search for shirts...">
+</div>
 
 <!-- ordered list -->
-<div class="resultsDiv">
+<div id="resultsDiv">
 </div>
 <ol id='list'>
     <li class="shirts"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
-    <li class="shirts"><a class="button" href="/store/Turtlenecks">Turtlenecks</a></li>
+    <li class="shirts"><a class="button" href="/store/Turtlenecks">Turtleneck</a></li>
     <li class="shirts"><a class="button" href="/store/nikeShirt">Nike Shirt</a></li>
     <li class="shirts"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
 </ol>
 
-
-<!-- linking javascript -->
-
-<!-- script src="./shirts.js"></script-->
 </body>
 
 </html>
+
 <style>
+    table, th, td {
+        border:5px solid #da1616;
+    }
+
     #searchbar{
         margin-left: 15%;
         padding:15px;
@@ -70,20 +58,26 @@
 
 <script>
     // JavaScript code
-    function search_shirts() {
+    function searchShirts() {
         let input = document.getElementById('searchbar').value
         input=input.toLowerCase();
         let x = document.getElementsByClassName('shirts');
+        let count = 0;
 
         for (i = 0; i < x.length; i++) {
             if (input.trim() != '' && x[i].innerHTML.toLowerCase().includes(input)) {
                 x[i].style.display="list-item";
+                count = count + 1;
                 //alert('found a match: ' + input);
-            }
-            else {
-                x[i].style.display="none";
+            } else {
+                x[i].style.display = "none";
                 //alert('no match');
             }
+        }
+        if (input.trim() == '') {
+            document.getElementById('resultsDiv').innerHTML = '';
+        } else {
+            document.getElementById('resultsDiv').innerHTML = 'Found ' + count + ' items.';
         }
     }
 </script>
@@ -93,21 +87,15 @@
     <header class="p-3 mb-4 border-bottom text-light bg-dark">
         <div class="d-flex align-items-center text-decoration-none">
             <table style="margin: 5%">
-
-
                 <tr>
                     <td> <a class="button" href="/store/Flannels">Flannel Shirt</a> <img id="image" src="/static/TeePictures/flannel.png" height = "300" width = "270"> </td>
                     <td> <a class="button" href="/store/Turtlenecks">Turtleneck Shirt</a> <img id="image" src="/static/TeePictures/turtleneck.png" height ="300" width = "270"</td>
                 </tr>
 
-
                 <tr>
                     <td> <a class="button" href="/store/nikeShirt">Nike Shirt</a> <img id="image" src="/static/TeePictures/nikeShirt.png" height = "300" width = "270"> </td>
                     <td><img id="image" src="/static/TeePictures/longSleeve.png" height ="300" width = "270"></td>
                 </tr>
-
-                <tr>
-
 
         </div>
     </header>
@@ -122,25 +110,6 @@
     <p><center>
     Click on the link to view more about it
 </center> </p>
-
-
-    <html>
-    <style>
-        table, th, td {
-            border:5px solid #da1616;
-        }
-    </style>
-
-
-    <body>
-
+</div>
 
     {% endblock %}
-
-
-
-</script>
-
-
-
-

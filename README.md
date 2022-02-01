@@ -31,6 +31,16 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
+## Week 7
+
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [Tee Shirt Search Bar](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/51462fc0c2994aa6eedf29db70fce6839bcedaa8) 
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [TeaNav Fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ca4e84cac8556953a12968fc380f3605226d9d54) [Javascript Functioning](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ab4cfa3d9d3651a3cf665847779505a5313a5fb2)
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51)  | [Teashophome](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b7f1b2b4606aee3c0d2cf5b8d0aee33747422558)
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [[Week 7 - Tea Database Work]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/50)
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/51) | [Tee Shop Implemented](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/1e65d423900bdd580822a7218e5c9ad2d50e8498)
+
 ## Week 5
 
 | Name | Tasks | Commits |
@@ -40,6 +50,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/47)  | [Teashophome](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b7f1b2b4606aee3c0d2cf5b8d0aee33747422558)
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/47) | [[TeaShop Automation]](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/46), [[TT5 Challenge]](https://github.com/NinjaBreadLord/super-duper-bassoons/blob/main/techtalks/TT5/danielevenoddprime.py)
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/47) | [Shopping Cart Fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/2f1ba71c05ca1a17607b8b60b811bef64b5fe65f)
+
 ## Week 4
 
 | Name | Tasks | Commits |
