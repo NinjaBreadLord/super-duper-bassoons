@@ -25,7 +25,7 @@
                     Shops
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
+                    <a class="d ropdown-item" href="/store/teaShop">Tea Shop</a>
                     <a class="dropdown-item" href="/store/TeeeShop">Teee Shop</a>
                     <a class="dropdown-item" href="/store/teeShop">Tee Shop</a>
                 </div>
@@ -60,11 +60,18 @@
 
         </ul>
 
-        <div class="collapse navbar-collapse justify-content-end" id="google_translate_element">
-            <div class="float-right">
-                <input type="text" class="form-control" id="term" placeholder="Google Translate">
-            </div>
+
+
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div class="float-right">
+            <input type="text" class="form-control" id="term" placeholder="Enter search term">
         </div>
+        <div class="float-right me-3">
+            <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
+            <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
+        </div>
+    </div>
 
         <div id="google_translate_element"></div>
 
@@ -82,16 +89,6 @@
 cb=googleTranslateElementInit">
         </script>
 
-    </div>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <div class="float-right">
-            <input type="text" class="form-control" id="term" placeholder="Enter search term">
-        </div>
-        <div class="float-right me-3">
-            <button class="btn btn-primary ms-2" id="navsearch" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" onclick="search_data();">Search</button>
-            <!-- <button class="btn btn-primary" onclick="location.href='https://github.com/NinjaBreadLord/super-duper-bassoons'"> Github </button> -->
-        </div>
-    </div>
 </nav>
 </div>
 
