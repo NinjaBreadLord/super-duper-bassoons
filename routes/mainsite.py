@@ -51,3 +51,7 @@ def Cart():
 def LongShirt():
     return render_template("store/longShirt.html")
 
+@app_mainsite.route('/snake/')
+def snake():
+    return render_template("snake.html")
+
