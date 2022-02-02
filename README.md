@@ -31,6 +31,15 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
+## Week 8
+
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) | 
+| Lucas Huang | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) |
+| Gavin Wu | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53)  | 
+| Ian Hua | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) | 
+
 ## Week 7
 
 | Name | Tasks | Commits |
