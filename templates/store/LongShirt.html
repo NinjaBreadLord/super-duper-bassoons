@@ -1,225 +1,98 @@
 {% extends "layouts/base.html" %}
 
-{% set moreInformation = "https://www.hollisterco.com/shop/us/p/plaid-flannel-shirt-47392821?categoryId=6974560&seq=06&faceout=prod1" %}
+{% set moreInformation = "https://www.amazon.com/NIKE-Short-Sleeve-Swoosh-Solid/dp/B01HGN3TP6/ref=pd_lpo_1?pd_rd_i=B071418HMV&psc=1" %}
 
 {% block body %}
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {font-family: Arial;}
-
-            /* Style the tab */
-            .tab {
-                overflow: hidden;
-                border: 1px solid #ccc;
-                background-color: #f1f1f1;
-                margin-top: 60px;
-            }
-
-            /* Style the buttons inside the tab */
-            .tab button {
-                background-color: inherit;
-                float: left;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                padding: 14px 16px;
-                transition: 0.3s;
-                font-size: 17px;
-            }
-
-            /* Change background color of buttons on hover */
-            .tab button:hover {
-                background-color: #ddd;
-            }
-
-            /* Create an active/current tablink class */
-            .tab button.active {
-                background-color: #ccc;
-            }
-
-            /* Style the tab content */
-            .tabcontent {
-                display: none;
-                padding: 6px 12px;
-                border: 1px solid #ccc;
-                border-top: none;
-            }
-        </style>
-    </head>
-    <body>
 
 
-    <div class="tab">
-        <button class="tablinks" onclick="choosesize(event, 'Large')" id="defaultOpen">Large</button>
-        <button class="tablinks" onclick="choosesize(event, 'Medium')">Medium</button>
-        <button class="tablinks" onclick="choosesize(event, 'Small')">Small</button>
-    </div>
 
-    <div id="Large" class="tabcontent">
-        <h3>Large</h3>
-        <div class="mt-5">
-            <div class="p-5 justify-content-center">
-                <div class="row p-3">
-                    Red Dri fit T-shirt that has sweat-wicking technology. It helps you stay dry and it also keeps you warm.
-                </div>
-                <div class="row p-3">
-                    Rating: 4.5 Stars
-                </div>
-                <div class="row p-3">
-                    Color: Navy Blue
-                </div>
-                <div class="row p-3">
-                    Cost: $45
-                </div>
-                <div class="row p-3">
-                    <a href="{{ moreInformation }}" class="link">More Information</a>
-                </div>
-                <div>
-                    <img src="/static/TeePictures/longSleeve.png">
-                </div>
-            </div>
-        </div>
-    </div>
+<style>
 
-    <div id="Medium" class="tabcontent">
-        <h3>Medium</h3>
-        <div class="mt-5">
-            <div class="p-5 justify-content-center">
-                <div class="row p-3">
-                    Red Dri fit T-shirt that has sweat-wicking technology. It helps you stay dry and it also keeps you warm.
-                </div>
-                <div class="row p-3">
-                    Rating: 4.5 Stars
-                </div>
-                <div class="row p-3">
-                    Color: Navy Blue
-                </div>
-                <div class="row p-3">
-                    Cost: $36.5
-                </div>
-                <div class="row p-3">
-                    <a href="{{ moreInformation }}" class="link">More Information</a>
-                </div>
-                <div>
-                    <img src="/static/TeePictures/longSleeve.png">
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div id="Small" class="tabcontent">
-        <h3>Small</h3>
-        <div class="mt-5">
-            <div class="p-5 justify-content-center">
-                <div class="row p-3">
-                    Red Dri fit T-shirt that has sweat-wicking technology. It helps you stay dry and it also keeps you warm.
-                </div>
-                <div class="row p-3">
-                    Rating: 4.5 Stars
-                </div>
-                <div class="row p-3">
-                    Color: Navy Blue
-                </div>
-                <div class="row p-3">
-                    Cost: $28
-                </div>
-                <div class="row p-3">
-                    <a href="{{ moreInformation }}" class="link">More Information</a>
-                </div>
-                <div>
-                    <img src="/static/TeePictures/longSleeve.png">
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <script>
-        function choosesize(evt, size) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(size).style.display = "block";
-            evt.currentTarget.className += " active";
+    .button {
+        background-color: #1c81c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Comic Sans MS;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    @keyframes glowing {
+        0% {
+            background-color: #5f2afd;
+            box-shadow: 0 0 5px #5f2afd;
         }
+        50% {
+            background-color: #8761f8;
+            box-shadow: 0 0 20px #8761f8;
+        }
+        100% {
+            background-color: #5f2afd;
+            box-shadow: 0 0 5px #5f2afd;
+        }
+    }
+    .button {
+        animation: glowing 1300ms infinite;
+    }
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
 
-    </body>
-    </html>
+    table, th, td {
+        border:1px solid #4709ff;
+    }
 
     <style>
+     .p1 {
+         font-family: "Times New Roman", Times, serif;
+     }
 
-        .button {
-            background-color: #1c87c9;
-            -webkit-border-radius: 60px;
-            border-radius: 60px;
-            border: none;
-            color: #eeeeee;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Comic Sans MS;
-            font-size: 20px;
-            padding: 10px 10px;
-            text-align: center;
-            text-decoration: none;
-        }
-        @keyframes glowing {
-            0% {
-                background-color: #5f2afd;
-                box-shadow: 0 0 5px #5f2afd;
-            }
-            50% {
-                background-color: #8761f8;
-                box-shadow: 0 0 20px #8761f8;
-            }
-            100% {
-                background-color: #5f2afd;
-                box-shadow: 0 0 5px #5f2afd;
-            }
-        }
-        .button {
-            animation: glowing 1300ms infinite;
-        }
+    .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p3 {
+        color: rgba(255, 255, 255, 0.99);
+        font-family: "Monaco", "Monaco", fantasy;
+    }
+
+    body {
+        background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+</style>
+
+<div class="mt-5">
+    <div class="p-5 justify-content-center">
+        <div class="row p-3" style="font: 300px" >
+            Red Dri fit T-shirt that has sweat-wicking technology. It helps you stay dry and it also keeps you warm.
+        </div>
+        <div class="row p-3">
+            Rating: 4.5 Stars
+        </div>
+        <div class="row p-3">
+            Color: Red
+        </div>
+        <div class="row p-3">
+            Cost: $28-$45
+        </div>
+        <div class="row p-3">
+            <a href="{{ moreInformation }}" class="link">More Information</a>
+        </div>
+        <div class "row p-1>
 
 
-        table, th, td {
-            border:1px solid #4709ff;
-        }
 
-        <style>
-         .p1 {
-             font-family: "Times New Roman", Times, serif;
-         }
+    </div>
 
-        .p2 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .p3 {
-            color: rgba(255, 255, 255, 0.99);
-            font-family: "Monaco", "Monaco", fantasy;
-        }
-
-        body {
-            background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-            background-color: #cccccc;
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
-
-    </style>
+</div>
+</div>
 
 
 {% endblock %}
