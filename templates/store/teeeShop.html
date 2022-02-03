@@ -67,10 +67,10 @@
 <div id="resultsDiv">
 </div>
 <ol id='list'>
-    <li class="shirts"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
-    <li class="shirts"><a class="button" href="/store/Turtlenecks">Turtleneck</a></li>
-    <li class="shirts"><a class="button" href="/store/nikeShirt">Nike Shirt</a></li>
-    <li class="shirts"><a class="button" href="/store/LongShirt">Long Shirt</a></li>
+    <li class="shirts" class="color"><a class="button" id="white" href="/store/Flannels">Flannel Shirt </a></li>
+    <li class="shirts" class="color"><a class="button" id="black" href="/store/Turtlenecks">Turtleneck</a></li>
+    <li class="shirts" class="color"><a class="button" id="black" href="/store/nikeShirt">Nike Shirt</a></li>
+    <li class="shirts" class="color"><a class="button" id="blue" href="/store/LongShirt">Long Shirt</a></li>
 </ol>
 
 </body>
@@ -81,7 +81,7 @@
     function searchShirts() {
         let input = document.getElementById('searchbar').value
         input=input.toLowerCase();
-        let x = document.getElementsByClassName('shirts');
+        let x = document.getElementsByClassName('shirts') || document.getElementsByClassName('color');
         let count = 0;
 
         for (i = 0; i < x.length; i++) {
