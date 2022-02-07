@@ -31,6 +31,15 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
+## Week 8
+
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) | [Color search](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ec3c4b9f414da763cf128b563e6a498379a6ca4a), [Long Sleeve](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/42230a2037448ee6a33ae12108efa2470c47bce2)
+| Lucas Huang | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) | [T-Shirt Pictures Fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/70471f31391fe3c1261a423683ea4cc098bb1aa2), [Google Translate](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b19e43c565d7907bd3459b91e1440a5e97ee757b)
+| Gavin Wu | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53)  | [Add small, medium, large buttons](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/04c8d1e18f770e7df340670e378ff6a448f6fa32)
+| Ian Hua | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) | [Snake Game](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/41380bf9c1aab23f876ec0bc9d00437d258b1038)
+
 ## Week 7
 
 | Name | Tasks | Commits |
