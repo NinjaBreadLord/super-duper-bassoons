@@ -16,3 +16,19 @@ def weather():
     return render_template("rithwikh/rithwikhAPI.html")
 
 
+@app_ritroutes.route('/Destiny/')
+def Destiny():
+
+    url = "https://destiny-2-xur.p.rapidapi.com/xur"
+
+    headers = {
+    'x-rapidapi-host': "destiny-2-xur.p.rapidapi.com",
+    'x-rapidapi-key': "9d1b75d842msh20486d8bf8d5c19p1904abjsneb2943a9124c"
+    }
+
+
+    response = requests.request("GET", url, headers=headers)
+
+    print(response.text)
+
+    return render_template("DestinyAPI.html", output=response.json())

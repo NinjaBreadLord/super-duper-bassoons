@@ -1,0 +1,49 @@
+{% extends "layouts/base.html" %}
+{% set output = output %}
+
+{% block body %}
+
+<style>
+    body {
+        background-color: #1da1f2;
+        height: 100%;
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+</style>
+
+
+<div class="bg-primary text-white">
+
+    <div class="row pt-5 px-5">
+        <h2 class="text-white"> Fortnite Shop Items - API</h2>
+    </div>
+
+    <div class="row p-3">
+        {% for item in output.data %}
+
+        <div class="col-3 p-4">
+            <div class="card bg-dark" style="width: 100%; height: 100%">
+                <img src={{item.item.images.icon}} class="card-img-top" alt="...">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title text-warning">{{item.item.name}}</h5>
+                    <p class="card-text text-grey pb-1">{{item.item.type}}</p>
+                    <p class="card-text text-white">{{item.item.description}}</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+{%  endblock %}
+{%  block background %}
+{% endblock %}
+
+</html>
