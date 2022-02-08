@@ -6,11 +6,11 @@
 
 <style>
     .parallax {
-        background-image: url("/static/assets/backgrounds/mall.png");
+        background-image: url("/static/TeePictures/CaroselBackground.png");
     }
     .carousel img {
-        max-height: 500px;
-        max-width: 100vw !important;
+        max-height: 1500px;
+        max-width: 500px !important;
         margin: 0 auto;
     }
     .carousel slide{
@@ -27,16 +27,16 @@
         border:5px solid #da1616;
     }
 
-    #searchbar{
+    #searchbar2{
         margin-left: 15%;
         padding:15px;
         border-radius: 10px;
-    }
-
-    input[type=text] {
         width: 30%;
         -webkit-transition: width 0.15s ease-in-out;
         transition: width 0.15s ease-in-out;
+    }
+
+    input[type=text] {
     }
 
     #list{
@@ -59,18 +59,18 @@
 <body style="background-color:#e50505;">
 
 <!-- input tag -->
-<div style="padding-top: 10px"><input id="searchbar" onkeyup="searchShirts()" type="text"
-                                      name="search" placeholder="Search for shirts by name, color, or store">
+<div style="padding-top: 10px"><input id="searchbar2" onkeyup="searchShirts()" type="text"
+                                      name="search" placeholder="Search for shirts...">
 </div>
 
 <!-- ordered list -->
 <div id="resultsDiv">
 </div>
 <ol id='list'>
-    <li class="shirts"><a class="button" id="white, hollister" href="/store/Flannels">Flannel Shirt</a></li>
-    <li class="shirts"><a class="button" is="black, HandM" href="/store/Turtlenecks">Turtleneck</a></li>
-    <li class="shirts"><a class="button" id="black, nike" href="/store/nikeShirt">Nike Shirt</a></li>
-    <li class="shirts"><a class="button" id="blue, macys" href="/store/LongShirt">Long Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/Flannels">Flannel Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/Turtlenecks">Turtleneck</a></li>
+    <li class="shirts"><a class="button" href="/store/nikeShirt">Nike Shirt</a></li>
+    <li class="shirts"><a class="button" href="/store/LongShirt">Long Shirt</a></li>
 </ol>
 
 </body>
@@ -79,9 +79,9 @@
 <script>
     // JavaScript code
     function searchShirts() {
-        let input = document.getElementById('searchbar').value
+        let input = document.getElementById('searchbar2').value
         input=input.toLowerCase();
-        let x = document.getElementsByClassName('shirts') || document.getElementById('colors') ;
+        let x = document.getElementsByClassName('shirts');
         let count = 0;
 
         for (i = 0; i < x.length; i++) {
@@ -108,13 +108,19 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 h-15" height="365px" src="/static/assets/shopping.webp" alt="First slide">
+                <img class="d-block w-100 h-15" height="500px" src="/static/TeePictures/BasicPjs.png" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 h-15" height="365px" src="/static/TeaPictures/chinese-man-drinking-tea.jpg" alt="Second slide">
+                <img class="d-block w-100 h-15" height="500px" src="/static/TeePictures/Layer.png" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 h-15" height="365px" src="/static/TeaPictures/putin-drinking-tea.jpg" alt="Third slide">
+                <img class="d-block w-100 h-15" height="500px" src="/static/TeePictures/shorts.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-15" height="500px" src="/static/TeePictures/Sweats.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-15" height="500px" src="/static/TeePictures/Undies.png" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.50)">
