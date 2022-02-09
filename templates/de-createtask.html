@@ -34,12 +34,11 @@
         min-height: 100%;
         background-color: #212529;
     }
-    .description{
-
-    }
 </style>
 
 <body class="content">
+
+    
 
     <div class="row p-5 fs-1 bg-dark text-white align-center"> Daniel and Everitt's Create Task </div>
 
@@ -47,8 +46,41 @@
         <p class="text-white">Lorem Ipsum Dolor</p>
     </div>
 
-    <div class="align-center">
+    <div class="row align-center">
         <input type="text" class="form-control" id="term" placeholder="Type Here">
     </div>
+    <div class="row align-center">
+        <button class="btn btn-primary my-2" id="submit_text" onclick="input();">Submit</button>
+    </div>
+
+    <div class="row align-center p-3">
+        <div class="container text-white" id="output"> </div>
+    </div>
+
+    <script>
+        var inputbar = document.getElementById("term");
+        console.log(inputbar);
+
+        inputbar.addEventListener('keyup', function(event) {
+
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("submit_text").click();
+            }
+        }); 
+
+        function input() {
+            var term = document.getElementById("term");
+
+            var outputdiv = document.getElementById("output");
+
+            while (outputdiv.firstChild) {
+                outputdiv.removeChild(outputdiv.firstChild);
+            };
+
+            outputdiv.innerHTML = "The term you input is " + term.value;
+
+        }
+    </script>
 
 </body>
