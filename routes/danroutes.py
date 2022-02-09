@@ -21,3 +21,7 @@ def danielapi():
 @app_danroutes.route('/testing1')
 def danieltest():
     return render_template("daniel/csstesting.html")
+
+@app_danroutes.route('/createtask')
+def dancreatetask():
+    return render_template("de-createtask.html")
