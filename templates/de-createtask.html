@@ -10,9 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title> Create Task - Daniel + Everitt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <style>
+    .content {
+        max-width: 500px;
+        margin: auto;
+    }
+    body{
+        font-family: 'Dongle', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
     html, body{
         margin: 0;
         height: 100%;
@@ -22,15 +33,22 @@
         -o-animation: fadein 2s; /* Opera */
         min-height: 100%;
         background-color: #212529;
-        font-family: Arial, sans-serif;
+    }
+    .description{
+
     }
 </style>
 
-<body>
+<body class="content">
 
-    <div class="container bg-dark text-white">
-        <div class="row p-3 fs-1"> Daniel and Everitt's Create Task </div>
+    <div class="row p-5 fs-1 bg-dark text-white align-center"> Daniel and Everitt's Create Task </div>
 
+    <div>
+        <p class="text-white">Lorem Ipsum Dolor</p>
+    </div>
+
+    <div class="align-center">
+        <input type="text" class="form-control" id="term" placeholder="Type Here">
     </div>
 
 </body>
