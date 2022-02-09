@@ -1,0 +1,47 @@
+{% extends "store/teaShop/teaBase.html" %}
+
+{% block body %}
+
+<style>
+
+    body {
+        background: #5373e0;
+    }
+</style>
+
+<form action="javascript:void(0);" onsubmit="calculateResults()">
+
+      <script>
+    function calculateResults() {
+        let q1Value = document.querySelector('input[name="q1"]:checked').value;
+        let q2Value = document.querySelector('input[name="q2"]:checked').value;
+        let q3Value = document.querySelector('input[name="q3"]:checked').value;
+        let q4Value = document.querySelector('input[name="q4"]:checked').value;
+
+    }
+</script>
+
+    <form action="javascript:void(0);" onsubmit="calculateResults()">
+
+        <fieldset style="background-color:#62C6F2;">
+            <legend>Question 1</legend>
+            <h4>Does your shirt have long sleeves></h4>
+            <input type="radio" name="q1" id="q1x1" value="9"> <label for="q1x1">Yes.</label><br>
+            <input type="radio" name="q1" id="q1x2" value="8"> <label for="q1x2">No.</label><br>
+        </fieldset>
+
+        <script>
+            if (document.GetELementById.checked = ('yes'));
+
+        </script>
+
+        <input type="submit" value="Submit"/>
+        <a class="button" href="http://127.0.0.1:5000/Results/">Click here to go to the next question.</a>
+
+        <fieldset style="background-color:#62C6F2;">
+            <div  id="resultsDiv"/>
+        </fieldset>
+
+    </form>
+
+{% endblock %}
