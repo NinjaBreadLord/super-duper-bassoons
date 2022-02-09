@@ -46,9 +46,45 @@
     <div>
         <p class="text-white">Lorem Ipsum Dolor</p>
     </div>
-
+    <div class="text-white" id="countdown">01:00</div>
     <div class="align-center">
         <input type="text" class="form-control" id="term" placeholder="Type Here">
     </div>
+    <div class="">
 
+    </div>
+
+    <script>
+        // let time = 60;
+        // const countdown = document.getElementByID('countdown');
+        //
+        // this.timerID = setInterval((time) =>  , 1000);
+        //
+        // function timer(){
+        //     for(let i = 60; i<=0; i--){
+        //         i.innerHTML = `${i}`;
+        //     }
+        // }
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10)
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        function startCountdown() {
+            let minute = 60 * 1,
+                display = document.querySelector('#countdown');
+            startTimer(minute, display);
+        };
+    </script>
 </body>
