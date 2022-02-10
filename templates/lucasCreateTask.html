@@ -9,38 +9,31 @@
     }
 </style>
 
-<form action="javascript:void(0);" onsubmit="calculateResults()">
 
-      <script>
-    function calculateResults() {
-        let q1Value = document.querySelector('input[name="q1"]:checked').value;
-        let q2Value = document.querySelector('input[name="q2"]:checked').value;
-        let q3Value = document.querySelector('input[name="q3"]:checked').value;
-        let q4Value = document.querySelector('input[name="q4"]:checked').value;
 
-    }
-</script>
+    <form action="javascript:void(0);">
 
-    <form action="javascript:void(0);" onsubmit="calculateResults()">
-
-        <fieldset style="background-color:#62C6F2;">
+        <fieldset style="background-color:#62C6F2;" onsubmit="Choice()">
             <legend>Question 1</legend>
             <h4>Does your shirt have long sleeves></h4>
-            <input type="radio" name="q1" id="q1x1" value="9"> <label for="q1x1">Yes.</label><br>
-            <input type="radio" name="q1" id="q1x2" value="8"> <label for="q1x2">No.</label><br>
+            <div id="box"></div>
+            <button id="yes">yes</button>
+            <button id="no">no</button>
         </fieldset>
 
         <script>
-            if (document.GetELementById.checked = ('yes'));
+            function Choice () {
+                var box = document.getElementById("box");
+                var yes = document.getElementById("yes");
+                var no = document.getElementById("no");
 
+                if (yes.clicked == true) {
+                    burger;
+                } else if (no.clicked == true) {
+                    pizza;
+                }
+                }
         </script>
-
-        <input type="submit" value="Submit"/>
-        <a class="button" href="http://127.0.0.1:5000/Results/">Click here to go to the next question.</a>
-
-        <fieldset style="background-color:#62C6F2;">
-            <div  id="resultsDiv"/>
-        </fieldset>
 
     </form>
 
