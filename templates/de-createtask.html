@@ -17,7 +17,7 @@
 
 <style>
     .content {
-        max-width: 500px;
+        max-width: 1000px;
         margin: auto;
     }
     body{
@@ -42,12 +42,45 @@
 
     <div class="row p-5 fs-1 bg-dark text-white align-center"> Daniel and Everitt's Create Task </div>
 
+    <style>
+        table, th, td{
+            border: 1px solid #212529;
+        }
+    </style>
     <div>
-        <p class="text-white">Lorem Ipsum Dolor</p>
+        <p class="fs-5 pt-2 text-white">Put in a list of what you want to order seperated by a comma and space like "Fu Shou Shan, Formosa Red" and our program will calculate the total cost of what you ordered. If your order costs more than $85, you qualify for a 20% coupon!</p>
+    </div>
+    <div class="text-white pt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-white bg-primary">Name</th>
+                    <th class="text-white bg-primary">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-dark bg-white">Fu Shou Shan</td>
+                <td class="text-dark bg-white">$39.00</td>
+            </tr>
+            <tr>
+                <td class="text-dark bg-white">Formosa Red</td>
+                <td class="text-dark bg-white">$32.00</td>
+            </tr>
+            <tr>
+                <td class="text-dark bg-white">Cloud and Mist</td>
+                <td class="text-dark bg-white">$22.00</td>
+            </tr>
+            <tr>
+                <td class="text-dark bg-white">Xin Gong Yi</td>
+                <td class="text-dark bg-white">$21.00</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="row align-center">
-        <input type="text" class="form-control" id="term" placeholder="Type Here">
+    <div class="row align-center pt-5">
+        <input type="text" class="form-control" id="terms" placeholder="Type Here">
     </div>
     <div class="row align-center">
         <button class="btn btn-primary my-2" id="submit_text" onclick="input();">Submit</button>
@@ -58,9 +91,12 @@
     </div>
 
     <script>
-        var inputbar = document.getElementById("term");
-        console.log(inputbar);
+        // Creates a dictionary with all price values of the items
+        const dict = {
+            'Fu Shou Shan': 39.00, 'Formosa Red': 32.00, 'Cloud and Mist': 22.00, 'Xin Gong Yi': 21.00,
+        };
 
+        // Adds an event listener to listen for an "Enter" key keypress
         inputbar.addEventListener('keyup', function(event) {
 
             if (event.keyCode === 13) {
@@ -70,15 +106,51 @@
         }); 
 
         function input() {
-            var term = document.getElementById("term");
+            // Gets the terms input by the user
+            var terms = document.getElementById("terms").value;
 
+            // Gets the div where all outputs will be shown and clears it for a new query
             var outputdiv = document.getElementById("output");
-
             while (outputdiv.firstChild) {
                 outputdiv.removeChild(outputdiv.firstChild);
             };
 
-            outputdiv.innerHTML = "The term you input is " + term.value;
+            // Splits the input by a comma and a space and adds it into an array
+            var itemArray = terms.split(", ");
+
+            //Creates total variable set to 0, will add to it later on within for loop
+            var total = 0;
+
+            //for loop iterating for the length of the itemArray, or how many items are added from the input
+            for(var i = 0; i < itemArray.length; i++){
+                console.log(itemArray[i]);
+                //Sets the indexed strings from the array within a variable
+                j = itemArray[i];
+
+                //Creates bottom table for all items added from input bar
+                var jdiv = document.createElement("div"); jdiv.className = "row"; 
+                jdiv.innerHTML = j + " - $" + dict[j]; outputdiv.appendChild(jdiv);
+
+                //Calls the dictionary and adds the values of each item from the dictionary to the total variable
+                total += dict[j];
+            } 
+            
+            console.log(total);
+
+            //If statement for coupon over $85
+            if (total >= 85){
+                var div = document.createElement("div"); div.className = "row pt-2 text-white"; 
+                div.innerHTML = "<hr/> Because your order is over $85, you qualify for a 20% off coupon!"; outputdiv.appendChild(div);
+                //80% off of total
+                total = total * 0.8;
+            }
+
+            //Prints total
+            var result = document.createElement("div"); result.className = "row pt-2 text-warning"; 
+            result.innerHTML = "<hr/> Therefore your total is $" + total;
+            outputdiv.appendChild(result);
+
+            
 
         }
     </script>
