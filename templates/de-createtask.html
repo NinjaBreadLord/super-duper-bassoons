@@ -160,27 +160,31 @@
 
         //If statement for coupon over $85
         if (total >= 85) {
+            //Tell the user that their order qualifies for the coupon
             var div = document.createElement("div");
-            div.className = "row pt-2 text-white";
+            div.className = "row pt-2 text-info";
             div.innerHTML = "<hr/> Because your order is over $85, you qualify for a 20% off coupon!";
             outputdiv.appendChild(div);
-            //80% off of total
+
+            //Show original total before coupon
             var result = document.createElement("div");
-            result.className = "row pt-2 text-warning";
-            result.innerHTML = "<hr/> Original total was $" + total;
+            result.className = "row pt-2 text-white";
+            result.innerHTML = "<hr/> The original total was $" + total;
             outputdiv.appendChild(result);
+            // Change total to discounted total
             total = total * 0.8;
 
+            // Show discounted total to user
             var result = document.createElement("div");
             result.className = "row pt-2 text-warning";
-            result.innerHTML = "<hr/> New total is $" + total;
+            result.innerHTML = "<hr/> The new total is $" + total;
             outputdiv.appendChild(result);
         }
         else{
             //Prints total
             var result = document.createElement("div");
             result.className = "row pt-2 text-warning";
-            result.innerHTML = "<hr/> Total is $" + total;
+            result.innerHTML = "<hr/> The total is $" + total;
             outputdiv.appendChild(result);
         }
 
