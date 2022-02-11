@@ -31,7 +31,15 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
-## Week 8
+## Week 9
+
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | [Create Task](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/96754554f23d7b81338d7a2f3a2b0c855ee1d87d)
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | 
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54)  | [Created Wiki for Create Task](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/05d378db585e4a81c46b99672c77d57562fafe53), [Worked on Create Task with Daniel](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b37abd3232451fdce0115de8d8643f5fc958fc8e)|
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | [Worked on Create Task with Everitt](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Daniel-Tsivkovski-and-Everitt-Cheng-Create-Task)
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | 
 
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|

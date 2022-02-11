@@ -55,3 +55,7 @@ def LongShirt():
 def snake():
     return render_template("snake.html")
 
+@app_mainsite.route('/lucasCreateTask/')
+def lucasCreateTask():
+    return render_template("lucasCreateTask.html")
+
