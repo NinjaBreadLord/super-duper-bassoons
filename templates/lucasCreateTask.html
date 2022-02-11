@@ -13,26 +13,59 @@
 
     <form action="javascript:void(0);">
 
-        <fieldset style="background-color:#62C6F2;" onsubmit="Choice()">
+        <body>
+        <div id="longSleeveQuestion">
             <legend>Question 1</legend>
-            <h4>Does your shirt have long sleeves></h4>
-            <div id="box"></div>
-            <button id="yes">yes</button>
-            <button id="no">no</button>
-        </fieldset>
+            <h4>Does your shirt have long sleeves?</h4>
+            <button id="yes" style="font-size: x-large" onclick="yesClickLongSleeve();">yes</button>
+            <button id="no" style="font-size: x-large" onclick="noClickLongSleeve();">no</button>
+        </div>
+
+        <div id="buttonQuestion" style="display: none">
+            <legend>Question 2</legend>
+            <h4>Does your shirt have buttons?</h4>
+            <button id="yes1" style="font-size: x-large" onclick="yesClickButtons();">yes</button>
+            <button id="no1" style="font-size: x-large" onclick="noClickButtons();">no</button>
+        </div>
+
+        <div id="formalQuestion" style="display: none">
+            <legend>Question 3</legend>
+            <h4>Is your shirt formal?</h4>
+            <button id="yes2" style="font-size: x-large" onclick="yesClickFormal();">yes</button>
+            <button id="no2" style="font-size: x-large" onclick="noClickFormal();">no</button>
+        </div>
+
+        <div id="outputDiv" style="font-size: x-large; color: darkred">
+        </div>
+        </body>
 
         <script>
-            function Choice () {
-                var box = document.getElementById("box");
-                var yes = document.getElementById("yes");
-                var no = document.getElementById("no");
+            function yesClickLongSleeve() {
+                document.getElementById("longSleeveQuestion").style.display = "none";
+                document.getElementById("buttonQuestion").style.display = "block";
+            }
 
-                if (yes.clicked == true) {
-                    burger;
-                } else if (no.clicked == true) {
-                    pizza;
-                }
-                }
+            function noClickLongSleeve() {
+                document.getElementById("outputDiv").innerHTML = "Is your shirt the Nike shirt?";
+            }
+
+            function yesClickButtons() {
+                document.getElementById("buttonQuestion").style.display = "none";
+                document.getElementById("formalQuestion").style.display = "block";
+            }
+
+            function noClickButtons() {
+                document.getElementById("outputDiv").innerHTML = "Is your shirt the turtleneck?";
+            }
+
+            function yesClickFormal() {
+                document.getElementById("buttonQuestion").style.display = "none";
+                document.getElementById("outputDiv").innerHTML = "Is your shirt the long sleeve dress shirt?";
+            }
+
+            function noClickFormal() {
+                document.getElementById("outputDiv").innerHTML = "Is your shirt the flannel?";
+            }
         </script>
 
     </form>
