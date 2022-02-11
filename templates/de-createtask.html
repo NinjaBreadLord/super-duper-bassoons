@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title> Create Task - Daniel + Everitt</title>
+    <!-- We are using google font apis for a cleaner look on your website, see the links below. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -28,9 +29,9 @@
         margin: 0;
         height: 100%;
         animation: fadein 2s;
-        -moz-animation: fadein 2s; /* Firefox */
-        -webkit-animation: fadein 2s; /* Safari and Chrome */
-        -o-animation: fadein 2s; /* Opera */
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s; 
         min-height: 100%;
         background-color: #212529;
     }
@@ -40,15 +41,16 @@
 
     
 
-    <div class="row p-5 fs-1 bg-dark text-white align-center"> Daniel and Everitt's Create Task </div>
+    <div class="row py-5 fs-1 bg-dark text-white align-center"> Daniel and Everitt's Create Task </div>
 
     <style>
         table, th, td{
             border: 1px solid #212529;
         }
     </style>
+
     <div>
-        <p class="fs-5 pt-2 text-white">Put in a list of what you want to order seperated by a comma and space like "Fu Shou Shan, Formosa Red" and our program will calculate the total cost of what you ordered. If your order costs more than $85, you qualify for a 20% coupon!</p>
+        <p class="fs-5 pt-2 text-white">Put in a list of what you want to order separated by a comma and space like "Fu Shou Shan, Formosa Red" and our program will calculate the total cost of what you ordered. If your order costs more than $85, you qualify for a 20% coupon!</p>
     </div>
     <div class="text-white pt-3">
         <table class="table">
@@ -75,6 +77,10 @@
                 <td class="text-dark bg-white">Xin Gong Yi</td>
                 <td class="text-dark bg-white">$21.00</td>
             </tr>
+            <tr>
+                <td class="text-dark bg-white">Native Cultivar Reserve</td>
+                <td class="text-dark bg-white">$44.00</td>
+            </tr>
             </tbody>
         </table>
     </div>
@@ -93,10 +99,11 @@
     <script>
         // Creates a dictionary with all price values of the items
         const dict = {
-            'Fu Shou Shan': 39.00, 'Formosa Red': 32.00, 'Cloud and Mist': 22.00, 'Xin Gong Yi': 21.00,
+            'Fu Shou Shan': 39.00, 'Formosa Red': 32.00, 'Cloud and Mist': 22.00, 'Xin Gong Yi': 21.00, 'Native Cultivar Reserve': 44.00
         };
 
-        // Adds an event listener to listen for an "Enter" key keypress
+        // Adds an event listener to listen for an "Enter" key keypress in the input
+        var inputbar = document.getElementById("terms");
         inputbar.addEventListener('keyup', function(event) {
 
             if (event.keyCode === 13) {
@@ -118,12 +125,11 @@
             // Splits the input by a comma and a space and adds it into an array
             var itemArray = terms.split(", ");
 
-            //Creates total variable set to 0, will add to it later on within for loop
+            //Creates total variable and resets it to 0, will add to it later on within for loop
             var total = 0;
 
             //for loop iterating for the length of the itemArray, or how many items are added from the input
             for(var i = 0; i < itemArray.length; i++){
-                console.log(itemArray[i]);
                 //Sets the indexed strings from the array within a variable
                 j = itemArray[i];
 
@@ -134,8 +140,6 @@
                 //Calls the dictionary and adds the values of each item from the dictionary to the total variable
                 total += dict[j];
             } 
-            
-            console.log(total);
 
             //If statement for coupon over $85
             if (total >= 85){
@@ -145,12 +149,13 @@
                 total = total * 0.8;
             }
 
+            //Rounds the result to two decimal places
+            total = total.toFixed(2);
+
             //Prints total
             var result = document.createElement("div"); result.className = "row pt-2 text-warning"; 
             result.innerHTML = "<hr/> Therefore your total is $" + total;
-            outputdiv.appendChild(result);
-
-            
+            outputdiv.appendChild(result);            
 
         }
     </script>
