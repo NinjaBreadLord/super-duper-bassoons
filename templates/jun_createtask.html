@@ -1,0 +1,63 @@
+{% extends "store/teaShop/teaBase.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% block body %}
+
+    <div class="card">
+        <img id=default src="/static/TeaPictures/AsianFamily.png" onclick="flip()" style="height:300px;width:200px">
+    </div>
+    <div class="back">
+        <img id=flipped1 src="/static/TeaPictures/fushoushan.jpg" onclick="flip()" style="height:400px;width:400px">
+    </div>
+    <div class="card1">
+        <img id=default1 src="/static/TeaPictures/AsianFamily.png" onclick="flip()" style="height:300px;width:200px">
+    </div>
+    <div class="back">
+        <img id=flipped2 src="/static/TeaPictures/green_tea.png" onclick="flip()" style="height:400px;width:400px">
+    </div>
+    <script>
+        function flip() {
+            const image = document.getElementById('default')
+
+            if (image.src.match("/static/TeaPictures/AsianFamily.png")) {
+                image.src = "/static/TeaPictures/fushoushan.jpg";
+            } else {
+                image.src = "/static/TeaPictures/AsianFamily.png";
+            }
+        }
+        function flip() {
+            const image = document.getElementById('default1')
+
+            if (image.src.match("/static/TeaPictures/AsianFamily.png")) {
+                image.src = "/static/TeaPictures/green_tea.jpg";
+            } else {
+                image.src = "/static/TeaPictures/AsianFamily.png";
+            }
+        }
+    </script>
+{#    <script>#}
+{#        function flip() {#}
+{#            ('card').toggleClass('flipped');#}
+{#        }#}
+{#    </script>#}
+    <style>
+    card{
+        background-color: white;
+        height:300px;
+        width:200px;
+    }
+    back{
+        background-color: white;
+        height:300px;
+        width:200px;
+    }
+    flipped{
+        transform: rotateY(180deg);
+    }
+    </style>
+
+<body>
+
+</body>
+{% endblock %}
+</html>
