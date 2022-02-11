@@ -156,7 +156,7 @@
         }
 
         //Rounds the result to two decimal places
-
+        total = total.toFixed(2);
 
         //If statement for coupon over $85
         if (total >= 85) {
@@ -171,8 +171,10 @@
             result.className = "row pt-2 text-white";
             result.innerHTML = "<hr/> The original total was $" + total;
             outputdiv.appendChild(result);
-            // Change total to discounted total
+            
+            // Change total to discounted total and round to two decimal places
             total = total * 0.8;
+            total = total.toFixed(2);
 
             // Show discounted total to user
             var result = document.createElement("div");

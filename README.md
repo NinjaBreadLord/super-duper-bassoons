@@ -39,7 +39,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | 
 | Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54)  | [Created Wiki for Create Task](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/05d378db585e4a81c46b99672c77d57562fafe53), [Worked on Create Task with Daniel](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b37abd3232451fdce0115de8d8643f5fc958fc8e)|
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | [Worked on Create Task with Everitt](https://github.com/NinjaBreadLord/super-duper-bassoons/wiki/Daniel-Tsivkovski-and-Everitt-Cheng-Create-Task)
-| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | 
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | [Create Task Progress](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/56e03b960eae1b35a0465b4208266aa252b756a2)
 
 | Name | Tasks | Commits |
 |:-----|:----------------------|:-----:|
