@@ -37,7 +37,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 |:-----|:----------------------|:-----:|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | [Create Task](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/96754554f23d7b81338d7a2f3a2b0c855ee1d87d)
 | Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | 
-| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54)  | [Search Bar for Tea](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/8159113086ba4164aad443a9fd04ee38c267a816), [Created Wiki for Create Task](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/05d378db585e4a81c46b99672c77d57562fafe53), [Worked on Create Task]()|
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54)  | [Search Bar for Tea](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/8159113086ba4164aad443a9fd04ee38c267a816), [Created Wiki for Create Task](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/05d378db585e4a81c46b99672c77d57562fafe53), [Worked on Create Task with Daniel](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b37abd3232451fdce0115de8d8643f5fc958fc8e)|
 | Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | 
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | 
 
