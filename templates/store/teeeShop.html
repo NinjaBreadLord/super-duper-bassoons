@@ -27,16 +27,16 @@
         border:5px solid #da1616;
     }
 
-    #searchbar2{
+    #searchbar{
         margin-left: 15%;
         padding:15px;
         border-radius: 10px;
-        width: 30%;
-        -webkit-transition: width 0.15s ease-in-out;
-        transition: width 0.15s ease-in-out;
     }
 
     input[type=text] {
+        width: 30%;
+        -webkit-transition: width 0.15s ease-in-out;
+        transition: width 0.15s ease-in-out;
     }
 
     #list{
@@ -59,7 +59,7 @@
 <body style="background-color:#e50505;">
 
 <!-- input tag -->
-<div style="padding-top: 10px"><input id="searchbar2" onkeyup="searchShirts()" type="text"
+<div style="padding-top: 10px"><input id="searchbar" onkeyup="searchShirts()" type="text"
                                       name="search" placeholder="Search for shirts...">
 </div>
 
@@ -79,7 +79,7 @@
 <script>
     // JavaScript code
     function searchShirts() {
-        let input = document.getElementById('searchbar2').value
+        let input = document.getElementById('searchbar').value
         input=input.toLowerCase();
         let x = document.getElementsByClassName('shirts');
         let count = 0;
@@ -139,7 +139,7 @@
             <div class="d-flex align-items-center">
                 <div id="teeeparent" class="row p-5">
                     {% for teee in teeelist %}
-                    <div type="button" id={{teee.name}} class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#{{teee.teeid}}"><p class="image-up"><img class="columnimage" id="image" src={{teee.imgurl}}><center><h5>{{teee.name}}, {{teee.type}}</h5></center><p/></div>
+                    <div type="button" id={{teee.name}} class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#{{teee.teeid}}"><p class="image-up"><img class="columnimage" id="image" src={{teee.imgurl}}><center><h5>{{teee.name}}, {{teee.color}}, {{teee.type}}</h5></center><p/></div>
 
                     <!-- Modal -->
                     <div class="modal fade" id={{teee.teeid}} tabindex="-1" aria-labelledby="{{teee.teeid}}Label" aria-hidden="true">
