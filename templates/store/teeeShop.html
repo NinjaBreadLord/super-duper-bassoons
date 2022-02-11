@@ -139,7 +139,7 @@
             <div class="d-flex align-items-center">
                 <div id="teeeparent" class="row p-5">
                     {% for teee in teeelist %}
-                    <div type="button" id={{teee.name}} class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#{{teee.teeid}}"><p class="image-up"><img class="columnimage" id="image" src={{teee.imgurl}}><center><h5>{{teee.name}}, {{teee.type}}</h5></center><p/></div>
+                    <div type="button" id={{teee.name}} class="col-lg-3 btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#{{teee.teeid}}"><p class="image-up"><img class="columnimage" id="image" src={{teee.imgurl}}><center><h5>{{teee.name}}, {{teee.color}}, {{teee.type}}</h5></center><p/></div>
 
                     <!-- Modal -->
                     <div class="modal fade" id={{teee.teeid}} tabindex="-1" aria-labelledby="{{teee.teeid}}Label" aria-hidden="true">
