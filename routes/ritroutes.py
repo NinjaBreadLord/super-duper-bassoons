@@ -32,3 +32,19 @@ def Destiny():
     print(response.text)
 
     return render_template("DestinyAPI.html", output=response.json())
+
+@app_ritroutes.route('/create/')
+def create():
+
+    url = "https://kohls.p.rapidapi.com/categories/list"
+
+    headers = {
+    'x-rapidapi-host': "kohls.p.rapidapi.com",
+    'x-rapidapi-key': "9d1b75d842msh20486d8bf8d5c19p1904abjsneb2943a9124c"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+
+    print(response.text)
+
+    return render_template("rithwikh/CreateTaskRithwikh.html", output=response.json())
