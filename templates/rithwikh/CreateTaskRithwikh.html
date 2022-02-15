@@ -1,0 +1,125 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+
+{% set output = output %}
+
+
+
+<style>
+
+    .centerb {
+        width: 1200px;
+        height: 700px;
+        padding: 10px;
+        margin: 60px auto;
+    }
+
+    .button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Comic Sans MS;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    table, th, td {
+        border:1px solid #4709ff;
+    }
+
+    <style>
+     .p1 {
+         font-family: "Times New Roman", Times, serif;
+     }
+
+    .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p3 {
+        color: rgba(255, 255, 255, 0.99);
+        font-family: "Monaco", "Monaco", fantasy;
+    }
+
+    body {
+        background-color: #a4d2ee;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+</style>
+</style>
+
+
+<center>
+
+    <div class="parallax">
+
+        <div class="row p-3">
+            {% for item in output.payload.categories %}
+
+            <div class="col-3 p-4">
+                <div class="card bg-dark" style="width: 100%; height: 100%">
+                    <img src={{item.item.index.}} class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title text-warning">{{item.item.}}</h5>
+                        <p class="card-text text-grey pb-1">{{item.item.}}</p>
+                        <p class="card-text text-white">{{item.item.}}</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+    <script>
+
+        for (let i = 0; i < pick.length; i++) {
+            let pickLetter = pick.charAt(i);
+            let answerLetter = answer.charAt(i);
+            if (pickLetter === answerLetter) {
+                result.push("Green");
+            }
+            else if (solution.indexOf(pickLetter) != -1) {
+                result.push("Yellow");
+            }
+            else {
+                result.push("Grey");
+            }
+        }
+
+    </script>
+
+
+    <div>
+        <a class="button" href="http://127.0.0.1:5000/">Homepage</a>
+        <button onclick="displayDate()">Click to view the Time?</button>
+
+        <script>
+            function displayDate() {
+                document.getElementById("yes").innerHTML = Date();
+            }
+        </script>
+
+        <p id="yes"></p>
+
+
+    </div>
+
+
+
+
+    {% endblock %}
+
+    {% block background %}
+    {% endblock %}
+
+</center>
+

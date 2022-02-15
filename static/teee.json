@@ -1,6 +1,7 @@
 [
     {
         "name": "Flannel Shirt",
+        "color": "White",
         "teeid": "tee1",
         "url": "https://redblossomtea.com/products/fu-shou-shan-spring?variant=31627639428",
         "imgurl": "/static/TeePictures/flannel.png",
@@ -10,6 +11,7 @@
     ,
     {
         "name": "Turtleneck",
+        "color": "Black",
         "teeid": "tee2",
         "url": "https://redblossomtea.com/products/formosa-red-20?variant=20426551754814",
         "imgurl": "/static/TeePictures/turtleneck.png",
@@ -19,6 +21,7 @@
     ,
     {
         "name": "Black Nike Shirt",
+        "color": "Black",
         "teeid": "tee3",
         "url": "https://redblossomtea.com/products/cloud-mist",
         "imgurl": "/static/TeePictures/nikeShirt.png",
@@ -28,6 +31,7 @@
     ,
     {
         "name": "Dress Shirt",
+        "color": "Blue",
         "teeid": "tee4",
         "url": "https://redblossomtea.com/products/xin-gong-yi",
         "imgurl": "/static/TeePictures/longSleeve.png",
