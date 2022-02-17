@@ -1,15 +1,10 @@
-list = [ [1,2,3],[4,5,6],[7,8,9] ] 
-
-
 def matrix(list):
     for i in list:
-        print(i[0], i[1], i[2])
-            
-def othermatrix(list):
-    for i in list:
+        # prints all elements in each list i 
         print(*i)
-        
 
-matrix(list)
-print("---- OR ----")
-othermatrix(list)
+
+# this only applies if the file is run as main
+if __name__ == "__main__":
+    list = [ [1,2,3],[4,5,6],[7,8,9] ] 
+    matrix(list)
