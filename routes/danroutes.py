@@ -25,3 +25,7 @@ def danieltest():
 @app_danroutes.route('/createtask')
 def dancreatetask():
     return render_template("de-createtask.html")
+
+@app_danroutes.route('/endtest')
+def endtest():
+    return render_template("daniel/endtest.html")
