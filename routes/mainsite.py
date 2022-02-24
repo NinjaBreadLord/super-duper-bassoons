@@ -59,3 +59,6 @@ def snake():
 def lucasCreateTask():
     return render_template("lucasCreateTask.html")
 
+@app_mainsite.route('jun_createtask')
+def jun_createtask():
+    return render_template("jun_createtask2.html")
