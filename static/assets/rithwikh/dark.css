@@ -1,24 +1,16 @@
 :root {
-    --primary-light: #000;
-    --secondary-light: #fff;
-    --primary-dark: #fff;
-    --secondary-dark: #000;
+    --primary: #000;
+    --secondary: #fff;
 }
 
-.background-color-secondary {
-    background-color: var(--secondary-light);
-}
-
-.color-primary {
-    color: var(--primary-light);
+body {
+    color: var(--primary);
+    background: var(--secondary);
 }
 
 @media (prefers-color-scheme: dark) {
-    .background-color-secondary {
-        background-color: var(--secondary-dark);
-}
-
-.color-primary{
-    color: var(--primary-dark);
+    :: root {}
+        --primary: #fff;
+        --secondary: #000;
     }
 }
