@@ -1,0 +1,19 @@
+$primary-light: #000
+$secondary-light: #fff
+$primary-dark: #fff
+$secondary-dark: #000
+
+
+
+:: root
+  --primary: #{primary-light}
+  --secondary: #{secondary-light}
+
+body
+  color: var(--primary)
+  background: var(--secondary)
+
+@media (prefers-color-scheme: dark)
+  :: root
+  --primary: #{primary-dark}
+  --secondary: #{secondary-dark}
