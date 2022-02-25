@@ -1,16 +1,22 @@
 :root {
-    --primary: #000;
-    --secondary: #fff;
+    --positive: #000;
+    --negative: #fff;
 }
 
 .body {
-    color: var(--primary);
-    background: var(--secondary);
+    color: var(--positive);
+    background: var(--negative);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (color-scheme: dark) {
     :: root {}
-        --primary: #fff;
-        --secondary: #000;
+        --positive: #fff;
+        --negative: #000;
     }
+
+}
+
+.dark-toggle {
+    background-color: var(--positive);
+    color: var(--negative);
 }
