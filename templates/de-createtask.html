@@ -142,8 +142,8 @@
         //Creates total variable and resets it to 0, will add to it later on within for loop
         var total = 0;
 
-        //for loop iterating for the length of the itemArray, or how many items are added from the input
-        for (var i = 0; i < itemArray.length; i++) {
+        // Creating a function to find the value of a term
+        function findvalue(i) {
             //Sets the indexed strings from the array within a variable
             j = itemArray[i];
 
@@ -155,7 +155,14 @@
 
             //Calls the dictionary and adds the values of each item from the dictionary to the total variable
             total += dict[j];
+        };
+
+
+        //for loop iterating for the length of the itemArray, or how many items are added from the input
+        for (var i = 0; i < itemArray.length; i++) {
+            findvalue(i);
         }
+
 
         //Rounds the result to two decimal places
         total = total.toFixed(2);
@@ -171,27 +178,28 @@
             //Show original total before coupon
             var result = document.createElement("div");
             result.className = "row pt-2 text-white";
-            result.innerHTML = "<hr/> The original total was $" + total;
+            result.innerHTML = "<hr/> The total before the discount was $" + total;
             outputdiv.appendChild(result);
 
             // Change total to discounted total and round to two decimal places
             total = total * 0.8;
             total = total.toFixed(2);
 
-            // Show discounted total to user
-            var result = document.createElement("div");
-            result.className = "row pt-2 text-warning";
-            result.innerHTML = "<hr/> The new total is $" + total;
-            outputdiv.appendChild(result);
+            // Show discounted total
+            printTotal();
         }
         else{
-            //Prints total
+            //Prints total without modifying it
+            printTotal();
+        }
+
+        function printTotal() {
+            // Creates a new div that displays the total to the user
             var result = document.createElement("div");
             result.className = "row pt-2 text-warning";
             result.innerHTML = "<hr/> The total is $" + total;
             outputdiv.appendChild(result);
         }
-
     }
 
 </script>
