@@ -40,39 +40,6 @@
         }
     }
 
-    {#    function match() {#}
-    {#    if (selected.length === 2){#}
-    {#        if (backs[0] === backs[1]) {#}
-    {#            alert("Nice! Enjoy your 5% discount on tea!")#}
-    {#        } else#}
-    {#        {#}
-    {#            alert("Nice try!")#}
-    {#        }#}
-    {#    }#}
-
-
-    {#        picId.setAttribute('data-id', i)#}
-    {#        backs[i].setAttribute('card_id', i)#}
-    {#        var backID = this.getAttribute('card_id' + i)#}
-    {#        backID.push(selected)#}
-    {#        if (backID.length === 2) {#}
-    {#            match()#}
-    {#        }#}
-    {#    }#}
-    {#function match() {#}
-    {#    var cards = document.querySelectorAll('img')#}
-    {#    const firstID = selected[0]#}
-    {#    const secondID = selected[1]#}
-    {#    if (selected[0] === selected[1]) {#}
-    {#        cards[firstID].setAttribute('src', 'https://www.kindpng.com/picc/m/0-8047_youtube-thumbs-up-png-transparent-png.png')#}
-    {#        cards[secondID].setAttribute('src', 'https://www.kindpng.com/picc/m/0-8047_youtube-thumbs-up-png-transparent-png.png')#}
-    {#    } else {#}
-    {#        cards[firstID].setAttribute('src', 'https://opengameart.org/sites/default/files/card%20back%20black.png')#}
-    {#        cards[secondID].setAttribute('src', 'https://opengameart.org/sites/default/files/card%20back%20black.png')#}
-    {#    }#}
-    {#    selected = []#}
-
-
     function loadpics(how_many_times) {
         newDiv = document.createElement("div");
         document.getElementById("main").appendChild(newDiv);
