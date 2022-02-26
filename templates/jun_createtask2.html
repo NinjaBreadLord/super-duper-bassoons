@@ -1,58 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <script>
-
-            let CardID = []
-
-            function flipCard(i) {
-                const backs = ['/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/nativecultivarreserve.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/nativecultivarreserve.jpg'];
-                picID = "backsID" + i;
-                imgSrc = "<img src='" + backs[i] + "' />";
-                document.getElementById(picID).innerHTML = imgSrc;
-                let picID = document.querySelectorAll('img')
-                if (picID.length === 2) {
-                    return match(500)
-                }
-            }
-
-            function match(500) {
-                var cards = document.querySelectorAll('img')
-                const FirstID = CardID[0]
-                const SecondID = CardID[1]
-                if (CardID[0] === CardID[1]) {
-                    cards[FirstID].setAttribute('src', 'https://www.kindpng.com/picc/m/0-8047_youtube-thumbs-up-png-transparent-png.png')
-                    cards[SecondID].setAttribute('src', 'https://www.kindpng.com/picc/m/0-8047_youtube-thumbs-up-png-transparent-png.png')
-                } else {
-                    cards[FirstID].setAttribute('src', 'https://opengameart.org/sites/default/files/card%20back%20black.png')
-                    cards[SecondID].setAttribute('src', 'https://opengameart.org/sites/default/files/card%20back%20black.png')
-                }
-                CardID = []
-            }
-
-            function loadpics(picsNum) {
-                newDiv = document.createElement("div");
-                document.getElementById("container").appendChild(newDiv);
-                let i = 0; //index
-                while (i < picsNum) //iteration of images display
-                newBtn = document.createElement("button");
-                newBtn.id = "backsID" + i;
-                npId = "unique_id" + i;
-                let j = i;
-                newBtn.innerHTML = "<img src='https://opengameart.org/sites/default/files/card%20back%20black.png' />";
-                newBtn.onclick = function () {
-                    flipCard(j); //call to function
-                }
-                newDiv.appendChild(newBtn);
-                i++;
-        }
-
-    </script>
-    <h1> Match the Cards!</h1>
-        <body onload="loadpics(10)">
-        <p id="container"> </p>
-
-    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
     <style>
         h1 {
             font-family: monospace;
@@ -60,7 +8,7 @@
             font-size: 40px;
         }
         img {
-            width: 328px;
+            width: 350px;
             height: 400px;
             display: inline-grid;
             margin: 0 auto;
@@ -69,8 +17,54 @@
             border:0;
         }
 
-        </style>
+    </style>
 </head>
-<body>
+<script>
+    function flip(i, k) {
+        const backs = ['/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/nativecultivarreserve.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/nativecultivarreserve.jpg'];
+        picId = 'card_id' + i;
+        imgSrc = "<img src='" + backs[i] + "' />";
+        document.getElementById(picId).innerHTML = imgSrc;
+        if (k >= 0) {
+            match()
+        }
+        else {
+            let i=l
+        }
+    }
+    function match(i, l) {
+        if (i === l) {
+            alert("Nice! Enjoy your 5% discount on tea!")
+        } else{
+            alert("Nice try!")
+        }
+    }
+
+    function loadpics(how_many_times) {
+        newDiv = document.createElement("div");
+        document.getElementById("main").appendChild(newDiv);
+        let i=0;
+        let k=-1;
+        while(i<how_many_times){
+            newBtn = document.createElement("button");
+            newBtn.id = 'card_id' + i;
+            let j=i;
+            let m=k;
+            newBtn.innerHTML = "<img src='https://opengameart.org/sites/default/files/card%20back%20black.png' />";
+            newBtn.onclick = function () { flip(j, m);}
+            newDiv.appendChild(newBtn);
+            i++;
+            k++;
+        }
+    }
+</script>
+
+<body onload="loadpics(10)">
+
+
+<div id="main"></div>
+
 
 </body>
+
+</html>
