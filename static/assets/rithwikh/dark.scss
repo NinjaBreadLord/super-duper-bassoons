@@ -1,19 +1,19 @@
-$primary-light: #000000
-$secondary-light: #fff
-$primary-dark: #fff
-$secondary-dark: #000
+$positive-light: #000000
+$negative-light: #fff
+$positive-dark: #fff
+$negative-dark: #000
 
 
 
 :: root
-  --primary: #{primary-light}
-  --secondary: #{secondary-light}
+--positive: #{positive-light}
+--negative: #{negative-light}
 
 body
-  color: var(--primary)
-  background: var(--secondary)
+color: var(--positive)
+background: var(--negative)
 
 @media (prefers-color-scheme: dark)
-  :: root
-  --primary: #{primary-dark}
-  --secondary: #{secondary-dark}
+:: root
+--positive: #{positive-dark}
+--negative: #{negative-dark}

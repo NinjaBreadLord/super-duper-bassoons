@@ -2,7 +2,7 @@
 
 {% block body %}
 
-
+<link href="/static/assets/rithwikh/dark.css" rel="stylesheet">
 
 <style>
 
@@ -13,42 +13,10 @@
         margin: 60px auto;
     }
 
-    .button {
-        background-color: #1c87c9;
-        -webkit-border-radius: 60px;
-        border-radius: 60px;
-        border: none;
-        color: #eeeeee;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Comic Sans MS;
-        font-size: 20px;
-        padding: 10px 10px;
-        text-align: center;
-        text-decoration: none;
-    }
-    @keyframes glowing {
-        0% {
-            background-color: #5f2afd;
-            box-shadow: 0 0 5px #5f2afd;
-        }
-        50% {
-            background-color: #8761f8;
-            box-shadow: 0 0 20px #8761f8;
-        }
-        100% {
-            background-color: #5f2afd;
-            box-shadow: 0 0 5px #5f2afd;
-        }
-    }
-    .button {
-        animation: glowing 1300ms infinite;
-    }
-
-
     table, th, td {
         border:1px solid #4709ff;
     }
+
 
     <style>
      .p1 {
@@ -60,7 +28,6 @@
     }
 
     .p3 {
-        color: rgba(255, 255, 255, 0.99);
         font-family: "Monaco", "Monaco", fantasy;
     }
 
@@ -70,12 +37,45 @@
         background-size: cover;
     }
 
+    .button-22 {
+        align-items: center;
+        appearance: button;
+        background-color: #0276FF;
+        border-radius: 8px;
+        border-style: none;
+        box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        font-family: "RM Neue",sans-serif;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+        padding: 10px 21px;
+        text-align: center;
+        text-transform: none;
+        transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+        user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button-22:active {
+        background-color: #006AE8;
+    }
+
+    .button-22:hover {
+        background-color: #1C84FF;
+    }
+
 </style>
-</style>
+
 
 
 <center>
-
+<body>
     <div class="centerb">
         <center>
 
@@ -120,7 +120,8 @@
         <a class="button" href="http://127.0.0.1:5000/">Homepage</a>
         <a class="button" href="http://127.0.0.1:5000/rithwikh/weather">Weather</a>
         <a class="button" href="http://127.0.0.1:5000/rithwikh/createtask">Create Task</a>
-        <button onclick="displayDate()">Click to view the Time?</button>
+
+        <button onclick="displayDate()"  class="button-22" role="button" >Click to See the Current Time</button>
 
         <script>
             function displayDate() {
@@ -128,12 +129,22 @@
             }
         </script>
 
+
+
+
+
+
+
+
+
+
+
         <p id="yes"></p>
 
 
     </div>
 
-
+</body>
 
 
     {% endblock %}
@@ -142,4 +153,5 @@
     {% endblock %}
 
 </center>
+
 

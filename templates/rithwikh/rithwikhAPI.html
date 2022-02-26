@@ -1,47 +1,14 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-
+<link href="/static/assets/rithwikh/dark.css" rel="stylesheet"
 
 
 <style>
 
-    .button {
-        background-color: #1c87c9;
-        -webkit-border-radius: 60px;
-        border-radius: 60px;
-        border: none;
-        color: #eeeeee;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Comic Sans MS;
-        font-size: 20px;
-        padding: 10px 10px;
-        text-align: center;
-        text-decoration: none;
-    }
-    @keyframes glowing {
-        0% {
-            background-color: #5f2afd;
-            box-shadow: 0 0 5px #5f2afd;
-        }
-        50% {
-            background-color: #8761f8;
-            box-shadow: 0 0 20px #8761f8;
-        }
-        100% {
-            background-color: #5f2afd;
-            box-shadow: 0 0 5px #5f2afd;
-        }
-    }
-    .button {
-        animation: glowing 1300ms infinite;
-    }
 
 
-    table, th, td {
-        border:1px solid #4709ff;
-    }
+
 
     <style>
      .p1 {
@@ -69,14 +36,6 @@
 
 <center>
 
-
-
-
-    <div>
-
-
-        <a class="button" href="http://127.0.0.1:5000/">Click To Return Home</a>
-    </div>
 
     <div class="powr-weather" id="be801033_1638823897"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
     <p>To Convert the Fahrenheit temperature to Celsius, inupt below.</p>
@@ -140,41 +99,7 @@
     </head>
     <body>
 
-    <div class="header">
-        <h2>Scroll Indicator</h2>
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
-    </div>
 
-    <div class="content">
-        <h3>Scroll Down to See The Effect</h3>
-        <p>We have created a "progress bar" to <b>show how far a page has been scrolled</b>.</p>
-        <p>It also <b>works when you scroll back up</b>.</p>
-        <p>It is even <b>responsive</b>! Resize the browser window to see the effect.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    </div>
-
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script>
 
     </body>
     </html>
