@@ -1,63 +1,110 @@
-{% extends "store/teaShop/teaBase.html" %}
 <!DOCTYPE html>
 <html lang="en">
-{% block body %}
-
-    <div class="card">
-        <img id=default src="/static/TeaPictures/AsianFamily.png" onclick="flip()" style="height:300px;width:200px">
-    </div>
-    <div class="back">
-        <img id=flipped1 src="/static/TeaPictures/fushoushan.jpg" onclick="flip()" style="height:400px;width:400px">
-    </div>
-    <div class="card1">
-        <img id=default1 src="/static/TeaPictures/AsianFamily.png" onclick="flip()" style="height:300px;width:200px">
-    </div>
-    <div class="back">
-        <img id=flipped2 src="/static/TeaPictures/green_tea.png" onclick="flip()" style="height:400px;width:400px">
-    </div>
+<head>
+    <h1>~ Memory Game ~</h1>
+    <p>Score:<span id="score"></span></p>
+    <div class="board"></div>
     <script>
-        function flip() {
-            const image = document.getElementById('default')
+        const cardArray = [
+            {
+                name: '1',
+                img: 'https://cloud-5ystxzer7.vercel.app/11.png'
+            },
+            {
+                name: '2',
+                img: 'https://cloud-5ystxzer7.vercel.app/22.png'
+            },
+            {
+                name: '3',
+                img: 'https://cloud-5ystxzer7.vercel.app/33.png'
+            },
+            {
+                name: '4',
+                img: 'https://cloud-5ystxzer7.vercel.app/44.png'
+            },
+            {
+                name: '5',
+                img: 'https://cloud-5ystxzer7.vercel.app/55.png'
+            },
+            {
+                name: '6',
+                img: 'https://cloud-5ystxzer7.vercel.app/06.png'
+            },
+            {
+                name: '1',
+                img: 'https://cloud-5ystxzer7.vercel.app/11.png'
+            },
+            {
+                name: '2',
+                img: 'https://cloud-5ystxzer7.vercel.app/22.png'
+            },
+            {
+                name: '3',
+                img: 'https://cloud-5ystxzer7.vercel.app/33.png'
+            },
+            {
+                name: '4',
+                img: 'https://cloud-5ystxzer7.vercel.app/44.png'
+            },
+            {
+                name: '5',
+                img: 'https://cloud-5ystxzer7.vercel.app/55.png'
+            },
+            {
+                name: '6',
+                img: 'https://cloud-5ystxzer7.vercel.app/06.png'
+            }
+        ]
+        const board = document.querySelector('.board')
+        const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
 
-            if (image.src.match("/static/TeaPictures/AsianFamily.png")) {
-                image.src = "/static/TeaPictures/fushoushan.jpg";
-            } else {
-                image.src = "/static/TeaPictures/AsianFamily.png";
+        // create game board
+        function createBoard() {
+            for (let i = 0; i < cardArray.length; i++) {
+                var card = document.createElement('img')
+                card.setAttribute('src', placeholder)
+                card.setAttribute('data-id', i)
+                card.addEventListener('click', flipCard)
+                board.appendChild(card)
             }
         }
-        function flip() {
-            const image = document.getElementById('default1')
+        createBoard()
 
-            if (image.src.match("/static/TeaPictures/AsianFamily.png")) {
-                image.src = "/static/TeaPictures/green_tea.jpg";
-            } else {
-                image.src = "/static/TeaPictures/AsianFamily.png";
+        var cardsClicked = []
+        var cardsClickedId = []
+        var cardsMatched = []
+        function flipCard() {
+            var cardId = this.getAttribute('data-id')
+            cardsClicked.push(cardArray[cardId].name)
+            cardsClickedId.push(cardId)
+            this.setAttribute('src', cardArray[cardId].img)
+            if (cardsClicked.length === 2) {
+                setTimeout(checkForMatch, 500)
             }
         }
+        function checkForMatch() {
+            var cards = document.querySelectorAll('img')
+            const firstCard = cardsClickedId[0]
+            const secondCard = cardsClickedId[1]
+            if (firstCard === secondCard) {
+                cards[firstCard].setAttribute('src', placeholder)
+                cards[secondCard].setAttribute('src', placeholder)
+                alert('You have clicked the same image!')
+            } else if (cardsClicked[0] === cardsClicked[1]) {
+                cards[firstCard].setAttribute('src', blank)
+                cards[secondCard].setAttribute('src', blank)
+                cardsMatched.push(cardsClicked)
+            } else if (cardsClicked[0] === cardsClicked[1]) {
+                // previous code
+                cards[firstCard].removeEventListener('click', flipCard)
+                cards[secondcard].removeEventListener('click', flipCard)
+            } else {
+                cards[firstCard].setAttribute('src', placeholder)
+                cards[secondCard].setAttribute('src', placeholder)
+            }
+            cardsClicked = []
+            cardsClickedId = []
+            result.textContent = cardsMatched.length
+        }
+
     </script>
-{#    <script>#}
-{#        function flip() {#}
-{#            ('card').toggleClass('flipped');#}
-{#        }#}
-{#    </script>#}
-    <style>
-    card{
-        background-color: white;
-        height:300px;
-        width:200px;
-    }
-    back{
-        background-color: white;
-        height:300px;
-        width:200px;
-    }
-    flipped{
-        transform: rotateY(180deg);
-    }
-    </style>
-
-<body>
-
-</body>
-{% endblock %}
-</html>
