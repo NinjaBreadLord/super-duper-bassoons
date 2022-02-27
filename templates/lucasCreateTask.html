@@ -82,7 +82,23 @@
             document.getElementById('turtleneck').style.visibility = "collapse";
             document.getElementById('longSleeve').style.visibility = "collapse";
             document.getElementById('nikeShirt').style.visibility = "visible";
-        } else {
+        } else if (document.getElementById('terms').value.toLowerCase() == 'turtleneck' ||
+            document.getElementById('terms').value.toLowerCase() == 'turtleneck shirt') {
+            document.getElementById('tableShirts').style.visibility = "visible";
+            document.getElementById('shirtHeader').style.visibility = "visible";
+            document.getElementById('flannelShirt').style.visibility = "collapse";
+            document.getElementById('turtleneck').style.visibility = "visible";
+            document.getElementById('longSleeve').style.visibility = "collapse";
+            document.getElementById('nikeShirt').style.visibility = "collapse";
+        } else if (document.getElementById('terms').value.toLowerCase() == 'long sleeve' ||
+            document.getElementById('terms').value.toLowerCase() == 'long sleeve shirt') {
+            document.getElementById('tableShirts').style.visibility = "visible";
+            document.getElementById('shirtHeader').style.visibility = "visible";
+            document.getElementById('flannelShirt').style.visibility = "collapse";
+            document.getElementById('turtleneck').style.visibility = "collapse";
+            document.getElementById('longSleeve').style.visibility = "visible";
+            document.getElementById('nikeShirt').style.visibility = "collapse";
+        }else {
             document.getElementById('tableShirts').style.visibility = "collapse";
             document.getElementById('shirtHeader').style.visibility = "collapse";
             document.getElementById('flannelShirt').style.visibility = "collapse";
