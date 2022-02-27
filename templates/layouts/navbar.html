@@ -17,52 +17,63 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shops
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
-                    <a class="dropdown-item" href="/store/TeeeShop">Teee Shop</a>
-                    <a class="dropdown-item" href="/store/teeShop">Tee Shop</a>
-                </div>
-            </li>
-            
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Our Team
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/everitt/about">Everitt</a>
-                    <a class="dropdown-item" href="/daniel/home">Daniel</a>
-                    <a class="dropdown-item" href="/jun">Jun</a>
-                    <a class="dropdown-item" href="/lucas/home">Lucas</a>
-                    <a class="dropdown-item" href="/rithwikh/home">Ŕithwikh</a>
-                </div>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shops
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/store/teaShop">Tea Shop</a>
+                        <a class="dropdown-item" href="/store/TeeeShop">Teee Shop</a>
+                        <a class="dropdown-item"  href="/store/Cart">Cart</a>
+                    </div>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/mainframe/search">Search Testing</a>
-            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/everitt/about">Everitt</a>
+                        <a class="dropdown-item" href="/daniel/home">Daniel</a>
+                        <a class="dropdown-item" href="/jun">Jun</a>
+                        <a class="dropdown-item" href="/lucas/home">Lucas</a>
+                        <a class="dropdown-item" href="/rithwikh/home">Ŕithwikh</a>
+                    </div>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/store/ShoppingCart">Shopping Cart</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/store/Cart">Shopping Cart</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/store/snake">Snake</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/store/lucasCreateTask">Lucas Create Task</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mainframe/search">Search</a>
+                </li>
 
-        </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Create Tasks
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/daniel/createtask">Daniel and Everitt's Create Task</a>
+                        <a class="dropdown-item" href="/store/lucasCreateTask">Lucas's Create Task </a>
+                        <a class="dropdown-item" href="/store/jun_createtask">Jun's Create Task</a>
+                        <a class="dropdown-item" href="/rithwikh/createtask">Ŕithwikh's Create Task</a>
+                    </div>
+                </li>
 
-    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/store/snake">Snake</a>
+                </li>
+
+                <button onclick="DarkToggle()" class="button-22" role="button">Toggle Light Mode</button>
+
+                <script>
+                    function DarkToggle() {
+                        var element = document.body;
+                        element.classList.toggle("dark-mode");
+                    }
+                </script>
+
+
+        </div>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <div class="float-right">
             <input type="text" class="form-control" id="term" placeholder="Enter search term">
