@@ -1,63 +1,76 @@
-{% extends "store/teaShop/teaBase.html" %}
 <!DOCTYPE html>
 <html lang="en">
-{% block body %}
-
-    <div class="card">
-        <img id=default src="/static/TeaPictures/AsianFamily.png" onclick="flip()" style="height:300px;width:200px">
-    </div>
-    <div class="back">
-        <img id=flipped1 src="/static/TeaPictures/fushoushan.jpg" onclick="flip()" style="height:400px;width:400px">
-    </div>
-    <div class="card1">
-        <img id=default1 src="/static/TeaPictures/AsianFamily.png" onclick="flip()" style="height:300px;width:200px">
-    </div>
-    <div class="back">
-        <img id=flipped2 src="/static/TeaPictures/green_tea.png" onclick="flip()" style="height:400px;width:400px">
-    </div>
+<head>
     <script>
-        function flip() {
-            const image = document.getElementById('default')
 
-            if (image.src.match("/static/TeaPictures/AsianFamily.png")) {
-                image.src = "/static/TeaPictures/fushoushan.jpg";
-            } else {
-                image.src = "/static/TeaPictures/AsianFamily.png";
+        let CardID = []
+
+        function flipCard(i) {
+            const backs = ['/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/nativecultivarreserve.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/nativecultivarreserve.jpg'];
+            picID = "backsID" + i;
+            imgSrc = "<img src='" + backs[i] + "' />";
+            document.getElementById(picID).innerHTML = imgSrc;
+            let picID = document.querySelectorAll('img')
+            if (picID.length === 2) {
+                return match(500)
             }
         }
-        function flip() {
-            const image = document.getElementById('default1')
 
-            if (image.src.match("/static/TeaPictures/AsianFamily.png")) {
-                image.src = "/static/TeaPictures/green_tea.jpg";
+        function match() {
+            var cards = document.querySelectorAll('img')
+            const FirstID = CardID[0]
+            const SecondID = CardID[1]
+            if (CardID[0] === CardID[1]) {
+                cards[FirstID].setAttribute('src', 'https://www.kindpng.com/picc/m/0-8047_youtube-thumbs-up-png-transparent-png.png')
+                cards[SecondID].setAttribute('src', 'https://www.kindpng.com/picc/m/0-8047_youtube-thumbs-up-png-transparent-png.png')
             } else {
-                image.src = "/static/TeaPictures/AsianFamily.png";
+                cards[FirstID].setAttribute('src', 'https://opengameart.org/sites/default/files/card%20back%20black.png')
+                cards[SecondID].setAttribute('src', 'https://opengameart.org/sites/default/files/card%20back%20black.png')
             }
+            CardID = []
         }
+
+        function loadpics(picsNum) {
+            newDiv = document.createElement("div");
+            document.getElementById("container").appendChild(newDiv);
+            let i = 0; //index
+            while (i < picsNum) //iteration of images display
+                newBtn = document.createElement("button");
+            newBtn.id = "backsID" + i;
+            npId = "unique_id" + i;
+            let j = i;
+            newBtn.innerHTML = "<img src='https://opengameart.org/sites/default/files/card%20back%20black.png' />";
+            newBtn.onclick = function () {
+                flipCard(j); //call to function
+            }
+            newDiv.appendChild(newBtn);
+            i++;
+        }
+
     </script>
-{#    <script>#}
-{#        function flip() {#}
-{#            ('card').toggleClass('flipped');#}
-{#        }#}
-{#    </script>#}
-    <style>
-    card{
-        background-color: white;
-        height:300px;
-        width:200px;
-    }
-    back{
-        background-color: white;
-        height:300px;
-        width:200px;
-    }
-    flipped{
-        transform: rotateY(180deg);
-    }
-    </style>
+    <h1> Match the Cards!</h1>
+<body onload="loadpics(10)">
+<p id="container"> </p>
 
+</script>
+<style>
+    h1 {
+        font-family: monospace;
+        text-align: center;
+        font-size: 40px;
+    }
+    img {
+        width: 328px;
+        height: 400px;
+        display: inline-grid;
+        margin: 0 auto;
+    }
+    th,td{
+        border:0;
+    }
+
+</style>
+</head>
 <body>
 
 </body>
-{% endblock %}
-</html>
