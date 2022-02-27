@@ -1,0 +1,19 @@
+$positive-light: #000000
+$negative-light: #fff
+$positive-dark: #fff
+$negative-dark: #000
+
+
+
+:: root
+--positive: #{positive-light}
+--negative: #{negative-light}
+
+body
+color: var(--positive)
+background: var(--negative)
+
+@media (prefers-color-scheme: dark)
+:: root
+--positive: #{positive-dark}
+--negative: #{negative-dark}

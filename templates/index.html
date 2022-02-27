@@ -7,14 +7,28 @@
 {% set small_anim_img = "/static/assets/general/flying-bird.gif" %}
 
 {% block body %}
-<link href="/static/assets/daniel/parallax.css" rel="stylesheet">
+<link href="/static/assets/rithwikh/dark.css" rel="stylesheet">
 
 <style>
     .parallax {
-        background-image: url("/static/assets/backgrounds/tea-field-ravi-pinisetti-unsplash.jpg");
+        background-image: url("/static/assets/rithwikh/DynamicCSS/village/VillageLight.jpg");
     }
-</style>
 
+    .body {
+        background-image: url("/static/assets/rithwikh/DynamicCSS/village/VillageLight.jpg") ;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+    }
+
+    .dark-toggle {
+        background-image: url("/static/assets/rithwikh/DynamicCSS/village/Village.jpg");
+        background-color: black;
+        color: white;
+    }
+
+</style>
+<body>
 <div class="parallax" style="height: 25%"></div>
 <div class="parallax">
     <marquee behavior="scroll" direction="left" scrollamount = "10">
@@ -45,6 +59,8 @@
 <div>
 
 </div>
+
+</body>
 {% endblock %}
 
 {% block background %}

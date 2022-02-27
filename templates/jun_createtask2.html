@@ -1,0 +1,79 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Match the Cards</title>
+    <h1>Match the Cards!</h1>
+    <h2>You only have one try to match each pair of cards. You can possibly earn up to 50% in discounts. Good luck!</h2>
+    <style>
+        h1 {
+            font-family: monospace;
+            text-align: center;
+            font-size: 40px;
+        }
+        h2 {
+            font-family: monospace;
+            text-align: center;
+        }
+        img {
+            width: 350px;
+            height: 400px;
+            display: inline-grid;
+            margin: 0 auto;
+        }
+        th,td{
+            border:0;
+        }
+        body{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<script>
+    function flip(i, k) {
+        const backs = ['/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/nativecultivarreserve.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/nativecultivarreserve.jpg'];
+        picId = 'card_id' + i;
+        imgSrc = "<img src='" + backs[i] + "' />";
+        document.getElementById(picId).innerHTML = imgSrc;
+        if (k >= 0) {
+            match(i, l)
+        }
+        else {
+            let i=l
+        }
+    }
+    function match(i, l) {
+        if (i === l) {
+            alert("Nice! Enjoy your 5% discount on tea!")
+        } else{
+            alert("Nice try!")
+        }
+    }
+
+    function loadpics(how_many_times) {
+        newDiv = document.createElement("div");
+        document.getElementById("main").appendChild(newDiv);
+        let i=0;
+        let k=-1;
+        while(i<how_many_times){
+            newBtn = document.createElement("button");
+            newBtn.id = 'card_id' + i;
+            let j=i;
+            let m=k;
+            newBtn.innerHTML = "<img src='https://opengameart.org/sites/default/files/card%20back%20black.png' />";
+            newBtn.onclick = function () { flip(j, m);}
+            newDiv.appendChild(newBtn);
+            i++;
+            k++;
+        }
+    }
+</script>
+
+<body onload="loadpics(10)">
+
+
+<div id="main"></div>
+
+
+</body>
+
+</html>

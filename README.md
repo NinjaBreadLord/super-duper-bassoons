@@ -31,6 +31,16 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 ### [Lucas, Ŕithwikh, and Jun's Pair-Share Journal](https://docs.google.com/document/d/1Mo2Scc3NmkeTiWN-pLBPexrsBTjY5X0mqlTHWC0ClTM/edit?usp=sharing)
 ### [Everitt and Daniel's Pair-Share Journal](https://docs.google.com/document/d/1PeEx1YdkPbe1ykQ0fboJnTnEJBK2chOiKaOZaK73VcM/edit#)
 
+## Week 10
+
+| Name | Tasks | Commits |
+|:-----|:----------------------|:-----:|
+| Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/56) | [Did AP test](https://docs.google.com/document/d/1iR2OKvWtNagkbd603NGcXlqQzrobUhtZIzv0gTEQtfg/edit) | [5.1-5.6 Notes](https://docs.google.com/document/d/1b_ho32jFODjsIXRHjucPzrC-9dHAH_4xOm8bm_MJao4/edit)
+| Ŕithwikh Várma | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/56) | 
+| Everitt Cheng | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/56)  | 
+| Daniel Tsivkovski | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/56) | 
+| Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/56) | 
+
 ## Week 9
 
 | Name | Tasks | Commits |
@@ -42,7 +52,7 @@ Daniel, Jun, Everitt, Lucas, Ŕithwikh
 | Jun Lim | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/54) | [Create Task Progress](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/56e03b960eae1b35a0465b4208266aa252b756a2)
 
 | Name | Tasks | Commits |
-|:-----|:----------------------|:-----:|
+|:-----|:----------------------|
 | Lucas Ho | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) | [Color search](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/ec3c4b9f414da763cf128b563e6a498379a6ca4a), [Long Sleeve](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/42230a2037448ee6a33ae12108efa2470c47bce2)
 | Lucas Huang | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53) | [T-Shirt Pictures Fixed](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/70471f31391fe3c1261a423683ea4cc098bb1aa2), [Google Translate](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/b19e43c565d7907bd3459b91e1440a5e97ee757b)
 | Gavin Wu | [Tasks](https://github.com/NinjaBreadLord/super-duper-bassoons/issues/53)  | [Add small, medium, large buttons](https://github.com/NinjaBreadLord/super-duper-bassoons/commit/04c8d1e18f770e7df340670e378ff6a448f6fa32)
