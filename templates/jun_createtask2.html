@@ -1,11 +1,17 @@
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Match the Cards</title>
+    <h1>Match the Cards!</h1>
+    <h2>You only have one try to match each pair of cards. You can possibly earn up to 50% in discounts. Good luck!</h2>
     <style>
         h1 {
             font-family: monospace;
             text-align: center;
             font-size: 40px;
+        }
+        h2 {
+            font-family: monospace;
+            text-align: center;
         }
         img {
             width: 350px;
@@ -16,7 +22,10 @@
         th,td{
             border:0;
         }
-
+        body{
+            display: inline-block;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <script>
@@ -26,7 +35,7 @@
         imgSrc = "<img src='" + backs[i] + "' />";
         document.getElementById(picId).innerHTML = imgSrc;
         if (k >= 0) {
-            match()
+            match(i, l)
         }
         else {
             let i=l
