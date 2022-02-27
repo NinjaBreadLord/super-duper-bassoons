@@ -1,110 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <h1>~ Memory Game ~</h1>
-    <p>Score:<span id="score"></span></p>
-    <div class="board"></div>
-    <script>
-        const cardArray = [
-            {
-                name: '1',
-                img: 'https://cloud-5ystxzer7.vercel.app/11.png'
-            },
-            {
-                name: '2',
-                img: 'https://cloud-5ystxzer7.vercel.app/22.png'
-            },
-            {
-                name: '3',
-                img: 'https://cloud-5ystxzer7.vercel.app/33.png'
-            },
-            {
-                name: '4',
-                img: 'https://cloud-5ystxzer7.vercel.app/44.png'
-            },
-            {
-                name: '5',
-                img: 'https://cloud-5ystxzer7.vercel.app/55.png'
-            },
-            {
-                name: '6',
-                img: 'https://cloud-5ystxzer7.vercel.app/06.png'
-            },
-            {
-                name: '1',
-                img: 'https://cloud-5ystxzer7.vercel.app/11.png'
-            },
-            {
-                name: '2',
-                img: 'https://cloud-5ystxzer7.vercel.app/22.png'
-            },
-            {
-                name: '3',
-                img: 'https://cloud-5ystxzer7.vercel.app/33.png'
-            },
-            {
-                name: '4',
-                img: 'https://cloud-5ystxzer7.vercel.app/44.png'
-            },
-            {
-                name: '5',
-                img: 'https://cloud-5ystxzer7.vercel.app/55.png'
-            },
-            {
-                name: '6',
-                img: 'https://cloud-5ystxzer7.vercel.app/06.png'
-            }
-        ]
-        const board = document.querySelector('.board')
-        const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
-
-        // create game board
-        function createBoard() {
-            for (let i = 0; i < cardArray.length; i++) {
-                var card = document.createElement('img')
-                card.setAttribute('src', placeholder)
-                card.setAttribute('data-id', i)
-                card.addEventListener('click', flipCard)
-                board.appendChild(card)
-            }
+    <meta charset="UTF-8">
+    <title>Match the Cards</title>
+    <h1>Match the Cards!</h1>
+    <h2>You only have one try to match each pair of cards. You can possibly earn up to 50% in discounts. Good luck!</h2>
+    <style>
+        h1 {
+            font-family: monospace;
+            text-align: center;
+            font-size: 40px;
         }
-        createBoard()
-
-        var cardsClicked = []
-        var cardsClickedId = []
-        var cardsMatched = []
-        function flipCard() {
-            var cardId = this.getAttribute('data-id')
-            cardsClicked.push(cardArray[cardId].name)
-            cardsClickedId.push(cardId)
-            this.setAttribute('src', cardArray[cardId].img)
-            if (cardsClicked.length === 2) {
-                setTimeout(checkForMatch, 500)
-            }
+        h2 {
+            font-family: monospace;
+            text-align: center;
         }
-        function checkForMatch() {
-            var cards = document.querySelectorAll('img')
-            const firstCard = cardsClickedId[0]
-            const secondCard = cardsClickedId[1]
-            if (firstCard === secondCard) {
-                cards[firstCard].setAttribute('src', placeholder)
-                cards[secondCard].setAttribute('src', placeholder)
-                alert('You have clicked the same image!')
-            } else if (cardsClicked[0] === cardsClicked[1]) {
-                cards[firstCard].setAttribute('src', blank)
-                cards[secondCard].setAttribute('src', blank)
-                cardsMatched.push(cardsClicked)
-            } else if (cardsClicked[0] === cardsClicked[1]) {
-                // previous code
-                cards[firstCard].removeEventListener('click', flipCard)
-                cards[secondcard].removeEventListener('click', flipCard)
-            } else {
-                cards[firstCard].setAttribute('src', placeholder)
-                cards[secondCard].setAttribute('src', placeholder)
-            }
-            cardsClicked = []
-            cardsClickedId = []
-            result.textContent = cardsMatched.length
+        img {
+            width: 350px;
+            height: 400px;
+            display: inline-grid;
+            margin: 0 auto;
         }
+        th,td{
+            border:0;
+        }
+        body{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<script>
+    function flip(i, k) {
+        const backs = ['/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/nativecultivarreserve.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/nativecultivarreserve.jpg'];
+        picId = 'card_id' + i;
+        imgSrc = "<img src='" + backs[i] + "' />";
+        document.getElementById(picId).innerHTML = imgSrc;
+        if (k >= 0) {
+            match(i, l)
+        }
+        else {
+            let i=l
+        }
+    }
+    function match(i, l) {
+        if (i === l) {
+            alert("Nice! Enjoy your 5% discount on tea!")
+        } else{
+            alert("Nice try!")
+        }
+    }
 
-    </script>
+    function loadpics(how_many_times) {
+        newDiv = document.createElement("div");
+        document.getElementById("main").appendChild(newDiv);
+        let i=0;
+        let k=-1;
+        while(i<how_many_times){
+            newBtn = document.createElement("button");
+            newBtn.id = 'card_id' + i;
+            let j=i;
+            let m=k;
+            newBtn.innerHTML = "<img src='https://opengameart.org/sites/default/files/card%20back%20black.png' />";
+            newBtn.onclick = function () { flip(j, m);}
+            newDiv.appendChild(newBtn);
+            i++;
+            k++;
+        }
+    }
+</script>
+
+<body onload="loadpics(10)">
+
+
+<div id="main"></div>
+
+
+</body>
+
+</html>
