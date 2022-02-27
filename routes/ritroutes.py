@@ -20,3 +20,7 @@ def weather():
 def ritcreatetask():
     return render_template("rithwikh/ritcreatetask/ritcreatetaskyes.html")
 
+@app_ritroutes.route('/createtaskcsp')
+def ritcreatetaskcsp():
+    return render_template("rithwikh/ritcreatetask/ritextra.html")
+

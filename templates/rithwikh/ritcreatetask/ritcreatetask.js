@@ -1,4 +1,4 @@
-const words = ['javascript', 'html', 'github', 'intellij', 'compsci', 'css', 'python', 'binary', 'hexadecimal', 'sassybootsrap', 'codecodecode', 'pbl'];
+const words = ['fushoushan', 'green', 'matcha', 'whitetea', 'chai', 'peppermint', 'chamomile', 'kombucha', 'lavender', 'ginger', 'earlgrey', 'sencha'];
 const finalMessage = document.getElementById('final-message');
 const notification = document.getElementById('notification-container');
 const popup = document.getElementById('popup-container');
