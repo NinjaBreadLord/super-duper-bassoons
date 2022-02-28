@@ -30,12 +30,23 @@
 </head>
 <script>
     function flip(i, k) {
-        const backs = ['/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/nativecultivarreserve.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/nativecultivarreserve.jpg'];
-        picId = 'card_id' + i;
-        imgSrc = "<img src='" + backs[i] + "' />";
+        const backs = [
+            '/static/TeaPictures/cloudandmist.jpg',
+            '/static/TeaPictures/green_tea.png',
+            '/static/TeaPictures/cloudandmist.jpg',
+            '/static/TeaPictures/xingongyi.jpg',
+            '/static/TeaPictures/formosared20.jpg',
+            '/static/TeaPictures/formosared20.jpg',
+            '/static/TeaPictures/xingongyi.jpg',
+            '/static/TeaPictures/nativecultivarreserve.jpg',
+            '/static/TeaPictures/green_tea.png',
+            '/static/TeaPictures/nativecultivarreserve.jpg'
+        ];
+        picId = 'card_id' + i; //cycle through array for card ids
+        imgSrc = "<img src='" + backs[i] + "' />"; //cycle through array for image sources
         document.getElementById(picId).innerHTML = imgSrc;
         let a=1;
-        a++;
+        a++; //set up for the 5% discount part of match to happen only once
         if (k >= 0) {
             match(i, l); //calls to function that compares the values of i and l
         }
@@ -55,10 +66,10 @@
     }
 
     function loadpics(picsNum) {
-        newDiv = document.createElement("div");
+        newDiv = document.createElement("div"); //create div
         document.getElementById("main").appendChild(newDiv);
         let i=0;
-        let k=-1;
+        let k=-1; //indexing at -1 allows for variable storage in flip function
         while(i<picsNum){
             newBtn = document.createElement("button");
             newBtn.id = 'card_id' + i;
@@ -66,7 +77,7 @@
             let m=k;
             newBtn.innerHTML = "<img src='https://opengameart.org/sites/default/files/card%20back%20black.png' />";
             newBtn.onclick = function () { flip(j, m);}
-            newDiv.appendChild(newBtn);
+            newDiv.appendChild(newBtn); //append cards to created div
             i++;
             k++;
         }
@@ -74,7 +85,6 @@
 </script>
 
 <body onload="loadpics(10)">
-
 
 <div id="main"></div>
 
