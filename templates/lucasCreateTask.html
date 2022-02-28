@@ -3,39 +3,142 @@
 {% block body %}
 
 <style>
-
     body {
         background: #5373e0;
     }
 </style>
 
+<center style="font-size: x-large">Type in one of the four shirts you want to think about for the game. When you submit, it will give you the information you will need to know for the game. Choose from the nike shirt, the turtleneck, the flannel shirt, and the long sleeve shirt.</center>
 
+<table>
+    <tr>
+        <td>Flannel Shirt <img id="image" src="/static/TeePictures/flannel.png" height = "270" width = "270"> </td>
+        <td>Turtleneck Shirt <img id="image" src="/static/TeePictures/turtleneck.png" height ="270" width = "270"></td>
+        <td>Nike Shirt <img id="image" src="/static/TeePictures/nikeShirt.png" height = "270" width = "270"> </td>
+        <td>Long Sleeve Shirt <img id="image" src="/static/TeePictures/longSleeve.png" height ="220" width = "220"></td>
+    </tr>
+</table>
+
+<div class="text-white pt-3">
+    <table id="tableShirts" class="table" style="visibility: collapse">
+        <thead>
+        <tr id="shirtHeader" style="visibility: collapse">
+            <th class="text-white bg-primary">Name</th>
+            <th class="text-white bg-primary">Sleeves</th>
+            <th class="text-white bg-primary">Buttons</th>
+            <th class="text-white bg-primary">Formal</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="flannelShirt" style="visibility: collapse">
+            <td class="text-dark bg-white">Flannel</td>
+            <td class="text-dark bg-white">Long sleeves</td>
+            <td class="text-dark bg-white">Yes buttons</td>
+            <td class="text-dark bg-white">Not formal</td>
+        </tr>
+        <tr id="turtleneck" style="visibility: collapse">
+            <td class="text-dark bg-white">Turtleneck</td>
+            <td class="text-dark bg-white">Long sleeves</td>
+            <td class="text-dark bg-white">No buttons</td>
+            <td class="text-dark bg-white">Not formal</td>
+        </tr>
+        <tr id="nikeShirt" style="visibility: collapse">
+            <td class="text-dark bg-white">Nike</td>
+            <td class="text-dark bg-white">Short sleeves</td>
+            <td class="text-dark bg-white">No buttons</td>
+            <td class="text-dark bg-white">Not formal</td>
+        </tr>
+        <tr id="longSleeve" style="visibility: collapse">
+            <td class="text-dark bg-white">Long sleeve shirt</td>
+            <td class="text-dark bg-white">Long sleeves</td>
+            <td class="text-dark bg-white">Yes buttons</td>
+            <td class="text-dark bg-white">Formal</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="align-center pt-5" style="padding-left: 10px">
+    <input type="text" id="terms" placeholder="Search for a shirt" size="50">
+</div>
+<div class="align-center" style="padding-left: 10px">
+    <button id="submit_text" onclick="input();">Submit</button>
+</div>
+
+<div class="row align-center p-3">
+    <div class="container text-white" id="output"> </div>
+</div>
+
+<script>
+    function input() {
+        if (document.getElementById('terms').value.toLowerCase() == 'flannel' ||
+                document.getElementById('terms').value.toLowerCase() == 'flannel shirt') {
+            document.getElementById('tableShirts').style.visibility = "visible";
+            document.getElementById('shirtHeader').style.visibility = "visible";
+            document.getElementById('nikeShirt').style.visibility = "collapse";
+            document.getElementById('turtleneck').style.visibility = "collapse";
+            document.getElementById('longSleeve').style.visibility = "collapse";
+            document.getElementById('flannelShirt').style.visibility = "visible";
+        } else if (document.getElementById('terms').value.toLowerCase() == 'nike' ||
+                document.getElementById('terms').value.toLowerCase() == 'nike shirt') {
+            document.getElementById('tableShirts').style.visibility = "visible";
+            document.getElementById('shirtHeader').style.visibility = "visible";
+            document.getElementById('flannelShirt').style.visibility = "collapse";
+            document.getElementById('turtleneck').style.visibility = "collapse";
+            document.getElementById('longSleeve').style.visibility = "collapse";
+            document.getElementById('nikeShirt').style.visibility = "visible";
+        } else if (document.getElementById('terms').value.toLowerCase() == 'turtleneck' ||
+            document.getElementById('terms').value.toLowerCase() == 'turtleneck shirt') {
+            document.getElementById('tableShirts').style.visibility = "visible";
+            document.getElementById('shirtHeader').style.visibility = "visible";
+            document.getElementById('flannelShirt').style.visibility = "collapse";
+            document.getElementById('turtleneck').style.visibility = "visible";
+            document.getElementById('longSleeve').style.visibility = "collapse";
+            document.getElementById('nikeShirt').style.visibility = "collapse";
+        } else if (document.getElementById('terms').value.toLowerCase() == 'long sleeve' ||
+            document.getElementById('terms').value.toLowerCase() == 'long sleeve shirt') {
+            document.getElementById('tableShirts').style.visibility = "visible";
+            document.getElementById('shirtHeader').style.visibility = "visible";
+            document.getElementById('flannelShirt').style.visibility = "collapse";
+            document.getElementById('turtleneck').style.visibility = "collapse";
+            document.getElementById('longSleeve').style.visibility = "visible";
+            document.getElementById('nikeShirt').style.visibility = "collapse";
+        }else {
+            document.getElementById('tableShirts').style.visibility = "collapse";
+            document.getElementById('shirtHeader').style.visibility = "collapse";
+            document.getElementById('flannelShirt').style.visibility = "collapse";
+            document.getElementById('turtleneck').style.visibility = "collapse";
+            document.getElementById('longSleeve').style.visibility = "collapse";
+            document.getElementById('nikeShirt').style.visibility = "collapse";
+        }
+    }
+</script>
 
     <form action="javascript:void(0);">
 
         <body>
-        <div id="longSleeveQuestion">
+        <div id="longSleeveQuestion" style="padding-left: 10px">
             <legend>Question 1</legend>
             <h4>Does your shirt have long sleeves?</h4>
             <button id="yes" style="font-size: x-large" onclick="yesClickLongSleeve();">yes</button>
             <button id="no" style="font-size: x-large" onclick="noClickLongSleeve();">no</button>
         </div>
 
-        <div id="buttonQuestion" style="display: none">
+        <div id="buttonQuestion" style="display: none; padding-left: 10px">
             <legend>Question 2</legend>
             <h4>Does your shirt have buttons?</h4>
             <button id="yes1" style="font-size: x-large" onclick="yesClickButtons();">yes</button>
             <button id="no1" style="font-size: x-large" onclick="noClickButtons();">no</button>
         </div>
 
-        <div id="formalQuestion" style="display: none">
+        <div id="formalQuestion" style="display: none; padding-left: 10px">
             <legend>Question 3</legend>
             <h4>Is your shirt formal?</h4>
             <button id="yes2" style="font-size: x-large" onclick="yesClickFormal();">yes</button>
             <button id="no2" style="font-size: x-large" onclick="noClickFormal();">no</button>
         </div>
 
-        <div id="outputDiv" style="font-size: x-large; color: darkred">
+        <div id="outputDiv" style="font-size: x-large; color: darkred; padding-left: 10px">
         </div>
         </body>
 
@@ -71,3 +174,9 @@
     </form>
 
 {% endblock %}
+
+
+document.getElementById("tableShirts").innerHTML = "flannel, buttons, long sleeve, non formal";
+document.getElementById("tableShirts").innerHTML = "long sleeve shirt, buttons, long sleeve, formal";
+document.getElementById("tableShirts").innerHTML = "nike shirt, no buttons, short sleeve, non formal";
+document.getElementById("tableShirts").innerHTML = "turtleneck, no buttons, long sleeve, non formal";
