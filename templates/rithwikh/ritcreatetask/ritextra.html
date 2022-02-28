@@ -214,9 +214,10 @@
 <div class="notification-container" id="notification-container">
     <p>You've already used this letter</p>
 </div>
-    <script>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       const words = ['javascript', 'html', 'github', 'intellij', 'compsci', 'css', 'python', 'binary', 'hexadecimal', 'sassybootsrap', 'codecodecode', 'pbl'];
+<script>
+    // The const words establishes the words
+    const words = ['javascript', 'html', 'github', 'intellij', 'compsci', 'css', 'python', 'binary', 'hexadecimal', 'sassybootsrap', 'codecodecode', 'pbl'];
     const finalMessage = document.getElementById('final-message');
     const notification = document.getElementById('notification-container');
     const popup = document.getElementById('popup-container');
@@ -230,111 +231,108 @@
 
     function displayWord(){
         wordE1.innerHTML = `
-        ${selectedWord
+${selectedWord
             .split('')
             .map(
                 letter =>`
-            <span class="letter">
-            ${correctLetters.includes(letter) ? letter : ''}
+<span class="letter">
+        ${correctLetters.includes(letter) ? letter : ''}
         </span>
-        `
-    )
-    .join('')}
-    `;
+`
+            )
+            .join('')}
+`;
 
-    const innerWord = wordE1.innerText.replace(/\n/g, '');
+        const innerWord = wordE1.innerText.replace(/\n/g, '');
 
-    if(innerWord === selectedWord){
-        finalMessage.innerText = 'You won! 🗿🔥💪😳';
-        popup.style.display= 'flex';
-    }
+        if(innerWord === selectedWord){
+            finalMessage.innerText = 'You won! 🗿🔥💪😳';
+            popup.style.display= 'flex';
+        }
     }
 
     function updateWrongLetterE1(){
 
         wrongLettersE1.innerHTML = `
-        ${wrongLetters.length > 0 ? '<p>Incorrect Answers</p>' : ''}
-        ${wrongLetters.map(letter => `<span>${letter}</span>`)}
-    `;
+${wrongLetters.length > 0 ? '<p>Incorrect Answers</p>' : ''}
+${wrongLetters.map(letter => `<span>${letter}</span>`)}
+`;
 
 
-    figureParts.forEach((part,index) => {
-                                          const errors = wrongLetters.length;
+        figureParts.forEach((part,index) => {
+            const errors = wrongLetters.length;
 
-    if(index < errors) {
-        part.style.display = 'block'
-    }
-    else{
-        part.style.display = 'none';
-    }
-    });
+            if(index < errors) {
+                part.style.display = 'block'
+            }
+            else{
+                part.style.display = 'none';
+            }
+        });
 
-    if(wrongLetters.length === figureParts.length){
-        finalMessage.innerText = 'You lost... 🇱 + ratio. The correct word is displayed below.';
-        wordE1.innerText = selectedWord;
-        popup.style.display = 'flex';
+        if(wrongLetters.length === figureParts.length){
+            finalMessage.innerText = 'You lost... 🇱 + ratio. The correct word is displayed below.';
+            wordE1.innerText = selectedWord;
+            popup.style.display = 'flex';
 
 
-    }
+        }
     }
 
     function showNotification(){
         notification.classList.add('show');
 
-    setTimeout(() => {
-                       notification.classList.remove('show');
-                   }, 2000);
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 2000);
     }
 
 
     window.addEventListener('keydown', e =>{
-    if(e.keyCode >= 65 && e.keyCode <=90){
-        const letter = e.key;
+        if(e.keyCode >= 65 && e.keyCode <=90){
+            const letter = e.key;
 
-    if(selectedWord.includes(letter)){
-    if(!correctLetters.includes(letter)){
-        correctLetters.push(letter);
+            if(selectedWord.includes(letter)){
+                if(!correctLetters.includes(letter)){
+                    correctLetters.push(letter);
 
-    displayWord();
-    } else{
-      showNotification();
-      }
-    } else{
-    if(!wrongLetters.includes(letter)){
-        wrongLetters.push(letter);
+                    displayWord();
+                } else{
+                    showNotification();
+                }
+            } else{
+                if(!wrongLetters.includes(letter)){
+                    wrongLetters.push(letter);
 
-    updateWrongLetterE1();
-    } else{
-      showNotification();
-      }
-    }
-    }
+                    updateWrongLetterE1();
+                } else{
+                    showNotification();
+                }
+            }
+        }
     });
 
     playAgainBtn.addEventListener('click', () => {
 
-                                                   correctLetters.splice(0);
-                                                   wrongLetters.splice(0);
+        correctLetters.splice(0);
+        wrongLetters.splice(0);
 
-                                                   selectedWord = words[Math.floor(Math.random() * words.length)];
+        selectedWord = words[Math.floor(Math.random() * words.length)];
 
-                                               displayWord();
+        displayWord();
 
-                                               updateWrongLetterE1();
+        updateWrongLetterE1();
 
-                                                   popup.style.display = 'none';
-                                               });
+        popup.style.display = 'none';
+    });
 
     displayWord();
-
-
-
-    </script>
-
+</script>
 
 <div>
-      <a class="button" href="http://127.0.0.1:5000/">Homepage</a>
-    <a class="button" href="http://127.0.0.1:5000/rithwikh/createtask">Click to switch to Tees and Teas Edition </a>
+<a class="button" href="http://127.0.0.1:5000/">Homepage</a>
+<a class="button" href="http://127.0.0.1:5000/rithwikh/createtask">Click to Switch to Tees and Teas Edition</a>
 </div>
+
 </body>
 </html>

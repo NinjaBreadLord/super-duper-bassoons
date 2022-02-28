@@ -176,6 +176,8 @@
 <p>Start by inputting a Letter to try and guess the word.</p>
 <p> *type all answers in lower-case<p>
 <div class="game-container">
+
+    <!--SVG or Scalable Vector Graphics help me to draw figures and is used to draw the figure in the PBL. -->
     <svg height="250" width="200" class="figure-container">
 
         <line x1="60" y1="20" x2="140" y2="20" />
@@ -213,8 +215,11 @@
 <div class="notification-container" id="notification-container">
     <p>You've already used this letter</p>
 </div>
-    <script>
 
+<!--Javascript function below adds functionality to the CSS -->
+
+    <script>
+// The const words establishes the words
         const words = ['fushoushan', 'green', 'matcha', 'whitetea', 'chai', 'peppermint', 'chamomile', 'kombucha', 'lavender', 'ginger', 'earlgrey', 'sencha','flannel', 'tshirt', 'turtleneck', 'dresshirt', '' ];
         const finalMessage = document.getElementById('final-message');
         const notification = document.getElementById('notification-container');
