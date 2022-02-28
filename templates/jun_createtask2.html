@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <title>Match the Cards</title>
     <h1>Match the Cards!</h1>
-    <h2>You only have one try to match each pair of cards. You can possibly earn up to 50% in discounts. Good luck!</h2>
+    <h2>You only have one try to match a pair of cards. You can possibly earn a discount. Good luck!</h2>
     <style>
         h1 {
             font-family: monospace;
@@ -34,27 +34,32 @@
         picId = 'card_id' + i;
         imgSrc = "<img src='" + backs[i] + "' />";
         document.getElementById(picId).innerHTML = imgSrc;
+        let a=1;
+        a++;
         if (k >= 0) {
-            match(i, l)
+            match(i, l); //calls to function that compares the values of i and l
         }
         else {
-            let i=l
+            let l=i; //first loop stores value of i for future match function
         }
     }
     function match(i, l) {
-        if (i === l) {
-            alert("Nice! Enjoy your 5% discount on tea!")
+        if (i == l) {
+            alert("Nice one!");
+            if (a == 1){
+                alert("Enjoy your 5% discount on tea! Make sure to use code 'GET5OFF' at checkout!"); //allows for only one discount
+            }
         } else{
-            alert("Nice try!")
+            alert("Nice try! You can still play again for fun!");
         }
     }
 
-    function loadpics(how_many_times) {
+    function loadpics(picsNum) {
         newDiv = document.createElement("div");
         document.getElementById("main").appendChild(newDiv);
         let i=0;
         let k=-1;
-        while(i<how_many_times){
+        while(i<picsNum){
             newBtn = document.createElement("button");
             newBtn.id = 'card_id' + i;
             let j=i;
