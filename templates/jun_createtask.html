@@ -30,11 +30,22 @@
 </head>
 <script>
     function flip(i, k) {
-        const backs = ['/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/cloudandmist.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/formosared20.jpg', '/static/TeaPictures/xingongyi.jpg', '/static/TeaPictures/nativecultivarreserve.jpg', '/static/TeaPictures/green_tea.png', '/static/TeaPictures/nativecultivarreserve.jpg'];
+        const backs = [
+            '/static/TeaPictures/cloudandmist.jpg',
+            '/static/TeaPictures/green_tea.png',
+            '/static/TeaPictures/cloudandmist.jpg',
+            '/static/TeaPictures/xingongyi.jpg',
+            '/static/TeaPictures/formosared20.jpg',
+            '/static/TeaPictures/formosared20.jpg',
+            '/static/TeaPictures/xingongyi.jpg',
+            '/static/TeaPictures/nativecultivarreserve.jpg',
+            '/static/TeaPictures/green_tea.png',
+            '/static/TeaPictures/nativecultivarreserve.jpg'
+        ];
         picId = 'card_id' + i; //cycle through array for card ids
         imgSrc = "<img src='" + backs[i] + "' />"; //cycle through array for image sources
         document.getElementById(picId).innerHTML = imgSrc;
-        let a=1; 
+        let a=1;
         a++; //set up for the 5% discount part of match to happen only once
         if (k >= 0) {
             match(i, l); //calls to function that compares the values of i and l
@@ -65,7 +76,7 @@
             let j=i;
             let m=k;
             newBtn.innerHTML = "<img src='https://opengameart.org/sites/default/files/card%20back%20black.png' />";
-            newBtn.onclick = function () { flip(j, m);} 
+            newBtn.onclick = function () { flip(j, m);}
             newDiv.appendChild(newBtn); //append cards to created div
             i++;
             k++;
@@ -73,7 +84,7 @@
     }
 </script>
 
-<body onload="loadpics(10)"> 
+<body onload="loadpics(10)">
 
 <div id="main"></div>
 
